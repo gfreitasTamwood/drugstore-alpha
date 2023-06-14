@@ -1,4 +1,4 @@
-# drugstore
+# drugstore-alpha
 
 ## Project setup
 ```
