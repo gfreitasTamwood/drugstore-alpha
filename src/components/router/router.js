@@ -2,7 +2,7 @@ import HomePage from '../pages/HomePage.vue';
 import ProductPage from '../pages/ProductPage.vue';
 import PromotionPage from '../pages/PromotionPage.vue';
 import ContactPage from '../pages/ContactPage.vue';
-import {createRouter, createWebhistory} from 'vue-router';
+import {createRouter, createWebHistory} from 'vue-router';
 
 const routes = [
     {
@@ -28,7 +28,7 @@ const routes = [
 ];
 
 const router = createRouter({
-    history: createWebhistory(process.env.BASE_URL),
+    history: createWebHistory(process.env.BASE_URL),
     routes
 });
 export default router;
