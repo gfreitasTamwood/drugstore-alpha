@@ -95,7 +95,7 @@ create table category (
 	category VARCHAR(50),
 	PRIMARY KEY (id)
 );
-insert into category (id, category) values (1, "product");
+insert into category (id, category) values (1, "medicine");
 insert into category (id, category) values (2, "Eye and Ear Care");
 insert into category (id, category) values (3, "First Aid");
 insert into category (id, category) values (4, "Personal Care");
