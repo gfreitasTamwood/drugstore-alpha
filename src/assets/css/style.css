@@ -97,8 +97,10 @@
 }
 
 .hero-header {
-    background: url(./../img/hero.jpg) top right no-repeat;
+    background: url(./../img/hero-banner-01.jpg) top right no-repeat;
     background-size: cover;
+    padding: 0 !important;
+    min-height: 35rem;
 }
 
 .service-item {
@@ -251,6 +253,14 @@
 
 .bg-dark {
     background-color: #1D2A4D !important;
+}
+
+.hero-header > section {
+    width: 100%;
+    height: 35rem;
+    background-color: rgba(100,100,100,.3);
+    display: flex;
+    align-items: center;
 }
 
 h4 {
