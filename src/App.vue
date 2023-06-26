@@ -1,12 +1,16 @@
 <template>
   <h1>App</h1>
+  <HomePage/>
 </template>
 
 <script>
-
+import HomePage from './components/pages/HomePage.vue'
 
 export default {
   name: 'App',
+  components: {
+    HomePage
+  }
 }
 </script>
 
