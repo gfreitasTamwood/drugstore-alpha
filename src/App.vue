@@ -1,17 +1,14 @@
 <template>
-  <!-- <ProductComponent :product="this.product" /> -->
   <HomePage/>
 </template>
 
 <script>
 import HomePage from './components/pages/HomePage.vue'
-// import ProductComponent from './components/pages/ProductPageComponents/ProductComponent.vue'
 
 export default {
   name: 'App',
   components: {
     HomePage,
-    // ProductComponent
   },
   data() {
     return {
