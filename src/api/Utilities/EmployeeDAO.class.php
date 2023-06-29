@@ -40,7 +40,7 @@ class EmployeeDAO {
         return self::$db->lastInsertId();
     }
     public static function insertEmployee( Employee $employee ){
-        $sql = "INSERT INTO employee(firsttName,lastName,email,phone,username,password) VALUES (:firstName,:lastName,:email,:phone,:username,:password)";
+        $sql = "INSERT INTO employee(firstName,lastName,email,phone,username,password) VALUES (:firstName,:lastName,:email,:phone,:username,:password)";
 
         self::$db->query($sql);
         self::$db->bind(":firstName", $employee->getFirstName());
