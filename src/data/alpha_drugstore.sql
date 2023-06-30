@@ -7,27 +7,29 @@ create table employee (
 	id INT NOT NULL AUTO_INCREMENT,
 	firstName VARCHAR(50),
 	lastName VARCHAR(50),
+	field CHAR(50),
 	email VARCHAR(50),
 	phone VARCHAR(50),
+	avatar VARCHAR(200),
 	username VARCHAR(50),
 	password VARCHAR(50),
     PRIMARY KEY (id)
 );
-insert into employee (id, firstName, lastName, email, phone, username, password) values (1, 'Winnah', 'De Blasi', 'wdeblasi0@hibu.com', '396-975-7959', 'wdeblasi0', 'wdeblasi0');
-insert into employee (id, firstName, lastName, email, phone, username, password) values (2, 'Phillie', 'Luigi', 'pluigi1@dion.ne.jp', '732-447-5906', 'pluigi1', 'pluigi1');
-insert into employee (id, firstName, lastName, email, phone, username, password) values (3, 'Shelby', 'Ambrogini', 'sambrogini2@goo.gl', '251-255-2098', 'sambrogini2', 'sambrogini2');
-insert into employee (id, firstName, lastName, email, phone, username, password) values (4, 'Christina', 'Bartolijn', 'cbartolijn3@amazon.de', '859-754-8440', 'cbartolijn3', 'cbartolijn3');
-insert into employee (id, firstName, lastName, email, phone, username, password) values (5, 'Sile', 'Oxley', 'soxley4@1688.com', '397-691-0129', 'soxley4', 'soxley4');
-insert into employee (id, firstName, lastName, email, phone, username, password) values (6, 'Mariette', 'Wade', 'mwade5@sciencedaily.com', '360-730-3868', 'mwade5', 'mwade5');
-insert into employee (id, firstName, lastName, email, phone, username, password) values (7, 'Clevey', 'Tackell', 'ctackell6@dedecms.com', '196-197-8487', 'ctackell6', 'ctackell6');
-insert into employee (id, firstName, lastName, email, phone, username, password) values (8, 'Kaspar', 'Ion', 'kion7@earthlink.net', '908-869-1850', 'kion7', 'kion7');
-insert into employee (id, firstName, lastName, email, phone, username, password) values (9, 'Mariya', 'Estcourt', 'mestcourt8@github.com', '758-878-6595', 'mestcourt8', 'mestcourt8');
-insert into employee (id, firstName, lastName, email, phone, username, password) values (10, 'Field', 'O''Hare', 'fohare9@bbc.co.uk', '705-802-4660', 'fohare9', 'fohare9');
-insert into employee (id, firstName, lastName, email, phone, username, password) values (11, 'Lanie', 'Benasik', 'lbenasika@quantcast.com', '993-996-1428', 'lbenasika', 'lbenasika');
-insert into employee (id, firstName, lastName, email, phone, username, password) values (12, 'Dania', 'Grayer', 'dgrayerb@storify.com', '480-215-0815', 'dgrayerb', 'dgrayerb');
-insert into employee (id, firstName, lastName, email, phone, username, password) values (13, 'Judi', 'Perry', 'jperryc@independent.co.uk', '170-401-7708', 'jperryc', 'jperryc');
-insert into employee (id, firstName, lastName, email, phone, username, password) values (14, 'Rossie', 'Aitchinson', 'raitchinsond@linkedin.com', '458-192-7912', 'raitchinsond', 'raitchinsond');
-insert into employee (id, firstName, lastName, email, phone, username, password) values (15, 'Jeffry', 'Mullenger', 'jmullengere@redcross.org', '335-734-5351', 'jmullengere', 'jmullengere');
+insert into employee (id, firstName, lastName, field, email, phone, avatar, username, password) values (1, 'Winnah', 'De Blasi', 'Infectious Diseases', 'wdeblasi0@hibu.com', '396-975-7959', 'team-02.jpg' ,'wdeblasi0', 'wdeblasi0');
+insert into employee (id, firstName, lastName, field, email, phone, avatar, username, password) values (2, 'Phillie', 'Luigi', 'Ambulatory Care', 'pluigi1@dion.ne.jp', '732-447-5906', 'team-00.jpg', 'pluigi1', 'pluigi1');
+insert into employee (id, firstName, lastName, field, email, phone, avatar, username, password) values (3, 'Shelby', 'Ambrogini', 'Cardiology Care', 'sambrogini2@goo.gl', '251-255-2098', 'team-03.jpg', 'sambrogini2', 'sambrogini2');
+insert into employee (id, firstName, lastName, field, email, phone, avatar, username, password) values (4, 'Christina', 'Bartolijn', 'Infectious Diseases Care', 'cbartolijn3@amazon.de', '859-754-8440', 'team-04.jpg', 'cbartolijn3', 'cbartolijn3');
+insert into employee (id, firstName, lastName, field, email, phone, avatar, username, password) values (5, 'Sile', 'Oxley','Geriatric Care',  'soxley4@1688.com', '397-691-0129', 'team-03.jpg', 'soxley4', 'soxley4');
+insert into employee (id, firstName, lastName, field, email, phone, avatar, username, password) values (6, 'Mariette', 'Wade', 'Pharmacotherapy Care',  'mwade5@sciencedaily.com', '360-730-3868', 'team-04.jpg', 'mwade5', 'mwade5');
+insert into employee (id, firstName, lastName, field, email, phone, avatar, username, password) values (7, 'Clevey', 'Tackell', 'Infectious Care', 'ctackell6@dedecms.com', '196-197-8487', 'team-00.jpg', 'ctackell6', 'ctackell6');
+insert into employee (id, firstName, lastName, field, email, phone, avatar, username, password) values (8, 'Kaspar', 'Ion', 'Cardiology Care', 'kion7@earthlink.net', '908-869-1850', 'team-00.jpg', 'kion7', 'kion7');
+insert into employee (id, firstName, lastName, field, email, phone, avatar, username, password) values (9, 'Mariya', 'Estcourt', 'Ambulatory Care', 'mestcourt8@github.com', '758-878-6595', 'team-04.jpg', 'mestcourt8', 'mestcourt8');
+insert into employee (id, firstName, lastName, field, email, phone, avatar, username, password) values (10, 'Field', 'O''Hare', 'Cardiology Care', 'fohare9@bbc.co.uk', '705-802-4660', 'team-01.jpg', 'fohare9', 'fohare9');
+insert into employee (id, firstName, lastName, field, email, phone, avatar, username, password) values (11, 'Lanie', 'Benasik', 'Ambulatory Care', 'lbenasika@quantcast.com', '993-996-1428', 'team-03.jpg', 'lbenasika', 'lbenasika');
+insert into employee (id, firstName, lastName, field, email, phone, avatar, username, password) values (12, 'Dania', 'Grayer', 'Geriatric Care', 'dgrayerb@storify.com', '480-215-0815', 'team-04.jpg', 'dgrayerb', 'dgrayerb');
+insert into employee (id, firstName, lastName, field, email, phone, avatar, username, password) values (13, 'Judi', 'Perry', 'Cardiology Care', 'jperryc@independent.co.uk', '170-401-7708', 'team-3.jpg', 'jperryc', 'jperryc');
+insert into employee (id, firstName, lastName, field, email, phone, avatar, username, password) values (14, 'Rossie', 'Aitchinson', 'Ambulatory Care', 'raitchinsond@linkedin.com', '458-192-7912', 'team-02.jpg', 'raitchinsond', 'raitchinsond');
+insert into employee (id, firstName, lastName, field, email, phone, avatar, username, password) values (15, 'Jeffry', 'Mullenger', 'Cardiology Care', 'jmullengere@redcross.org', '335-734-5351', 'team-2.jpg', 'jmullengere', 'jmullengere');
 
 create table customer (
 	id INT NOT NULL AUTO_INCREMENT,
