@@ -110,7 +110,7 @@ create table product (
 	drugname VARCHAR(50),
 	brand VARCHAR(50),
 	manufacturer VARCHAR(50),
-	epireDate DATE,
+	expireDate DATE,
 	description TEXT,
 	price DECIMAL(5,2),
 	rating DECIMAL(2,1),
@@ -118,812 +118,3092 @@ create table product (
 	PRIMARY KEY (id),
 	FOREIGN KEY (categoryId) REFERENCES category(id)
 );
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (1, 'diclofenac sodium', 'PENNSAID', 'Unit Dose Services', '2034-01-24', 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 95.74, 3.6, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (2, 'rabeprazole', 'Rabeprazole Sodium', 'Mylan Pharmaceuticals Inc.', '2028-09-14', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', 84.49, 2.0, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (3, 'Acetaminophen', 'care one pain relief', 'American Sales Company', '2024-12-27', 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
-
-Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 162.91, 4.7, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (4, 'SODIUM SULFACETAMIDE, SULFUR', 'SODIUM SULFACETAMIDE, SULFUR', 'AUSTIN PHARMACEUTICALS, LLC', '2023-01-02', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 174.8, 1.1, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (5, 'Western White Pine', 'Western White Pine', 'Nelco Laboratories, Inc.', '2029-04-16', 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
-
-Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 21.6, 2.3, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (6, 'Saline', 'enema', 'Hannaford Brothers Company', '2023-09-18', 'In congue. Etiam justo. Etiam pretium iaculis justo.
-
-In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 146.24, 2.1, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (7, 'Phenobarbital', 'Phenobarbital', 'West-Ward Pharmaceutical Corp', '2033-10-26', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
-
-Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', 92.14, 1.4, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (8, 'GLYCERIN, DIMETHICONE', 'ORIGINAL POWER HYDRO AMPOULE', 'NATURE REPUBLIC CO., LTD.', '2023-04-27', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 197.05, 4.1, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (9, 'Water', 'Xpect Buffered Eyewash Sterile Isotonic', 'Cintas', '2033-03-14', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', 209.47, 3.6, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (10, 'Acetaminophen', 'mapap arthritis pain', 'Major Pharmaceuticals', '2027-01-30', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
-
-Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 24.86, 2.5, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (11, 'AVOBENZONE, ENSULIZOLE, OCTICSALATE, OCTOCRYLENE', 'Simple', 'CONOPCO Inc. d/b/a Unilever', '2029-05-06', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
-
-Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', 208.2, 3.6, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (12, 'Doxylamine succinate', 'Sleep Aid', 'CARDINAL HEALTH', '2025-05-21', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 29.7, 4.3, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (13, 'Aspirin', 'Equaline Aspirin', 'Supervalu Inc', '2028-07-11', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.', 152.42, 4.2, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (14, 'Octinoxate, Octisalate, and Titanium Dioxide', 'Neutrogena Healthy Skin Enhancer', 'Neutrogena Corporation', '2024-03-09', 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 97.29, 2.2, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (15, 'TOXICODENDRON RADICANS LEAF, CROTON TIGLIUM SEED, and XEROPHYLLUM ASPHODELOIDES', 'Poison Ivy/Oak', 'Hyland''s', '2025-07-06', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
-
-Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 231.55, 1.7, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (16, 'Acetaminophen and Diphenhydramine HCl', 'Acetaminophen PM', 'DOLGENCORP, LLC', '2033-04-10', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
-
-Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.', 182.29, 2.2, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (17, 'Mucor racemosus immunoserum rabbit', 'Pleo Muc Ex', 'Sanum Kehlbeck GmbH & Co. KG', '2030-03-19', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
-
-Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 240.35, 2.6, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (18, 'risperidone', 'Risperidone', 'Mylan Pharmaceuticals Inc.', '2026-06-25', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', 151.57, 3.3, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (19, 'LEDUM PALUSTRE TWIG', 'Ledum Palustre Kit Refill', 'Washington Homeopathic Products', '2030-08-04', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 211.23, 2.9, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (20, 'Ribavirin', 'Virazole', 'Valeant Pharmaceuticals North America LLC', '2034-10-08', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 245.73, 4.0, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (21, 'Diphenhydramine Hydrochloride', 'CareOne Allergy Medication', 'American Sales Company', '2024-11-30', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 14.19, 4.4, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (22, 'CALCAREA FLUORICA', 'CALCAREA FLUORICA', 'HOMEOLAB USA INC', '2029-04-23', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
-
-Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', 166.22, 3.6, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (23, 'rOPINIRole', 'Ropinirole', 'Carilion Materials Management', '2022-10-23', 'Fusce consequat. Nulla nisl. Nunc nisl.', 3.26, 5.0, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (24, 'Aspirin', 'Low Dose Aspirin', 'Time-Cap Labs, Inc', '2028-08-05', 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 116.58, 4.0, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (25, 'fluvoxamine maleate', 'FLUVOXAMINE MALEATE', 'Caraco Pharmaceutical Laboratories, Ltd.', '2027-12-02', 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
-
-Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 189.34, 4.7, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (26, 'Strawberry', 'Strawberry', 'Antigen Laboratories, Inc.', '2030-06-21', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 193.89, 1.9, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (27, 'Octinoxate', 'Maybelline New York Pure Stay Powder Foundation Broad Spectrum SPF 15 Sunscreen', 'L''Oreal USA Products Inc', '2033-08-13', 'Fusce consequat. Nulla nisl. Nunc nisl.', 49.12, 1.2, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (28, 'LIDOCAINE, MENTHOL', 'MEIJER ALOE GEL', 'Meijer Distribution Inc', '2025-01-01', 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', 39.02, 2.9, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (29, 'Titanium Dioxide', 'ck one waterfresh face makeup spf 15', 'Coty US LLC', '2033-08-22', 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', 245.05, 1.0, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (30, 'MIDODRINE HYDROCHLORIDE', 'MIDODRINE HYDROCHLORIDE', 'AvPAK', '2026-02-12', 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', 81.75, 3.6, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (31, 'balanced salt solution', 'BSS', 'Alcon Laboratories, Inc.', '2029-01-09', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-
-Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 77.03, 4.8, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (32, 'Prussian blue insoluble capsules', 'Radiogardase', 'Heyl Chem.-pharm. Fabrik GmbH & Co. KG', '2022-10-18', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
 
-Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 129.38, 3.4, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (33, 'Salicylic Acid', 'ST. IVES', 'Cosmetic Laboratories of America', '2026-11-03', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 34.76, 2.1, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (34, 'Sodium Citrate', 'Nauzene', 'Alva-Amco Pharmacal Companies, Inc.', '2030-03-23', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 120.97, 1.1, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (35, 'Metaxalone', 'Metaxalone', 'Physicians Total Care, Inc.', '2023-03-16', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.', 17.51, 4.6, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (36, 'Homeopathic Label', 'Kidney-Tone', 'Energetix Corp', '2026-05-29', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 232.63, 4.8, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (37, 'White Petrolatum', 'NATURES PURITY', 'AMERICAN EAGLE STAR IMPORTS INC.', '2035-04-14', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (1, 'Ondansetron', 'Ondansetron', 'Proficient Rx', '2025-06-22', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
 
-Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 228.47, 1.6, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (38, 'Normal Saline with Phenol', 'Diluent for Allergenic Extract - Sterile Normal Saline with Phenol', 'Hollister-Stier Laboratories LLC', '2028-06-25', 'Fusce consequat. Nulla nisl. Nunc nisl.
-
-Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 75.96, 1.2, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (39, 'Naproxen Sodium', 'All Day Pain Relief', 'H E B', '2025-10-26', 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
-
-Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', 138.25, 1.8, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (40, 'not applicable', 'Streptococcus Remedy', 'Deseret Biologicals, Inc.', '2032-01-06', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', 269.66, 2305, 5, 4.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (2, 'LEFLUNOMIDE', 'LEFLUNOMIDE', 'Golden State Medical Supply, Inc.', '2033-02-27', 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
 
-Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 63.52, 3.2, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (41, 'Terbinafine Hydrochloride', 'Athletes Foot', 'Topco Associates LLC', '2027-07-16', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', 344.33, 1820, 6, 3.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (3, 'Phenylephrine Hydrochloride', 'Phenylephrine Hydrochloride', 'HUB Pharmaceuticals, LLC', '2029-03-10', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
 
-Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 126.4, 3.7, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (42, 'Labetalol Hydrochloride', 'Labetalol Hydrochloride', 'Gland Pharma Limited', '2028-10-28', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 128.56, 2.6, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (43, 'OCTINOXATE, TITANIUM DIOXIDE, and ZINC OXIDE', 'IOPE RETIGEN GLOW COVER CAKE', 'AMOREPACIFIC', '2033-10-17', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 163.97, 3.8, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (44, 'vancomycin hydrochloride', 'Vancocin', 'Cardinal Health', '2035-06-19', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 43.14, 1.8, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (45, 'Formaldehyde', 'Formadon', 'Gordon Laboratories', '2032-01-19', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 124.51, 4.3, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (46, 'Hydrocortisone', 'Hydrocortisone', 'REMEDYREPACK INC.', '2029-11-26', 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
 
-Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 41.17, 1.0, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (47, 'RANITIDINE', 'RANITIDINE', 'WOCKHARDT LIMITED', '2030-06-15', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', 55.29, 4.1, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (48, 'Brevibloc', 'Brevibloc', 'General Injectables & Vaccines', '2029-07-11', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.', 86.21, 2.2, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (49, 'Demeclocycline Hydrochloride', 'Demeclocycline Hydrochloride', 'CorePharma, LLC', '2029-02-19', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 153.02, 3.0, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (50, 'DIMETHICONE', 'TRUFFLE EX WRINKLE ESSENCE', 'NATURE REPUBLIC CO., LTD.', '2029-03-02', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
+Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
 
-Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 242.86, 2.1, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (51, 'Olanzapine', 'Olanzapine', 'TYA Pharmaceuticals', '2029-08-26', 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 62.78, 2825, 1, 1.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (4, 'Ofloxacin', 'Ofloxacin', 'Clinical Solutions Wholesale', '2030-02-01', 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
 
-Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 26.51, 4.2, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (52, 'SITAGLIPTIN and METFORMIN HYDROCHLORIDE', 'JANUMET', 'REMEDYREPACK INC.', '2033-09-10', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 183.42, 1.3, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (53, 'GIANT PUFFBALL', 'Eczema Headache', 'Natural Health Supply', '2033-12-04', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 208.28, 3.8, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (54, 'Propranolol Hydrochloride', 'Propranolol Hydrochloride', 'Aidarex Pharmaceuticals LLC', '2028-03-02', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
 
-Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 165.02, 1.2, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (55, 'olsalazine sodium', 'Dipentum', 'Carilion Materials Management', '2030-07-13', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 351.13, 590, 7, 5.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (5, 'Technetium Tc-99m Generator', 'Ultra-TechneKow', 'Mallinckrodt Inc.', '2024-01-19', 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
 
-Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 154.8, 4.4, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (56, 'acyclovir', 'Acyclovir', 'Physicians Total Care, Inc.', '2026-03-04', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
 
-Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 129.16, 1.8, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (57, 'Albumin Human', 'Albumin (Human)', 'Octapharma Pharmazeutika Produktionsgesellschaft m.b.H.', '2032-01-20', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 19.39, 94, 3, 3.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (6, 'Nicotine Polacrilex', 'leader nicotine', 'Cardinal Health', '2034-03-07', 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
 
-Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 168.03, 4.0, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (58, 'Hydrastis Canadensis', 'Vag Pack', 'Wise Woman Herbals', '2024-03-22', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', 27.47, 4.5, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (59, 'Haloperidol', 'Haloperidol', 'Sandoz Inc', '2028-08-02', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 198.56, 3.8, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (60, 'Leucovorin Calcium', 'Leucovorin Calcium', 'Mylan Institutional Inc.', '2024-04-06', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 227.8, 595, 1, 3.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (7, 'Chlordiazepoxide Hydrochloride', 'Chlordiazepoxide Hydrochloride', 'Physicians Total Care, Inc.', '2033-08-12', 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
 
-Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 16.23, 1.1, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (61, 'Amiodarone Hydrochloride', 'Pacerone', 'Upsher-Smith Laboratories, Inc.', '2028-02-23', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 13.62, 1038, 7, 2.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (8, 'Homosalate and Octinoxate and Octisalate and Avobenzone and Octocrylene', 'Banana Boat Kids Tear Free Sunscreen SPF 60', 'Accra-Pac, Inc.', '2033-04-26', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
 
-Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 79.18, 4.2, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (62, 'LIDOCAINE HYDROCHLORIDE', 'AfterBurn', 'Tender Corporation', '2028-08-31', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
 
-Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 174.03, 3.0, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (63, 'Phenylephrine hydrochloride', 'shoprite nasal four', 'Wakefern Food Corporation', '2029-05-13', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 91.08, 2.1, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (64, 'Hydrochlorothiazide', 'Hydrochlorothiazide', 'PD-Rx Pharmaceuticals, Inc.', '2028-11-25', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', 176.19, 53, 2, 2.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (9, 'Octinoxate', 'Lancome', 'L''Oreal USA Products Inc', '2025-12-17', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
 
-Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 37.55, 4.9, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (65, 'simvastatin', 'Simvastatin', 'Cobalt Laboratories Inc.', '2032-05-13', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 41.66, 1.8, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (66, 'ALCOHOL', 'Instant Foam Hand Sanitizer', 'Dixie Packing & Seal Company', '2027-06-03', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 210.51, 3.2, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (67, 'OCTINOXATE, OXYBENZONE', 'LBEL EFFET PARFAIT Spots Reducing Effect Foundation SPF 18 - OBSCURE 8C', 'Ventura International, LTD', '2023-09-04', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
 
-Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', 94.47, 1.6, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (68, 'Lidocaine', 'Simply Numb Endure', 'Golden Touch LLC', '2028-03-22', 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 357.54, 1737, 9, 1.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (10, 'OCTINOXATE, Titanium Dioxide, Zinc Oxide', 'Face Mix Make up Base Green', 'TONYMOLY CO., LTD.', '2028-10-25', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
 
-Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', 164.87, 4.7, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (69, 'Chloroxylenol', 'Sanitex MVP Liquid Anti-Bacterial', 'Vectair Systems, Inc.', '2029-10-09', 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.', 170.18, 1791, 6, 3.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (11, 'ropinirole', 'ropinirole', 'Lake Erie Medical DBA Quality Care Products LLC', '2032-08-28', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
 
-Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 166.69, 3.1, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (70, 'diltiazem hydrochloride', 'Diltiazem Hydrochloride', 'Oceanside Pharmaceuticals', '2029-04-22', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
-
-Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', 17.36, 2.7, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (71, 'Quetiapine fumarate', 'Quetiapine fumarate', 'Accord Healthcare Inc.', '2024-06-09', 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', 161.6, 2.3, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (72, 'LIDOCAINE HYDROCHLORIDE, MENTHOL', 'LenzaGel', 'Pharmaceutica North America, Inc.', '2024-10-02', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
-
-Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', 99.36, 2.0, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (73, 'PANAX GINSENG ROOT OIL', 'ATO-K', 'LUBASBIO CO., LTD', '2030-02-11', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 174.38, 3.2, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (74, 'Carduus marianus, Gentiana lutea, Sambucus nigra', 'Stomaplex', 'Apotheca Company', '2030-01-29', 'Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.', 97.21, 4.0, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (75, 'Acetaminophen', 'Good Neighbor Pharmacy Childrens Pain and Fever', 'Amerisource Bergen', '2031-07-10', 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
-
-Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 132.49, 3.9, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (76, 'tramadol hydrochloride', 'tramadol hydrochloride', 'Cardinal Health', '2024-07-10', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
-
-Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.', 10.82, 1.0, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (77, 'ALCOHOL', 'Cotton Candy Hand Sanitizer', 'ENCHANTE ACCESSORIES INC.', '2032-10-14', 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
-
-Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 218.41, 2.3, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (78, 'Acetaminophen and Diphenhydramine HCl', 'Allergy Severe', 'Stephen L. LaFrance Pharmacy, Inc.', '2028-05-12', 'Fusce consequat. Nulla nisl. Nunc nisl.
-
-Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 38.88, 2.3, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (79, 'Blackberry', 'Blackberry', 'Nelco Laboratories, Inc.', '2029-06-10', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
-
-Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 135.02, 3.5, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (80, 'Sodium Fluoride', 'Rembrandt Deeply White Plus Peroxide Whitening', 'Johnson & Johnson Healthcare Products, Division of McNEIL-PPC, Inc.', '2028-09-21', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
-
-Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 201.43, 1.8, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (81, 'TRICLOSAN', 'PANROSA Green Apple Scented Hand', 'Panrosa Enterprises, Inc.', '2031-07-18', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 208.2, 4.9, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (82, 'Triclosan', 'Pumpkin Spice Antibacterial Foaming Hand Wash', 'SJ Creations, Inc.', '2031-03-18', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
-
-Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 184.59, 4.0, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (83, 'Ziprasidone Hydrochloride', 'Ziprasidone Hydrochloride', 'American Health Packaging', '2023-04-07', 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 202.55, 1.7, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (84, 'BUPROPION HYDROCHLORIDE', 'WELLBUTRIN', 'STAT Rx USA LLC', '2026-07-17', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
-
-Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 68.61, 2.2, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (85, 'Chlordiazepoxide Hydrochloride', 'Chlordiazepoxide Hydrochloride', 'Barr Laboratories Inc.', '2030-04-07', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
-
-Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 21.6, 4.0, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (86, 'Avobenzone Octisalate Octocrylene', 'La Roche Posay Redermic plus UV', 'La Roche-Posay Laboratoire Pharmaceutique', '2022-10-06', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
-
-Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 31.33, 5.0, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (87, 'Risperidone', 'Risperidone', 'Jubilant Cadista Pharmaceuticals Inc.', '2032-03-29', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
-
-Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 169.67, 1.6, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (88, 'Hydromorphone HCl', 'Hydromorphone HCl', 'Cantrell Drug Company', '2028-07-10', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
-
-Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 169.06, 2.6, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (89, 'THUJA OCCIDENTALIS LEAF', 'Wrinkle Control', 'Forces of Nature', '2028-02-27', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', 230.29, 4.4, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (90, 'Psyllium Husk', 'Metamucil', 'The Procter & Gamble Manufacturing Company', '2023-05-16', 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 148.06, 1.2, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (91, 'octinoxate, octisalate, and avobenzone', 'Origins', 'ORIGINS NATURAL RESOURCES INC.', '2030-09-22', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
-
-Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 89.23, 4.8, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (92, 'Iva xanthifolia', 'Burweed Marshelder Pollen', 'Allermed Laboratories, Inc.', '2024-07-25', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
-
-Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', 46.87, 3.6, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (93, 'Corn Smut', 'Corn Smut', 'Nelco Laboratories, Inc.', '2022-07-04', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 45.63, 1.9, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (94, 'warfarin sodium', 'warfarin sodium', 'New Horizon Rx Group, LLC', '2029-06-13', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
-
-Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', 185.68, 2.8, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (95, 'piroxicam', 'Piroxicam', 'Greenstone LLC', '2023-10-01', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 204.91, 2.3, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (96, 'TITANIUM DIOXIDE', 'Exuviance CoverBlend Skin Caring Foundation', 'NeoStrata Company Inc.', '2028-01-31', 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 22.15, 3.6, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (97, 'Oxygen', 'Oxygen', 'ROBINSON`S INDUSTRIAL GAS & EQUIPMENT CORP.', '2029-09-01', 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', 4.62, 4.1, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (98, 'Titanium Dioxide', 'bareMinerals 5-in-1 BB Advanced Performance Eyeshadow Broad Spectrum SPF 15', 'Bare Escentuals Beauty, Inc.', '2030-10-22', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
-
-Phasellus in felis. Donec semper sapien a libero. Nam dui.', 129.72, 2.0, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (99, 'AVOBENZONE, OCTINOXATE, OCTISALATE', 'LAURA GELLER BEAUTY TUSCAN SUN SPACKLE SPF 30 PROTECTIVE UNDER MAKE-UP PRIMER TAN', 'Laura Geller Beauty, LLC', '2024-05-23', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 245.56, 3.9, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (100, 'tramadol hydrochloride', 'tramadol hydrochloride', 'Cardinal Health', '2024-12-24', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
-
-Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', 151.07, 4.5, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (101, 'Tangerine', 'Tangerine', 'Nelco Laboratories, Inc.', '2026-01-10', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 5.8, 3.1, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (102, 'temazepam', 'Temazepam', 'Lake Erie Medical & Surgical Supply DBA Quality Care Products LLC', '2031-12-04', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-
-Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 98.0, 2.9, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (103, 'Halobetasol Propionate', 'Halobetasol Propionate', 'Taro Pharmaceuticals U.S.A., Inc.', '2033-06-04', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', 125.16, 2.9, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (104, 'adenosine', 'IASO Pregressive Age Care Eye', 'IASO Inc', '2028-11-19', 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
-
-In congue. Etiam justo. Etiam pretium iaculis justo.', 90.87, 1.3, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (105, 'SODIUM FLUORIDE', 'OralLine Kids', 'J.M. Murray Center Inc.', '2031-03-08', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
-
-Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 231.6, 2.6, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (106, 'Propranolol Hydrochloride', 'Propranolol Hydrochloride', 'Pliva Inc.', '2030-10-15', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
-
-Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 33.37, 3.6, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (107, 'Heparin Sodium', 'Heparin Sodium', 'Cardinal Health', '2026-11-02', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 52.96, 1.4, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (108, 'fenofibrate', 'Antara', 'LUPIN PHARMA', '2034-01-22', 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 103.86, 1.9, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (109, 'LISINOPRIL AND HYDROCHLOROTHIAZIDE', 'LISINOPRIL AND HYDROCHLOROTHIAZIDE', 'American Health Packaging', '2023-10-04', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 180.42, 1.5, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (110, 'Benzalkonium Chloride', 'BZK', 'Jiangsu Province JianErKang Medical Dressing Co.,Ltd', '2030-04-04', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
-
-Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', 138.48, 2.0, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (111, 'Coast Maple', 'Coast Maple', 'Nelco Laboratories, Inc.', '2032-08-02', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 242.4, 4.8, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (112, 'Baclofen', 'Baclofen', 'REMEDYREPACK INC.', '2030-01-07', 'Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 5.72, 4.6, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (113, 'Titanium Dioxide and Zinc oxide', 'bareMinerals READY Touch Up Veil Broad Spectrum SPF 15', 'Bare Escentuals Beauty Inc.', '2025-06-28', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 58.39, 3.9, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (114, 'Pramoxine Hydrochloride', 'Tucks', 'Johnson & Johnson Healthcare Products, Division of McNEIL-PPC, Inc.', '2022-10-12', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 165.17, 4.0, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (115, 'METHOTREXATE', 'METHOTREXATE', 'Rebel Distributors Corp', '2026-01-29', 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 82.51, 2.7, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (116, 'Pantoprazole Sodium', 'Pantoprazole Sodium', 'Rebel Distributors Corp', '2031-12-27', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 198.2, 3.0, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (117, 'Dalfampridine', 'AMPYRA', 'Acorda Therapeutics, Inc.', '2029-01-26', 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 84.81, 1.0, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (118, 'ETHYL ALCOHOL', 'Instant Hand Sanitizer', 'AOSS Medical Supply, Inc.', '2026-11-04', 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 70.34, 3.6, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (119, 'Aesculus hippocastanum, apis mellifica, Benzoicum acidum, Causticum, Equisetum hyemale, Lycopodium clavatum, Phosphorus, Plantago major, Rhus aromatica, Sepia', 'Bladder Formula', 'King Bio Inc.', '2028-09-16', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 219.63, 3.7, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (120, 'Prenatal with Ferrous Fum and Folic Acid', 'Prenatal Vitamins Plus Low Iron', 'Patrin Pharma, Inc.', '2032-12-29', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 172.99, 1.7, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (121, 'One Seed Juniper', 'One Seed Juniper', 'Nelco Laboratories, Inc.', '2028-10-03', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', 127.59, 3.6, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (122, 'Metoclopramide', 'Metoclopramide', 'Actavis Elizabeth LLC', '2033-02-28', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.', 10.28, 4.1, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (123, 'Norepinephrine bitartrate', 'Norepinephrine bitartrate', 'Cardinal Health', '2029-04-05', 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', 3.1, 3.9, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (124, 'ALUMINUM CHLOROHYDRATE', 'CLARINSMEN Antiperspirant ALL DAY DRY ALCOHOL-FREE', 'Laboratoires Clarins S.A.', '2022-08-15', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 161.81, 3.2, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (125, 'Metronidazole', 'Metronidazole', 'Carilion Materials Management', '2023-12-29', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 149.19, 3.0, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (126, 'Thyroidinum, Cortisone Aceticum, Anacardium Orentale, Antimonium Crudum, Ignatia Amara,', 'Appetite Control', 'Deseret Biologicals, Inc.', '2033-12-24', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 228.98, 1.2, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (127, 'Atorvastatin Calcium', 'Atorvastatin Calcium', 'Ranbaxy Pharmaceuticals Inc.', '2028-02-28', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 103.22, 1.9, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (128, 'bacitracin zinc, neomycin sulfate and polymyxin b sulfate', 'bacitracin zinc, neomycin sulfate and polymyxin b sulfate', 'Sion Biotext Medical Ltd', '2025-02-15', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.
+Phasellus in felis. Donec semper sapien a libero. Nam dui.
 
-Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 28.88, 2.3, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (129, 'Hydrocortisone', 'Hydrocortisone Maximum Strength', 'The Kroger Company', '2026-09-21', 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 153.42, 2.1, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (130, 'Simethicone', 'SIMETHICONE', 'Geri-Care Pharmaceuticals, Corp', '2028-10-27', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 315.94, 1429, 4, 2.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (12, 'Cocklebur', 'Cocklebur', 'Antigen Laboratories, Inc.', '2024-06-19', 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
 
-Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 243.16, 1.8, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (131, 'Cephalexin', 'Cephalexin', 'Blenheim Pharmacal, Inc.', '2022-08-13', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
 
-Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 143.6, 4.1, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (132, 'Methylphenidate Hydrochloride', 'Methylphenidate Hydrochloride', 'Teva Pharmaceuticals USA Inc', '2030-09-13', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 238.51, 4.8, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (133, 'Fluconazole', 'Fluconazole', 'West-Ward Pharmaceutical Corp', '2031-07-06', 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
 
-Sed ante. Vivamus tortor. Duis mattis egestas metus.', 187.81, 1.4, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (134, 'Hyoscyamine Sulfate', 'Hyosyne', 'Silarx Pharmaceuticals, Inc', '2027-09-25', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
 
-Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 16.72, 4.7, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (135, 'enoxaparin sodium', 'Lovenox', 'sanofi-aventis U.S. LLC', '2033-02-12', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 142.23, 3.5, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (136, 'Acetaminophen', 'Extra Strength Acetaminohpen', 'Major Pharmeceuticals', '2026-04-18', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', 318.85, 1797, 7, 4.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (13, 'BRAIN-DERIVED NEUROTROPHIC FACTOR', 'GUNA-BDNF', 'Guna spa', '2025-01-08', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
 
-Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', 160.81, 3.5, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (137, 'Citalopram', 'Citalopram', 'International Labs, Inc.', '2033-09-06', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
 
-Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', 94.66, 3.5, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (138, 'Protriptyline Hydrochloride', 'Protriptyline Hydrochloride', 'Rising Pharmaceuticals, Inc', '2031-06-14', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 17.24, 3.6, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (139, 'Lithium Carbonate', 'Lithium Carbonate', 'Hetero Drugs Limited', '2024-06-01', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 190.51, 4.2, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (140, 'metformin hydrochloride', 'Metformin Hydrochloride', 'Cardinal Health', '2030-03-01', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
 
-Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 92.27, 2.3, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (141, 'AMANTADINE HYDROCHLORIDE', 'Amantadine HCl', 'State of Florida DOH Central Pharmacy', '2024-01-11', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 192.22, 4.9, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (142, 'tocilizumab', 'Actemra', 'Genentech, Inc.', '2032-07-24', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.', 158.02, 3.1, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (143, 'Rizatriptan Benzoate', 'Rizatriptan Benzoate', 'Sun Pharma Global FZE', '2033-11-12', 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
 
-Sed ante. Vivamus tortor. Duis mattis egestas metus.', 216.38, 4.8, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (144, 'Duloxetine Hydrochloride', 'Duloxetine Hydrochloride', 'Proficient Rx LP', '2028-08-26', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 380.36, 1352, 2, 4.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (14, 'Benzocaine', 'Topical Anesthetic', 'Patterson Dental Supply Inc', '2026-03-02', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
 
-Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 190.47, 1.6, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (145, 'TITANIUM DIOXIDE', 'PRESCRIPTIVES ALL SKINS MINERAL MAKEUP', 'PRESCRIPTIVES INC', '2031-03-09', 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', 170.21, 4.0, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (146, 'Trifluoperazine Hydrochloride', 'Trifluoperazine Hydrochloride', 'Sandoz Inc', '2028-04-21', 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
 
-Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 221.57, 1.9, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (147, 'Simvastatin', 'Simvastatin', 'State of Florida DOH Central Pharmacy', '2026-12-15', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
 
-Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 114.46, 1.3, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (148, 'Acetaminophen, Dextromethorphan Hydrobromide, Phenylephrine Hydrochloride', 'day relief pe', 'Western Family Foods Inc', '2030-05-17', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 46.75, 4.4, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (149, 'Ensulizole', 'Covergirl Queen Collection All Day Flawless 3in1 Foundation', 'Noxell', '2023-04-06', 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', 148.08, 2.1, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (150, 'Triclosan', 'Lucky Antibacterial Hand Soap', 'Delta Brands Inc', '2033-07-04', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 39.33, 3.3, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (151, 'Loratadine, Pseudoephedrine', 'Allergy and Congestion Relief', 'Rite Aid Corporation', '2028-03-19', 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', 23.56, 1.2, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (152, 'Bambusa Rhus', 'Bambusa Rhus', 'Uriel Pharmacy Inc.', '2027-07-26', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', 394.71, 172, 6, 1.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (15, 'acetaminophen, dextromethorphan hydrobromide, and phenylephrine hydrochloride', 'TYLENOL Cold Multi-Symptom Daytime', 'McNeil Consumer Healthcare Div. McNeil-PPC, Inc', '2024-08-04', 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
 
-Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 95.35, 2.2, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (153, 'Gemfibrozil', 'Gemfibrozil', 'Aidarex Pharmaceuticals LLC', '2024-09-23', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.', 216.53, 2.6, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (154, 'TITANIUM DIOXIDE', 'NUTRITIOUS', 'ESTEE LAUDER INC', '2024-12-15', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
 
-In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', 243.54, 3.0, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (155, 'amlodipine besylate', 'Amlodipine Besylate', 'Lake Erie Medical DBA Quality Care Products LLC', '2032-03-05', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.', 114.95, 3.1, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (156, 'candida albicans', 'Pleo Alb', 'Sanum Kehlbeck GmbH & Co. KG', '2035-05-06', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 139.91, 1.5, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (157, 'ACETAMINOPHEN', 'ACETAMINOPHEN', 'TIME CAP LABS INC', '2026-06-03', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
 
-Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 244.49, 3.5, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (158, 'dextromethorphan hydrobromide, guaifenesin, and phenylephrine hydrochloride', 'Robitussin Peak Cold Multi-Symptom Cold', 'Richmond Division of Wyeth', '2028-01-03', 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', 82.87, 3.1, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (159, 'Quinidine Sulfate', 'Quinidine Sulfate', 'Eon Labs, Inc.', '2023-02-10', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', 257.45, 2729, 6, 3.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (16, 'Gabapentin', 'Gabapentin', 'Amneal Pharmaceuticals of New York, LLC', '2034-01-03', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
-Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', 100.92, 4.6, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (160, 'donepezil hydrochloride', 'Aricept', 'Physicians Total Care, Inc.', '2029-04-02', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
 
-Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 168.29, 1.4, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (161, 'lorazepam', 'Ativan', 'RxPak Division of McKesson Corporation', '2034-08-31', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 74.29, 2.7, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (162, 'dextromethorphan hydrobromide and quinidine sulfate', 'NUEDEXTA', 'Avanir Pharmaceuticals, Inc.', '2033-10-05', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 216.47, 3.4, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (163, 'Titanium Dioxide and Zinc Oxide', 'MDSolarSciences SPF50 Plus Ultra Mineral Screen', 'Ecometics, Inc', '2035-05-16', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
 
-Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.', 146.6, 1.3, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (164, 'Naproxen Sodium', 'Good Sense Naproxen Sodium', 'L. Perrigo Company', '2027-09-14', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 207.75, 2235, 6, 4.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (17, 'Peanut Arachis hypogaea', 'Food - Plant Source, Peanut Arachis hypogaea', 'Jubilant HollisterStier LLC', '2027-12-31', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
-Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 200.43, 4.9, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (165, 'Vitamin C, Calcium, Iron, Vitamin D3, Vitamin E, Thiamin, Riboflavin, Niacinamide, Vitamin B6, Folic Acid, Iodine, Zinc, Copper, Docusate Sodium', 'CitraNatal DHA', 'Mission Pharmacal Company', '2029-07-07', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
 
-Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 13.62, 2.3, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (166, 'LIDOCAINE HCL', 'Publix Burn Relief', 'Publix Super Markets Inc', '2026-05-20', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
 
-Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 118.42, 2.2, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (167, 'Trazodone Hydrochloride', 'Trazodone Hydrochloride', 'AvKARE, Inc.', '2032-03-09', 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 
-Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 207.24, 1.2, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (168, 'clobetasol propionate', 'TEMOVATE', 'PharmaDerm a division of Fougera Pharmaceuticals Inc.', '2029-02-10', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 96.13, 2803, 4, 3.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (18, 'Promethazine Hydrochloride', 'Promethazine Hydrochloride', 'Zydus Pharmaceuticals (USA) Inc.', '2022-12-29', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
 
-Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 216.23, 4.2, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (169, 'ropinirole', 'ropinirole', 'Sandoz Inc', '2034-06-30', 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', 20.51, 3.3, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (170, 'Hypromellose 2910 (4000 MPA.S)', 'Goniovisc', 'HUB Pharmaceuticals, LLC', '2027-08-28', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
 
-Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 169.28, 1.9, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (171, 'Alcohol', 'Instant Foaming Hand Sanitizer', 'RD Food Service DBA Restaurant Depot', '2027-11-16', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 177.56, 4.8, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (172, 'verapamil hydrochloride', 'CALAN', 'G.D. Searle LLC Division of Pfizer Inc', '2022-12-07', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
 
-Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', 14.01, 1.6, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (173, 'GLYCERIN', 'GIVEN BY NATURE OLIVE MASK SHEET', 'NATURE REPUBLIC CO., LTD.', '2030-06-01', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 82.29, 800, 1, 1.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (19, 'HYDROCODONE BITARTRATE AND ACETAMINOPHEN', 'HYDROCODONE BITARTRATE AND ACETAMINOPHEN', 'McKesson Contract Packaging', '2028-08-02', 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
 
-Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 7.86, 4.3, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (174, 'hydrocodone bitartrate and acetaminophen', 'Xodol', 'Shionogi Inc', '2023-03-05', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 113.39, 2.4, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (175, 'diltiazem hydrochloride', 'Tiazac Extended Release', 'Cardinal Health', '2035-04-30', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
 
-Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 14.34, 3.6, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (176, 'levonorgestrel/ethinyl estradiol and ethinyl estradiol', 'Amethia Lo', 'Watson Pharma, Inc.', '2025-01-13', 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.', 315.8, 1324, 1, 3.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (20, 'CICUTA VIROSA ROOT', 'Skin Eruptions', 'Natural Health Supply', '2027-09-02', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
 
-Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 83.26, 2.3, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (177, 'Triclosan', 'Hand Kleen Southern OrchardAntibacterial Han', 'Auto-Chlor System, LLC', '2022-11-11', 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
 
-Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', 205.22, 4.2, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (178, 'DIPYRIDAMOLE', 'DIPYRIDAMOLE', 'AvKARE, Inc.', '2028-05-07', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
 
-Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 161.58, 1.3, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (179, 'Avobenzone, Octisalate and Octocrylene', 'Meijer Elements 7-in-1 Anti-Aging Vitamin', 'Meijer Distribution Inc.', '2029-06-05', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
 
-Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 189.13, 1.0, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (180, 'candida albicans', 'Pleo San Cand', 'Sanum-Kehlbeck GmbH & Co. KG', '2023-03-30', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 212.44, 4.6, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (181, 'Tree Mixture', 'Tree Mixture', 'Antigen Laboratories, Inc.', '2032-04-25', 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+In congue. Etiam justo. Etiam pretium iaculis justo.', 1.64, 287, 1, 5.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (21, 'witch hazel', 'Hemorrhoidal Hygiene pads', 'Geritrex Corp.', '2025-02-25', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
 
-Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 133.79, 3.9, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (182, 'dextromethorphan polistirex', 'Smart Sense Cough DM', 'Kmart Corporation', '2025-01-07', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 52.03, 3.0, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (183, 'Furosemide', 'Furosemide', 'REMEDYREPACK INC.', '2033-05-11', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 83.04, 2.6, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (184, 'Sumatriptan Succinate', 'Sumatriptan', 'Greenstone LLC', '2023-11-01', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', 161.15, 2188, 7, 2.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (22, 'Berberis vulgaris, Glycyrrhiza glabra, Lappa major, Phytolacca decandra, Stillingia sylvatica, Trifolium pratense, Glandula suprarenalis suis, Hepar suis, Lymph suis, Thyroidinum suis, Belladonna, Iri', 'Chemtox', 'Apotheca Company', '2027-04-26', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
 
-Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 125.18, 4.4, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (185, 'Topical Analgesic', 'Golden Sunshine Herbal', 'Golden Sunshine International, Inc.', '2025-08-05', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', 150.98, 4.0, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (186, 'Cyanocobalamin, Glandula suprarenalis suis, Kali carbonicum, L-carnitine, L-glutamine, L-ornithine, L-tryptophan, L-tyrosine, Orchitinum.', 'Platinum for Men', 'Apotheca Company', '2025-07-02', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
 
-Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 65.81, 3.2, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (187, 'Acyclovir', 'Acyclovir', 'REMEDYREPACK INC.', '2034-08-29', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 43.8, 4.9, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (188, 'Melaleuca Pollen', 'MELALEUCA QUINQUENERVIA POLLEN', 'ALK-Abello, Inc.', '2032-01-31', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
 
-Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 212.49, 4.8, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (189, 'Alprazolam', 'Alprazolam', 'Aurobindo Pharma Limited', '2025-06-07', 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', 177.36, 4.2, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (190, 'Amolodipine Besylate', 'Amlodipine Besylate', 'Northwind Pharmaceuticals, LLC', '2028-12-31', 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
 
-Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', 81.42, 1.5, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (191, 'brompheniramine maleate and pseudoephedrine hydrochloride', 'Lodrane D', 'ECR Pharmaceuticals', '2029-03-03', 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 155.02, 2800, 8, 3.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (23, 'Lorazepam', 'Lorazepam', 'American Health Packaging', '2027-09-21', 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
 
-Fusce consequat. Nulla nisl. Nunc nisl.', 205.71, 3.7, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (192, 'vancomycin hydrochloride', 'vancomycin hydrochloride', 'Alvogen, Inc.', '2035-05-12', 'Fusce consequat. Nulla nisl. Nunc nisl.
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
 
-Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 163.49, 4.9, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (193, 'norgestimate and ethinyl estradiol', 'ORTHO TRI CYCLEN Lo', 'Janssen Pharmaceuticals, Inc.', '2025-03-05', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
 
-Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 56.2, 2.1, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (194, 'ropinirole', 'ropinirole', 'Sandoz Inc', '2030-05-16', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
 
-Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 223.47, 3.3, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (195, 'Carbamazepine', 'Carbamazepine', 'Teva Pharmaceuticals USA Inc', '2025-11-22', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 379.7, 3779, 5, 1.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (24, 'Renagel', 'Renagel', 'Genzyme Corporation', '2027-02-28', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 200.5, 4.4, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (196, 'Titanium Dioxide and Octinoxate', 'Eve Lom Radiance Lift Foundation SPF 15', 'Space Brands Limited', '2027-11-15', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
 
-Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', 244.87, 1.2, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (197, 'Risperidone', 'Risperidone', 'Gen-Source Rx', '2029-04-17', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', 160.63, 1.0, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (198, 'Camphor (Synthetic) and Menthol', 'Tiger Balm White', 'Tiger Balm (Malaysia) Sdn. Bhd.', '2024-11-19', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
 
-Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 130.13, 2.8, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (199, 'Cimetidine', 'Cimetidine', 'Teva Pharmaceuticals USA Inc', '2026-12-04', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', 5.34, 2338, 7, 2.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (25, 'Doxycycline Hyclate', 'Doxycyclate Hyclate', 'Golden State Medical Supply, Inc.', '2024-09-22', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
 
-Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', 106.7, 2.0, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (200, 'Oxygen', 'Oxygen', 'Apollo Services Inc.', '2025-12-04', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', 172.08, 1.4, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (201, 'Ondansetron Hydrochloride', 'Ondansetron', 'BD Rx Inc.', '2033-11-04', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 187.98, 1.9, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (202, 'dicyclomine hydrochloride', 'Dicyclomine Hydrochloride', 'REMEDYREPACK INC.', '2031-03-06', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 111.47, 4.9, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (203, 'Diltiazem Hydrochloride', 'Diltiazem HCl CD', 'Oceanside Pharmaceuticals', '2024-07-16', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 2.57, 3.7, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (204, 'CEFPROZIL', 'CEFPROZIL', 'Wockhardt Limited', '2033-03-13', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 107.63, 3.3, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (205, 'Docusate sodium', 'Colace', 'Purdue Products LP', '2028-06-09', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 165.22, 1.2, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (206, 'Avobenzone, Homosalate, Octisalate, Octocrylene, and Oxybenzone', 'Neutrogena', 'Neutrogena Corporation', '2023-05-22', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 85.96, 1.2, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (207, 'ibuprofen', 'ibuprofen', 'Major Pharmaceuticals', '2030-08-01', 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
 
-In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 103.92, 1.8, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (208, 'Azithromycin Anhydrous', 'Azithromycin', 'REMEDYREPACK INC.', '2025-10-25', 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
 
-Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 199.69, 4.6, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (209, 'Niacin and Simvastatin', 'Simcor', 'AbbVie Inc.', '2026-11-14', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
+Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', 56.82, 1995, 8, 2.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (26, 'Duloxetine hydrochloride', 'Cymbalta', 'PD-Rx Pharmaceuticals, Inc.', '2034-12-19', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
 
-Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 60.04, 3.2, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (210, 'AVOBENZONE OCTOCRYLENE OXYBENZONE', 'Rite Aid RENEWAL', 'RITE AID CORPORATION', '2032-10-08', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', 27.14, 2.1, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (211, 'methocarbamol', 'Methocarbamol', 'NCS HealthCare of KY, Inc dba Vangard Labs', '2033-02-24', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
 
-Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 85.03, 2.3, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (212, 'Octinoxate', 'ESIKA HD COLOR HIGH DEFINITION COLOR SPF 20', 'Ventura Corporation LTD', '2034-03-12', 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', 128.41, 3998, 7, 3.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (27, 'Isopropyl Alcohol', 'Shopko Alcohol Swabs', 'SHOPKO STORES OPERATING CO., LLC', '2023-12-06', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
 
-Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 78.55, 1.1, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (213, 'metoprolol tartrate', 'Metoprolol Tartrate', 'Mylan Pharmaceuticals Inc.', '2030-09-03', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.', 139.44, 4.0, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (214, 'diphenoxylate hydrochloride and atropine sulfate', 'Diphenoxylate Hydrochloride and Atropine Sulfate', 'Preferred Pharmaceuticals, Inc', '2026-10-21', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 101.69, 2.7, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (215, 'Furosemide', 'Furosemide', 'PD-Rx Pharmaceuticals, Inc.', '2031-06-06', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
 
-Phasellus in felis. Donec semper sapien a libero. Nam dui.', 39.18, 4.5, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (216, 'FENOFIBRATE', 'FENOFIBRATE', 'Clinical Solutions Wholesale', '2027-02-12', 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
 
-Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', 74.81, 4.3, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (217, 'Famotidine', 'Premier Value Famotidine', 'Premier Value', '2033-04-27', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', 213.76, 2.3, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (218, 'efavirenz', 'SUSTIVA', 'Bristol-Myers Squibb Pharma Company', '2022-07-06', 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
 
-Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 186.38, 2.5, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (219, 'ALUMINUM CHLOROHYDRATE', 'DawnMist Antiperspirant Deodorant', 'Dukal Corporation', '2029-09-05', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 91.89, 2680, 2, 4.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (28, 'Carvedilol', 'Carvedilol', 'State of Florida DOH Central Pharmacy', '2026-02-10', 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 151.44, 3.7, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (220, 'amoxicillin and clavulanate potassium', 'AMOXICILLIN AND CLAVULANATE POTASSIUM', 'Preferred Pharmaceuticals, Inc', '2030-06-27', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 171.77, 2.8, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (221, 'Etomidate', 'Amidate', 'General Injectables and Vaccines, Inc.', '2034-04-21', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+Sed ante. Vivamus tortor. Duis mattis egestas metus.
 
-Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 80.5, 4.0, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (222, 'METHADONE HYDROCHLORIDE', 'METHADONE HYDROCHLORIDE', 'STAT Rx USA LLC', '2024-03-10', 'In congue. Etiam justo. Etiam pretium iaculis justo.', 137.56, 4.8, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (223, 'Avobenzone 2.5%, Octinoxate 6%, Oxybenzone 3%', 'Sun Shades Lip Balm', 'Melaleuca Inc.', '2024-02-16', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.', 150.68, 2.9, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (224, 'Agaricus musc, Mag phos, Stramonium, Tarentula hisp', 'TremorSoothe', 'Native Remedies, LLC', '2031-06-09', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
 
-Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', 186.16, 2.1, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (225, 'metoprolol succinate and hydrochlorothiazide', 'Dutoprol', 'AstraZeneca Pharmaceuticals LP', '2028-07-22', 'Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
 
-Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 124.32, 2.3, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (226, 'tramadol hydrochloride', 'tramadol hydrochloride', 'Sun Pharmaceutical Industries, Inc.', '2026-12-18', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 166.48, 612, 5, 2.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (29, 'Hydromorphone Hydrochloride', 'Hydromorphone Hydrochloride', 'Mallinckrodt, Inc.', '2032-05-04', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
 
-Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 46.14, 1.8, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (227, 'Aspirin', 'Enteric Aspirin', 'COSTCO WHOLESALE CORPORATION', '2024-01-12', 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 163.37, 728, 9, 4.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (30, 'ENALAPRIL MALEATE', 'ENALAPRIL MALEATE', 'NCS HealthCare of KY, Inc dba Vangard Labs', '2027-07-25', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
 
-Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 32.65, 4.8, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (228, 'OCTINOXATE, OCTISALATE, AVOBENZONE', 'DAYWEAR PLUS MULTI PROTECTION TINTED MOISTURIZER', 'ESTEE LAUDER INC', '2029-04-26', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.', 96.5, 1.9, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (229, 'Bacitracin Zinc', 'TopCare', 'Topco Associates LLC', '2026-11-22', 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
 
-Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 126.61, 1.8, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (230, 'Avobenzone, Homosalate, Octinoxate, Octisalate, Octocrylene', 'perfect truth cc broad spectrum SPF 30 sunscreen', 'Ole Henriksen', '2032-09-03', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 129.04, 3.8, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (231, 'OCTINOXATE', 'No7 Protect and Perfect Foundation Sunscreen Broad Spectrum SPF 15 Cool Beige', 'BCM Cosmetique SAS', '2023-09-05', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.', 33.99, 2.1, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (232, 'Diltiazem Hydrochloride', 'Diltiazem Hydrochloride', 'Sun Pharma Global FZE', '2026-03-09', 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', 130.18, 1.4, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (233, 'Dextromethorphan', 'Delsym', 'A-S Medication Solutions LLC', '2035-04-15', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 338.79, 2172, 8, 4.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (31, 'ranitidine hydrochloride', 'ZANTAC', 'Covis Pharmaceuticals, Inc.', '2023-01-20', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
 
-Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', 181.53, 4.3, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (234, 'AMMONIA N-13', 'Ammonia', 'Shertech Laboratories, LLC', '2032-11-17', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', 239.04, 2.4, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (235, 'Dextroamphetamine Saccharate, Amphetamine Aspartate Monohydrate, Dextroamphetamine Sulfate and Amphetamine Sulfate', 'Dextroamphetamine Saccharate, Amphetamine Aspartate Monohydrate, Dextroamphetamine Sulfate and Amphetamine Sulfate', 'Eon Labs, Inc.', '2030-05-11', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
 
-Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.', 63.39, 3.6, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (236, 'Natural product', 'Advantage Weight Loss and Hunger Control', 'Bouari Clinic', '2024-06-25', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 123.81, 4.3, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (237, 'Cefazolin Sodium', 'Cefazolin Sodium', 'Cantrell Drug Company', '2031-07-15', 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 67.47, 3.7, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (238, 'BACITRACIN ZINC AND POLYMYXIN B SULFATE', 'POLYCIN', 'Fera Pharmaceuticals', '2034-01-14', 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
 
-Fusce consequat. Nulla nisl. Nunc nisl.', 172.62, 4.3, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (239, 'Ibuprofen', 'Topcare Ibuprofen', 'Topco Associates LLC', '2033-10-10', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 45.45, 3.6, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (240, 'Dantrolene Sodium', 'Dantrolene Sodium', 'Global Pharmaceuticals, Division of Impax Laboratories Inc.', '2034-08-21', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
 
-Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', 89.58, 1.7, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (241, 'CELECOXIB', 'CELEBREX', 'Dispensing Solutions, Inc.', '2032-01-30', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.', 119.26, 2.0, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (242, 'Sodium Hyaluronate', 'HYLASE Wound', 'ECR Pharmaceuticals Co., Inc.', '2027-06-18', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 206.35, 3884, 9, 2.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (32, 'benzalkonium chloride, benzocaine', 'Antiseptic', 'Safetec of America, Inc.', '2025-02-03', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.
 
-Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 10.5, 1.5, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (243, 'Menthol', 'Bentasil', 'CLOETTA ITALIA S.r.l.', '2025-03-12', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', 225.7, 5.0, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (244, 'COLCHICUM AUTUMNALE', 'COLCHICUM AUTUMNALE', 'HOMEOLAB USA INC.', '2027-09-26', 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
 
-Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', 145.49, 1.3, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (245, 'Blackberry', 'Blackberry', 'Nelco Laboratories, Inc.', '2027-07-22', 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
 
-Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 144.81, 1.7, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (246, 'Atenolol', 'Atenolol', 'REMEDYREPACK INC.', '2028-07-17', 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', 247.43, 4.2, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (247, 'Agaricus musc., Arsenicum alb., Aur. met., Berber. aqui., Caladium seguinum, Candida albicans, Cantharis, Conium, Graphites, Helonias dioica, Hydrastis, Kali carb., Kreosotum, Lycopodium, Merc. viv., Murex purpurea, Nat. mur., Nitricum ac., Pulsatilla, Rhus toxicodendron, Sepia, Sulphur, Tarentula hispana, Thuja occ., Zinc. met., Apis mel., Hamamelis', 'Feminine Comfort', 'Newton Laboratories, Inc.', '2035-02-18', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 294.81, 2640, 2, 4.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (33, 'Oxygen', 'Oxygen', 'Terry Supply Company', '2028-01-30', 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
 
-Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 37.42, 1.3, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (248, 'TRICLOSAN', 'simple pleasures', 'Tri-Coastal Design Company Inc.', '2024-06-21', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
 
-Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 248.07, 4.1, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (249, 'Benzalkonium Chloride', 'Nice and Clean Antibacterial', 'Professional Disposables International, Inc.', '2026-07-01', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
 
-Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', 60.73, 4.4, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (250, 'BENZALKONIUM CHLORIDE', 'CVS PHARMACY', 'CVS PHARMACY', '2031-06-24', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 34.51, 168, 6, 1.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (34, 'Acyclovir Sodium', 'Acyclovir Sodium', 'AuroMedics Pharma LLC', '2028-07-27', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
 
-Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 111.62, 2.3, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (251, 'Ciprofloxacin', 'Ciprofloxacin', 'Dr Reddy''s Laboratories', '2024-05-09', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 63.01, 3.2, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (252, 'Risperidone', 'Risperidone', 'Sun Pharmaceutical Industries Limited', '2034-11-17', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 205.01, 3.4, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (253, 'petrolatum', 'Personal Care Petroleum', 'Personal Care Products', '2033-02-13', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
-Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 88.95, 1.3, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (254, 'Oxaliplatin', 'Oxaliplatin', 'Mylan Institutional LLC', '2034-10-17', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 287.45, 1314, 1, 4.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (35, 'Belladonna 30c, Calc Phos 30c, Ferrum Phos 30c, Glonoine 30c, Lachesis 30c, Sanguinaria 30c Sepia 30c, Sulphur 30c', 'Hot Flashes', 'Home Sweet Homeopathics', '2035-03-24', 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
 
-Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', 231.62, 3.0, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (255, 'Dapsone', 'Dapsone', 'Physicians Total Care, Inc.', '2026-08-27', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
 
-Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 231.31, 4.1, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (256, 'Acetaminophen', 'Leader Pain Reliever', 'Cardinal Health', '2025-04-29', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 20.21, 3.3, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (257, 'Titanium Dioxide', 'Moisturizing Sunblock', 'Vienna Health and Beauty Corporation', '2026-01-31', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
 
-Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 13.05, 1.1, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (258, 'Sulfasalazine', 'Sulfasalazine', 'Major Pharmaceuticals', '2027-09-12', 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
 
-Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', 177.14, 4.7, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (259, 'Hydrochlorothiazide', 'Hydrochlorothiazide', 'NCS HealthCare of KY, Inc dba Vangard Labs', '2026-09-17', 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 32.78, 2720, 4, 3.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (36, 'Ibuprofen', 'Ibuprofen', 'CVS Pharmacy', '2030-08-21', 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
 
-Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 205.38, 2.6, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (260, 'Diphenhydramine Hydrochloride, Zinc Acetate', 'dg health anti itch', 'Dolgencorp Inc', '2023-01-01', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.
+In congue. Etiam justo. Etiam pretium iaculis justo.
 
-Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 147.22, 2.2, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (261, 'Hydroquinone', 'Seequin 4', 'Vivier Pharma, Inc.', '2033-01-18', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 82.65, 531, 6, 2.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (37, 'Aluminum zirconium tetrachlorohydrex gly', 'Speed Stick', 'Colgate-Palmolive Company', '2028-08-16', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
 
-Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', 67.59, 3.8, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (262, 'aluminum hydroxide, magnesium hydroxide, simethicone', 'Topcare Antacid', 'Topco Associates LLC', '2034-07-31', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 61.99, 4.1, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (263, 'Undecylenic Acid', 'Sanafitil', 'ZURICH MEDICAL LABS, LLC', '2023-01-15', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 59.12, 3.0, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (264, 'Alprazolam', 'Alprazolam', 'Preferred Pharmaceuticals, Inc.', '2034-08-20', 'Fusce consequat. Nulla nisl. Nunc nisl.
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
 
-Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 100.89, 1.4, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (265, 'CADMIUM', 'Indigestion', 'Natural Health Supply', '2032-04-29', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 67.28, 3.5, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (266, 'Acetaminophen', 'Extra Strength Pain Reliever', 'Stephen L. LaFrance Pharmacy, Inc.', '2028-09-24', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 81.33, 1.8, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (267, 'ARNICA MONTANA', 'Arnicare', 'Laboratoires Boiron', '2032-07-31', 'Fusce consequat. Nulla nisl. Nunc nisl.', 139.97, 2.2, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (268, 'Nicotine Polacrilex', 'CareOne Nicotine', 'American Sales Company', '2028-02-26', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
 
-Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 33.05, 4.8, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (269, 'Helium Oxygen', 'Helium Oxygen', 'Airgas National Welders', '2024-11-02', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 288.57, 1111, 4, 2.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (38, 'Clonazepam', 'Clonazepam', 'Rebel Distributors', '2034-03-13', 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
 
-Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 3.73, 1.9, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (270, 'RISPERIDONE', 'RISPERIDONE', 'WOCKHARDT USA LLC.', '2023-07-01', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
 
-In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', 1.2, 2.0, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (271, 'ADENOSINE', 'MIOGGI Magic Advanced Skin Essential Activator', 'Colorpink R&D Inc.', '2032-02-19', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.', 223.3, 2.5, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (272, 'Eichhornia Crassipes Whole, OKOUBAKA AUBREVILLEI BARK, QUASSIA AMARA WOOD, and TARAXACUM PALUSTRE ROOT', 'Detox Intestinum', 'Hevert Pharmaceuticals, Inc.', '2033-08-01', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
 
-Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', 10.12, 2.8, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (273, 'ELVITEGRAVIR', 'Vitekta', 'Gilead Sciences, Inc.', '2024-05-09', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
 
-Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.', 50.09, 1.6, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (274, 'Sodium Fluoride', 'ZOOBY', 'Young Dental Manufacturing Co 1, LLC', '2030-05-10', 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', 230.7, 2571, 2, 2.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (39, 'NEVIRAPINE', 'Nevirapine', 'BRECKENRIDGE PHARMACEUTICAL, INC.', '2031-08-08', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
 
-Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', 242.96, 3.4, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (275, 'Phytolacca decandra, Trifolium pratense, Xanthoxylum fraxineum, Arsenicum album,', 'Additox', 'Apotheca Company', '2032-11-20', 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
 
-Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 125.22, 4.9, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (276, 'Acetaminophen', 'simply right acetaminophen', 'Sam''s West Inc', '2024-09-20', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 178.19, 4.0, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (277, 'Alcohol', 'Kleenex Moisturizing Instant Hand Sanitizer', 'Kimberly-Clark Corporation', '2025-06-22', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
+Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.', 111.57, 1209, 3, 4.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (40, 'Clindamycin Hydrochloride', 'Clindamycin Hydrochloride', 'REMEDYREPACK INC.', '2025-11-01', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 
-In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', 114.3, 3.7, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (278, 'FERRUM PHOSPHORICUM', 'Ferrum Phos Kit Refill', 'Washington Homeopathic Products', '2028-01-28', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 210.21, 2.4, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (279, 'everolimus', 'Afinitor', 'Novartis Pharmaceuticals Corporation', '2033-02-09', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
 
-Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 218.6, 3.1, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (280, 'Clemastine Fumarate', 'Clemastine Fumarate', 'Qualitest Pharmaceuticals, Inc', '2028-03-12', 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 86.81, 4.6, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (281, 'Witch Hazel', 'SHAKING SMOOTHIE LEMON MASK', 'NATURE REPUBLIC CO., LTD.', '2035-01-14', 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
 
-Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 20.15, 4.9, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (282, 'Promethazine Hydrochloride, Dextromethorphan Hydrobromide', 'Prometh with Dextromethorphan', 'Actavis Mid Atlantic LLC', '2031-03-24', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 216.22, 3.8, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (283, 'Acetaminophen', 'Acetaminophen', 'Rugby Laboratories Inc.', '2031-11-23', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 69.41, 2721, 8, 4.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (41, 'Atenolol', 'Atenolol', 'Clinical Solutions Wholesale', '2024-05-01', 'Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
 
-Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', 249.02, 2.6, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (284, 'Loratadine', 'Loratadine', 'Lake Erie Medical DBA Quality Care Products LLC', '2029-07-03', 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 158.54, 4.2, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (285, 'ALCOHOL', 'Cotton Blossom Waterless Anti-Antibateria Hand Sanitizer', 'NINGBO MEIDUO GENERAL PRODUCTS CO., LTD', '2030-08-24', 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
 
-Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 41.51, 1.3, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (286, 'Aluminum Chlorohydrate', 'Obao Frescura Intensa', 'Cosbel S.A de C.V.', '2024-03-28', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
 
-Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 133.75, 4.4, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (287, 'Air', 'Air', 'Encompass Medical & Specialty Gases, Ltd.', '2025-02-02', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
 
-Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 230.54, 1.9, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (288, 'Gabapentin', 'Gabapentin', 'NCS HealthCare of KY, Inc dba Vangard Labs', '2025-09-28', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 297.2, 2524, 6, 2.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (42, 'Salsalate', 'Salsalate', 'Rebel Distributors Corp', '2034-01-16', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
 
-Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 210.03, 3.8, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (289, 'levofloxacin', 'LEVAQUIN', 'Cardinal Health', '2027-08-20', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 158.91, 1.1, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (290, 'Oxygen', 'Oxygen', 'Scott-Gross Company, Inc.', '2028-08-17', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 74.76, 4.9, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (291, 'Titanium Dioxide', 'Golden Medium Foundation SPF 15', 'Bare Escentuals Beauty Inc.', '2033-11-13', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+Phasellus in felis. Donec semper sapien a libero. Nam dui.', 134.74, 1973, 6, 3.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (43, 'Ethyl Alcohol', 'Deb Med InstantFOAM Hand Sanitizer', 'Deb USA, Inc.', '2030-10-13', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
 
-Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 195.59, 4.8, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (292, 'fibrinogen human and thrombin human', 'TISSEEL', 'Baxter Healthcare Corporation', '2024-02-04', 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 248.49, 2.0, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (293, 'SALICYLIC ACID', 'Salicylic Acid', 'Acella Pharmaceuticals, LLC', '2028-07-27', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 94.49, 2.4, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (294, 'Candesartan Cilexetil', 'Candesartan Cilexetil', 'Apotex Corp', '2028-03-27', 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 87.85, 5.0, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (295, 'Acetaminophen', 'Pain Relief', 'Publix Super Markets Inc', '2030-11-12', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 154.76, 1.8, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (296, 'Ranitidine', 'Acid Reducer', 'Good Sense', '2034-10-10', 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 229.29, 4.5, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (297, 'Glyburide', 'Glyburide', 'Lake Erie Medical DBA Quality Care Products LLC', '2031-03-31', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 238.27, 1.0, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (298, 'Acetaminophen, Dextromethorphan HBr', 'good neighbor pharmacy childrens pain relief plus', 'Amerisource Bergen', '2024-03-04', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.', 139.0, 3.8, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (299, 'Betula Cortex, Caltha Palustris, Galium Aparine, Sedum Acre, Thuja Occidentalis, Urtica urens, Clematis Erecta, Hedera Helix, Juniperus Communis, Quillaja Saponaria, Sempervivum Tectorum, Echinacea,', 'Healing Support', 'Deseret Biologicals, Inc.', '2035-02-20', 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 193.05, 2.7, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (300, 'Piperonly Butoxide, Pyrethrum Extract', 'Lice-Nil', 'Sujanil Chemo Industries', '2022-11-07', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 193.95, 2.2, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (301, 'levetiracetam', 'Levetiracetam', 'McKesson Contract Packaging', '2029-10-30', 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 178.18, 417, 5, 1.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (44, 'Sodium Fluoride', 'AIM', 'Church & Dwight Co., Inc.', '2026-05-20', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
 
-Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 229.61, 1.5, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (302, 'Salicylic Acid', 'Clearasil', 'Reckitt Benckiser LLC', '2035-04-17', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 126.68, 4.1, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (303, 'bacitracin, neomycin, polymyxin B', 'ShopRite Triple Antibiotic', 'Wakefern Food Corporation', '2028-11-09', 'In congue. Etiam justo. Etiam pretium iaculis justo.', 245.23, 4.1, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (304, 'valsartan and hydrochlorothiazide', 'Valsartan and Hydrochlorothiazide', 'Mylan Institutional Inc.', '2026-12-10', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
 
-Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', 26.24, 4.4, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (305, 'benzethonium chloride and zinc oxide cream', 'Secura Two Step Kit', 'Smith & Nephew, Inc.', '2027-11-27', 'In congue. Etiam justo. Etiam pretium iaculis justo.', 35.41, 4.9, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (306, 'OXALIPLATIN', 'Oxaliplatin', 'Hospira Worldwide, Inc.', '2022-11-13', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+Sed ante. Vivamus tortor. Duis mattis egestas metus.
 
-Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 165.04, 3.2, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (307, 'Triclosan', 'Sweet Fig Antibacterial Hand Wash', 'SJ Creations, Inc.', '2027-12-08', 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', 122.72, 1.1, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (308, 'Mirtazapine', 'Mirtazapine', 'Citron Pharma LLC', '2030-06-16', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
 
-Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.', 70.26, 3.0, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (309, 'Avobenzone, Homosalate, Octisalate, Octocrylene, Oxybenzone', 'hope in a jar', 'Philosophy', '2028-02-28', 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 130.3, 3.1, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (310, 'Acetaminophen, Dextromethorphan HBr, Doxylamine succinate', 'Good Sense Night Time Cold and Flu', 'L. Perrigo Company', '2029-08-02', 'Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.', 190.9, 3.8, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (311, 'OCTINOXATE, OCTOCRYLENE, and ZINC OXIDE', 'SHISEIDO URBAN ENVIRONMENT', 'SHISEIDO AMERICA INC.', '2025-07-18', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 75.52, 3.2, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (312, 'Ibuprofen', 'Ibuprofen', 'AvKARE, Inc.', '2034-07-20', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 84.45, 1.1, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (313, 'Levothyroxine sodium', 'Levothyroxine sodium', 'Sandoz Inc.', '2034-11-14', 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', 4.32, 2.2, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (314, 'efavirenz, emtricitabine, and tenofovir disoproxil fumarate', 'Atripla', 'REMEDYREPACK INC.', '2030-05-02', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 10.64, 2.8, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (315, 'Enalapril Maleate', 'Enalapril Maleate', 'Golden State Medical Supply, Inc.', '2025-08-08', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 299.63, 3982, 7, 1.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (45, 'Treatment Set TS329240', 'Treatment Set TS329240', 'Antigen Laboratories, Inc.', '2035-04-06', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
 
-Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 190.54, 3.9, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (316, 'zinc gluconate', 'Pleo Zinc', 'Sanum Kehlbeck GmbH & Co. KG', '2025-07-23', 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', 260.58, 1689, 2, 4.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (46, 'ALCOHOL', 'Instant Hand sanitizer', 'CVS Pharmacy, Inc', '2030-08-16', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
 
-Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 113.04, 3.5, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (317, 'OXCARBAZEPINE', 'OXCARBAZEPINE', 'Golden State Medical Supply', '2027-10-21', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
 
-In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', 185.69, 1.2, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (318, 'Acetaminophen, Dextromethorphan Hydrobromide, Doxylamine Succinate', 'Nighttime', 'CVS Pharmacy', '2033-08-24', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', 62.9, 1.5, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (319, 'BRYONIA ALBA ROOT, EUPHRASIA STRICTA, CALCIUM SULFIDE, SODIUM CHLORIDE, PHOSPHORUS, ANEMONE PATENS, RUMEX CRISPUS ROOT, and SILICON DIOXIDE', 'Defend Cold and Mucus', 'Hyland''s', '2033-04-04', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.', 31.29, 2.4, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (320, 'Famotidine', 'Smart Sense Acid Reducer', 'Kmart Corporation', '2032-03-10', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', 189.34, 1.4, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (321, 'Glyburide', 'Glyburide', 'REMEDYREPACK INC.', '2032-03-04', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+In congue. Etiam justo. Etiam pretium iaculis justo.', 231.37, 1542, 3, 1.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (47, 'Pheniramine Maleate and Naphazoline Hydrochloride', 'Eye Allergy Relief', 'Wal-Mart Stores Inc', '2022-08-31', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
 
-Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 95.2, 3.1, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (322, 'ONION', 'Allium Cepa Kit Refill', 'Washington Homeopathic Products', '2034-10-26', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.', 89.35, 3.9, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (323, 'PANTOPRAZOLE SODIUM', 'PANTOPRAZOLE SODIUM', 'New Horizon Rx Group, LLC', '2026-03-20', 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
 
-Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 240.79, 1.6, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (324, 'ropinirole', 'REQUIP', 'GlaxoSmithKline LLC', '2027-03-28', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
 
-Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 59.52, 1.5, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (325, 'acetaminophen, dextromethorphan hydrobromide and doxylamine succinate', 'Topcare Nite Time', 'Topco Associates LLC', '2027-06-04', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', 311.48, 3853, 5, 4.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (48, 'Irbesartan', 'Irbesartan', 'Bryant Ranch Prepack', '2023-09-26', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
 
-Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 200.97, 2.2, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (326, 'Titanium Dioxide', 'Dermablend Cover', 'L''Oreal USA Products Inc', '2023-03-21', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 135.09, 3.0, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (327, 'acetaminophen, dextromethorphan HBr, guaifenesin, phenylephrine HCl', 'DG Health Cold and Flu Relief', 'Dolgencorp Inc', '2028-05-07', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.', 195.92, 4.0, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (328, 'METFORMIN HYDROCHLORIDE', 'METFORMIN HYDROCHLORIDE', 'Rebel Distributors Corp.', '2031-03-17', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
 
-In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', 184.71, 2.1, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (329, 'clonazepam', 'Clonazepam', 'Aidarex Pharmaceuticals LLC', '2029-12-30', 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
 
-Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 45.5, 2.1, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (330, 'Benzoyl Perozide', 'PCA SKIN Acne', 'Physicians Care Alliance DBA PCA SKIN', '2034-12-05', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 161.15, 4.7, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (331, 'Cyclobenzaprine Hydrochloride', 'Cyclobenzaprine Hydrochloride', 'Aurobindo Pharma Limited', '2031-11-03', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
 
-Phasellus in felis. Donec semper sapien a libero. Nam dui.', 169.14, 4.8, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (332, 'Econazole Nitrate', 'Econazole Nitrate', 'Rebel Distributors Corp', '2024-08-15', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 187.06, 2.3, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (333, 'cocoa butter, phenylephrine HCl', 'hemorrhoidal', 'CVS Pharmacy', '2034-09-20', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 318.7, 251, 8, 1.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (49, 'Carbo animalis, Carbo vegetabilis, Kali bichromicum', 'Acne', 'Apotheca Company', '2023-03-24', 'In congue. Etiam justo. Etiam pretium iaculis justo.
 
-Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 245.45, 4.4, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (334, 'avobenzone, homosalate, octisalate, octocrylene, and oxybenzone', 'Coppertone waterBABIES Sunscreen', 'MSD Consumer Care, Inc.', '2035-06-06', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 344.39, 3255, 8, 1.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (50, 'Oxygen', 'Oxygen', 'BayCare Home Care, Inc.', '2030-10-12', 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
 
-Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 133.04, 1.8, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (335, 'ezogabine', 'POTIGA', 'GlaxoSmithKline LLC', '2024-07-10', 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', 182.6, 5.0, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (336, 'CAFFEINE CITRATE', 'CAFFEINE CITRATE', 'REMEDYREPACK INC.', '2022-11-11', 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+Sed ante. Vivamus tortor. Duis mattis egestas metus.', 263.67, 898, 5, 3.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (51, 'Cupressus arizonica', 'Cypress, Arizona Pollen', 'Allermed Laboratories, Inc.', '2025-09-01', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
-Sed ante. Vivamus tortor. Duis mattis egestas metus.', 23.4, 1.5, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (337, 'Calendula officinalis, Bellis Perennis, Ledum Palustre, Arnica Montana, Phosphorus', 'Formula 4', 'Apotheca Company', '2023-05-12', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 12.18, 1.9, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (338, 'Nicotine Polacrilex', 'Topcare Nicotine', 'Topco Associates LLC', '2025-11-07', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 100.82, 1750, 8, 1.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (52, 'Acetaminophen', 'pain relief', 'Western Family Foods Inc', '2034-10-28', 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
 
-Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 112.54, 1.5, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (339, 'Alteplase', 'Activase', 'Genentech, Inc.', '2030-01-02', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
 
-Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 109.94, 4.0, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (340, 'dextroamphetamine sulfate', 'dextroamphetamine sulfate', 'Actavis Pharma, Inc.', '2032-12-10', 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 195.4, 3440, 8, 1.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (53, 'urea', 'rea lo 39', 'Crown Laboratories', '2029-12-11', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
 
-Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 16.76, 2.2, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (341, 'Tryptophan,', 'Tryptophan', 'Apotheca Company', '2027-12-22', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 84.29, 3.3, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (342, 'TRICLOSAN', 'JASMINE TEA AND BASIL ANTIBACTERIAL HAND SP', 'HEB', '2032-04-29', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 14.39, 1210, 2, 4.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (54, 'Aluminum Chlorohydrate', 'Odyssey', 'Avon Products, Inc', '2032-03-30', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
 
-Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', 81.97, 2.5, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (343, 'Phenobarbital', 'Phenobarbital', 'West-Ward Pharmaceutical Corp', '2023-07-24', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', 107.56, 4.6, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (344, 'Bupropion hydrochloride', 'Bupropion hydrochloride', 'Sun Pharma Global FZE', '2028-10-28', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.', 4.63, 2394, 5, 2.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (55, 'Zinc Oxide', 'Zinc Oxide', 'Topco Associates LLC', '2029-06-19', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
 
-Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', 137.34, 2.4, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (345, 'OCTINOXATE, HOMOSALATE, and AVOBENZONE', 'THE SPF 18 FLUID TINT', 'MAX HUBER RESEARCH LAB INC', '2029-06-17', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
 
-Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 192.21, 1.3, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (346, 'Octinoxate, Oxybenzone, and Titanium Dioxide', 'ESIKA 3-IN-1 PRO MAKE UP FOUNDATION SPF 20 BASE DE MAQUILLAJE PARA ROSTRO 3-EN-1 PRO FPS 20', 'Ventura Corporation LTD', '2026-11-02', 'Fusce consequat. Nulla nisl. Nunc nisl.', 151.91, 3.6, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (347, 'Acetaminophen', 'pain relief', 'Safeway', '2026-03-31', 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.', 176.87, 560, 3, 1.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (56, 'TITANIUM DIOXIDE', 'PERFECTION LUMIERE', 'CHANEL PARFUMS BEAUTE', '2025-11-10', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
 
-Sed ante. Vivamus tortor. Duis mattis egestas metus.', 179.58, 2.8, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (348, 'Cefadroxil', 'Cefadroxil', 'West-Ward Pharmaceutical Corp', '2024-01-15', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+Phasellus in felis. Donec semper sapien a libero. Nam dui.', 236.11, 1620, 5, 3.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (57, 'treprostinil', 'Orenitram', 'United Therapeutics Corp.', '2028-11-06', 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
 
-Phasellus in felis. Donec semper sapien a libero. Nam dui.', 176.36, 4.4, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (349, 'Levothyroxine Sodium', 'Synthroid', 'Dispensing Solutions, Inc.', '2031-05-26', 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 247.43, 4.8, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (350, 'Zinc Oxide', 'Burn Out SPF-30 Sunscreen', 'Sun Research LLC', '2035-02-02', 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
 
-Sed ante. Vivamus tortor. Duis mattis egestas metus.', 153.81, 3.5, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (351, 'ARIPIPRAZOLE', 'ABILIFY', 'Rebel Distributors Corp.', '2027-06-23', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
+Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 116.68, 435, 1, 1.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (58, 'Coffea tosta, Ginkgo biloba, Germanium sesquioxide, Silicea,', 'Hydrate', 'Apotheca Company', '2027-09-30', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
 
-In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', 213.54, 2.8, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (352, 'Indapamide', 'Indapamide', 'Rebel Distributors Corp', '2024-08-12', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+Phasellus in felis. Donec semper sapien a libero. Nam dui.
 
-Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 52.2, 4.9, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (353, 'Antihemophilic Factor, Recombinant', 'Helixate FS', 'CSL Behring LLC', '2026-03-11', 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 379.59, 3340, 9, 3.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (59, 'Levetiracetam', 'Levetiracetam', 'REMEDYREPACK INC.', '2029-05-07', 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
 
-Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', 67.02, 4.0, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (354, 'rasburicase', 'Elitek', 'sanofi-aventis U.S. LLC', '2027-07-25', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 33.67, 2.7, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (355, 'gabapentin enacarbil', 'HORIZANT', 'GlaxoSmithKline LLC', '2034-11-18', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 62.6, 2.9, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (356, 'OXYGEN', 'OXYGEN', 'PURITY CYLINDER GASES, INC.', '2023-05-21', 'In congue. Etiam justo. Etiam pretium iaculis justo.
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
 
-In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 124.57, 3.2, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (357, 'Clotrimazole', 'Protective Nail and skin', 'Eduard Gerlach GmbH', '2026-03-11', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', 43.36, 1.9, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (358, 'Galantamine', 'Galantamine', 'Mylan Institutional Inc.', '2030-12-10', 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 124.75, 1.2, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (359, 'Acetaminophen, Diphenhydramine HCL, and Phenylephrine HCL.', 'Our Family night time severe cold and cough', 'Quality Home Products', '2035-04-12', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 84.43, 2.8, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (360, 'Sodium Fluoride', 'Hello', 'Hello Products LLC', '2026-04-08', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
 
-In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', 201.92, 2.7, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (361, 'Lorazepam', 'Lorazepam', 'Rx Pak Division of McKesson Corporation', '2028-10-11', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 104.25, 2.2, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (362, 'Clotrimazole', 'Clotrimazole', 'Premier Value', '2025-06-17', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 73.4, 5.0, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (363, 'Famotidine', 'Acid Reducer', 'L. Perrigo Company', '2034-03-10', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 122.08, 1668, 7, 2.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (60, 'Octinoxate and Titanium Dioxide', 'EFFET PARFAIT', 'Ventura Corporation Ltd.', '2032-07-04', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
-Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', 109.12, 2.0, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (364, 'OCTINOXATE, TITANIUM DIOXIDE', 'Dolce and Gabbana The Lift Foundation Almond 150', 'Procter & Gamble Manufacturing Company', '2033-12-24', 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', 33.66, 3.1, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (365, 'propranolol hydrochloride', 'Propranolol Hydrochloride', 'Mylan Pharmaceuticals Inc.', '2028-05-10', 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
 
-Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', 16.77, 1.1, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (366, 'Salicylic Acid', 'Neutrogena Oil Free Acne Wash', 'Neutrogena Corporation', '2032-03-30', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', 65.4, 2777, 5, 4.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (61, 'Naproxen Sodium', 'Aleve', 'Bayer HealthCare LLC, Consumer Care', '2033-11-06', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
 
-Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 185.37, 2.6, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (367, 'apremilast', 'OTEZLA', 'Celgene Corporation', '2029-09-21', 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', 94.02, 4.2, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (368, 'SODIUM FLUORIDE', 'SmileGuard Spider Sense Spider-Man Bubblegum', 'Dr. Fresh, Inc.', '2031-07-13', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', 77.18, 2.1, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (369, 'PYRITHIONE ZINC', 'Personal Care Pyrithione Zinc Dandruff', 'Personal Care Products, LLC', '2027-07-24', 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 63.78, 1.7, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (370, 'ALUMINUM CHLOROHYDRATE', 'CUBA ORIGINAL LADIES ROLL ON ANTIPERSPIRANT DEODORANT', 'BB TRADING WORLDWIDE, INC', '2025-06-20', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
 
-Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', 21.84, 3.5, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (371, 'Dextromethorphan HBr, Guaifenesin', 'Tussin Cough DM', 'Hannaford Brothers Company', '2029-11-12', 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
-Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 217.34, 2.9, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (372, 'spironolactone and hydrochlorothiazide', 'ALDACTAZIDE', 'G.D. Searle LLC Division of Pfizer Inc', '2027-04-13', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 185.13, 3.3, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (373, 'TITANIUM DIOXIDE', 'CLARINS Ever Matte Broad Spectrum SPF 15 Tint 104', 'Laboratoires Clarins S.A', '2023-06-09', 'Fusce consequat. Nulla nisl. Nunc nisl.
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 387.59, 3251, 1, 3.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (62, 'Cyclamen europaeum 4X, Ginkgo biloba 3X, Aranea diadema 4X, Cimicifuga racemosa 4X, Cocculus indicus 4X, Colocynthis 4X, Gelsemium sempervirens 3X, Spigelia anthelmia 4X', 'DR. RECKEWEG R81 Maldol', 'PHARMAZEUTISCHE FABRIK DR. RECKEWEG & CO', '2023-06-24', 'Fusce consequat. Nulla nisl. Nunc nisl.
 
-Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 66.47, 2.7, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (374, 'Grindelia, Melatonin, Passiflora Incarnata', 'Nighty Nite', 'Alternative Pharmacy', '2022-06-29', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
 
-Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', 227.98, 2.5, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (375, 'allantoin', 'DR. OBERON NATURAL BABY', 'Oberon Cosmetic Co., Ltd.', '2029-11-07', 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', 143.51, 2511, 3, 2.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (63, 'Isoniazid', 'Isoniazid', 'Liberty Pharmaceuticals, Inc.', '2027-05-05', 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
 
-Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 82.83, 2.2, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (376, 'Octinoxate and Zinc Oxide', '06 Moisture Foundation SPF 15', 'The Body Shop Wake Forest', '2032-05-19', 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 173.6, 2.2, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (377, 'Velvet Grass', 'HOLCUS LANATUS POLLEN', 'ALK-Abello, Inc.', '2033-11-05', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 141.64, 3.1, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (378, 'Mesalamine', 'Mesalamine', 'Perrigo New York Inc', '2031-04-03', 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
 
-Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 103.51, 4.5, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (379, 'Acetaminophen, Diphenhydramine hydrochloride, Phenylephrine hydrochloride', 'up and up flu and severe cold and cough relief', 'Target Corporation', '2027-08-12', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
 
-Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 15.65, 3.8, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (380, 'AVOBENZONE, OCTINOXATE, OCTISALATE, OXYBENZONE', 'ANTI-AGING TINTED MOISTURIZER', 'Dedra LLC', '2025-10-22', 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', 194.51, 3.7, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (381, 'ETHYL ALCOHOL', 'HEB', 'HEB', '2032-09-29', 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.', 5.44, 748, 3, 4.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (64, 'Dexamethasone sodium phosphate', 'Dexamethasone sodium phosphate', 'Mylan Institutional LLC', '2025-08-05', 'Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
 
-Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', 67.28, 3.3, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (382, 'EUCALYPTOL', 'Antiseptic Mouth Rinse', 'Demoulas Super Markets', '2027-02-26', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', 52.32, 3.9, 6);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (383, 'Trichoderma harzianam', 'Trichoderma harzianam', 'Nelco Laboratories, Inc.', '2025-05-10', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 261.35, 3199, 8, 1.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (65, 'Gemfibrozil', 'Gemfibrozil', 'Med-Health Pharma, LLC', '2028-11-27', 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 19.25, 3.6, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (384, 'azithromycin', 'azithromycin', 'Lake Erie Medical DBA Quality Care Products LLC', '2025-10-30', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
 
-Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 228.62, 3.2, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (385, 'Glycerin', 'Ultra Nutrition Night', 'AMI Cosmetic Co.,Ltd.', '2035-06-09', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 104.49, 1.8, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (386, 'Ciprofloxacin', 'Ciprofloxacin', 'Pfizer Labs, Division of Pfizer Inc', '2029-11-27', 'In congue. Etiam justo. Etiam pretium iaculis justo.', 183.01, 2.4, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (387, 'carboplatin', 'Carboplatin', 'Sagent Pharmaceuticals', '2032-09-22', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
 
-Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', 211.7, 3.0, 1);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (388, 'ENSULIZOLE, OCTINOXATE, and TITANIUM DIOXIDE', 'SHISEIDO PERFECT HYDRATING BB', 'SHISEIDO AMERICA INC.', '2022-10-16', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
 
-Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 69.08, 4.5, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (389, 'ALCOHOL', 'Enchanted Moments Candy Apple Hand Sanitizer', 'ENCHANTE ACCESSORIES INC.', '2022-08-25', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', 182.68, 2.7, 4);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (390, 'cetylpyridinium chloride', 'cetylpyridinium chloride', 'Sage Products Inc.', '2027-08-20', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', 210.93, 2.3, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (391, 'Valsartan and Hydrochlorothiazide', 'Valsartan and Hydrochlorothiazide', 'Qualitest Pharmaceuticals', '2023-05-18', 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.', 96.94, 1.8, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (392, 'Menthol', 'Extra Strength Pain Relief Therapy', 'United Exchange Corp', '2028-03-16', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 321.15, 937, 4, 1.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (66, 'enoxaparin sodium', 'Lovenox', 'sanofi-aventis U.S. LLC', '2034-05-16', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
 
-Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.', 136.26, 3.6, 9);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (393, 'Amlodipine Besylate and Benazepril Hydrochloride', 'Amlodipine Besylate and Benazepril Hydrochloride', 'Aidarex Pharmaceuticals LLC', '2029-11-12', 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 79.62, 1.3, 2);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (394, 'Aralia Quinquefolia, Glycyrrhiza Glabra, Sarsaparilla, Avena Sativa, Glandula Suprarenalis Bovinum, Adrenalinum', 'Adrenal Tonic', 'BioActive Nutritional, Inc.', '2030-03-18', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 139.43, 1.9, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (395, 'LOVASTATIN', 'LOVASTATIN', 'International Labs, Inc.', '2028-07-04', 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', 66.76, 4.8, 8);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (396, 'Levofloxacin', 'Levofloxacin', 'Hi-Tech Pharmacal Co., Inc.', '2025-12-30', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
 
-Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 210.19, 4.2, 3);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (397, 'oxycodone hydrochloride', 'Roxicodone', 'Mallinckrodt, Inc', '2031-09-16', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
 
-Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.', 220.37, 1.9, 5);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (398, 'Atomoxetine Hydrochloride', 'Atomoxetine Hydrochloride', 'Sun Pharma Global FZE', '2031-07-16', 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', 329.78, 1131, 6, 2.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (67, 'Johnson Grass', 'Johnson Grass', 'Nelco Laboratories, Inc.', '2024-03-27', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.
 
-Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', 85.17, 2.6, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (399, 'Cefadroxil', 'Cefadroxil', 'Citron Pharma LLC', '2031-12-12', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
 
-Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.', 141.21, 3.7, 7);
-insert into product (id, drugname, brand, manufacturer, epireDate, description, price, rating, categoryId) values (400, 'Tamsulosin Hydrochloride', 'Tamsulosin Hydrochloride', 'Contract Pharmacy Services-PA', '2025-05-15', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 170.66, 2.2, 1);
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 17.61, 488, 9, 3.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (68, 'Nonoxynol', 'Conceptrol', 'Caldwell Consumer Health LLC', '2025-07-18', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
+
+Fusce consequat. Nulla nisl. Nunc nisl.', 24.07, 3004, 7, 1.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (69, 'diclofenac sodium', 'Voltaren', 'Endo Pharmaceuticals, Inc.', '2033-04-16', 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 386.55, 3463, 9, 4.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (70, 'famotidine, calcium carbonate and magnesium hydroxide', 'Acid Controller Complete', 'Walgreen Company', '2034-03-21', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 210.31, 2281, 6, 3.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (71, 'Acetaminophen, Phenylephrine Hydrochloride, Dextromethorphan Hydrobromide, and Doxylamine Succinate', 'Vicks DayQuil and Vicks NyQuil', 'Procter & Gamble Manufacturing Company', '2030-11-09', 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
+
+Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 52.74, 535, 9, 4.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (72, 'Titanium Dioxide and Zinc oxide', 'bareMinerals READY Touch Up Veil Broad Spectrum SPF 15', 'Bare Escentuals Beauty Inc.', '2034-12-18', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', 78.74, 3714, 5, 4.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (73, 'lorazepam', 'Lorazepam', 'Cardinal Health', '2035-05-09', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 304.44, 83, 2, 1.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (74, 'VANCOMYCIN HYDROCHLORIDE', 'Vancomycin Hydrochloride', 'Pfizer Laboratories Div Pfizer Inc', '2023-10-31', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', 62.25, 2897, 4, 4.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (75, 'Camphor, Eucalyptus Oil, Menthol', 'Vaporizing Chest Rub', 'Narvarro Discount Pharmarcies,LLC', '2034-10-31', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
+
+Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
+
+Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.', 164.44, 1394, 8, 4.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (76, 'folltropin alfa', 'Gonal-f RFF Pen', 'EMD Serono, Inc.', '2024-11-06', 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 136.46, 44, 4, 2.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (77, 'Ipratropium Bromide', 'Ipratropium Bromide', 'REMEDYREPACK INC.', '2027-09-02', 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
+
+Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 12.28, 3174, 2, 1.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (78, 'hydroxyzine hydrochloride', 'HydrOXYzine Hydrochloride', 'KVK-Tech, Inc.', '2022-08-28', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.', 29.17, 2838, 8, 4.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (79, 'Betamethasone Valerate', 'Betamethasone Valerate', 'Actavis Mid Atlantic LLC', '2024-06-24', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 229.89, 1037, 4, 2.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (80, 'Cephalexin', 'Cephalexin', 'Ascend Laboratories, LLC', '2025-06-09', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 70.01, 2431, 4, 2.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (81, 'SIMVASTATIN', 'ZOCOR', 'Merck Sharp & Dohme Corp.', '2028-09-04', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+
+Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', 351.61, 2722, 2, 2.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (82, 'aluminum hydroxide, magnesium hydroxide, dimethicone', 'GERI-LANTA ANTACID ANTIGAS', 'Preferred Pharmaceuticals, Inc.', '2026-05-02', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+
+In congue. Etiam justo. Etiam pretium iaculis justo.', 215.02, 3743, 7, 2.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (83, 'BENZOCAINE, ISOPROPYL ALCOHOL', 'Insect Sting Relief Wipes', 'ZEE MEDICAL', '2023-12-31', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 325.89, 1111, 9, 2.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (84, 'Acetaminophen', 'Acetaminophen Rapid Release', 'Kinray LLC', '2028-07-31', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 247.01, 3285, 8, 3.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (85, 'CITALOPRAM HYDROBROMIDE, CHOLINE', 'Sentralopram AM-10', 'Physician Therapeutics LLC', '2028-01-12', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 156.3, 1591, 2, 1.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (86, 'Homosalate, Octisalate, Oxybenzone, Octocrylene, Avobenzone', 'Leader', 'Cardinal Health', '2023-07-09', 'In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 12.75, 2089, 7, 4.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (87, 'calcium carbonate', 'Antacid', 'Select Brand', '2032-09-08', 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
+
+Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 279.28, 1798, 4, 2.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (88, 'cetirizine Hydrochloride', 'CHILDRENS ALLERGY', 'H E B', '2026-09-22', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.', 386.31, 480, 6, 3.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (89, 'citalopram', 'Citalopram', 'Cardinal Health', '2026-10-21', 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+
+In congue. Etiam justo. Etiam pretium iaculis justo.', 317.79, 2951, 4, 1.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (90, 'Titanium Dioxide and Zinc Oxide', 'Pure Transformation Sheer Medium', 'Bare Escentuals Beauty Inc.', '2032-02-15', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 398.27, 949, 3, 1.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (91, 'Theophylline', 'Theophylline', 'Lake Erie Medical DBA Quality Care Products LLC', '2034-06-18', 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
+
+Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 15.3, 3007, 9, 1.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (92, 'Rosuvastatin calcium', 'CRESTOR', 'Physicians Total Care, Inc.', '2023-05-12', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', 349.52, 3198, 6, 4.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (93, 'Androc 30c, Apis 30c, Cannabis Indica 30c, Causticum 30c, Chamomilla 30c, Helleborus 30c, Iridium Met 30c, Lachesis 30c, Mezereum 30c, Nat Mur 30c, Nux Moschata 30c, Platina 30c, Pulsatilla 30c, Sepia 30c', 'Absent Minded', 'Home Sweet Homeopathics', '2034-03-25', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 2.57, 1291, 2, 4.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (94, 'Norepinephrine Bitartrate', 'Norepinephrine Bitartrate', 'Cantrell Drug Company', '2033-07-22', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', 86.02, 2505, 6, 3.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (95, 'OCTINOXATE, OCTISALATE, and TITANIUM DIOXIDE', 'REPAIRWEAR UPLIFTING FIRMING', 'CLINIQUE LABORATORIES INC.', '2029-06-16', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', 228.84, 498, 1, 4.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (96, 'GLYCERIN', 'SHOPKO DRY EYE RELIEF', 'HANLIM PHARM. CO., LTD.', '2022-12-28', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+
+Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', 110.56, 1124, 3, 3.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (97, 'California Black Walnut', 'California Black Walnut', 'Nelco Laboratories, Inc.', '2034-07-25', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', 339.04, 2722, 3, 1.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (98, 'Oxytocin', 'Oxytocin', 'Cantrell Drug Company', '2027-05-20', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
+
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 391.31, 3505, 4, 4.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (99, 'Loratadine', 'Loratadine', 'American Sales Company', '2030-08-24', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', 201.62, 2162, 6, 1.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (100, 'BENZOCAINE', 'Baby SensiGel', 'Dr. Fresh, Inc', '2032-07-24', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 210.72, 1050, 7, 4.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (101, 'carbidopa, levodopa, and entacapone', 'Stalevo', 'Novartis Pharmaceuticals Corporation', '2029-06-10', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 294.44, 1321, 7, 4.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (102, 'Helleborus e pl. tota 4', 'Helleborus e pl. tota 4', 'Uriel Pharmacy Inc.', '2022-08-20', 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+
+Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
+
+Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 21.98, 1511, 4, 1.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (103, 'Cyclobenzaprine Hydrochloride', 'Cyclobenzaprine Hydrochloride', 'Camber Pharmaceuticals', '2035-02-01', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', 266.1, 2766, 3, 2.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (104, 'Diphenhydramine HCl', 'Allergy', 'EQUALINE (SuperValu)', '2028-04-07', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
+
+Fusce consequat. Nulla nisl. Nunc nisl.
+
+Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 247.39, 956, 4, 4.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (105, 'Asparagus', 'Asparagus', 'Nelco Laboratories, Inc.', '2032-05-24', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 199.02, 671, 2, 1.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (106, 'Benzocaine', 'Rite Aid', 'Rite Aid', '2025-04-28', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.', 308.66, 2597, 3, 1.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (107, 'Hydrocodone Bitartrate and Acetaminophen', 'Hydrocodone Bitartrate and Acetaminophen', 'Actavis Pharma, Inc.', '2022-08-18', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+
+Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 74.03, 3756, 1, 3.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (108, 'Rough Marsh Elder', 'Rough Marsh Elder', 'Antigen Laboratories, Inc.', '2034-03-15', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
+
+Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
+
+Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+
+Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', 58.51, 109, 4, 2.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (109, 'Titanium Dioxide', 'Neutrogena Nourishing Long Wear Makeup Tone Correcting Complex Sunscreen Broad Spectrum SPF20', 'Neutrogena Corporation', '2026-12-15', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+
+Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 101.21, 444, 6, 1.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (110, 'Asafoetida, Kalmia latifolia, Causticum, Coldhicum autumnale, Ferrum metallicum, Gnaphalium polycephalum, Lithium benzoicum', 'Inflammation', 'Apotheca Company', '2033-02-10', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
+
+Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
+
+Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
+
+Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+
+Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 278.6, 100, 3, 2.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (111, 'Acetaminophen, Phenylephrine HCl, Dextromethorphan HBr and Guiafenesin', 'Day Time Cold Multi-Symptom Severe', 'DOLGENCORP, LLC', '2032-03-23', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', 390.89, 2582, 5, 1.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (112, 'INSULIN-LIKE GROWTH FACTOR-1', 'GUNA-IGF', 'Guna spa', '2028-03-03', 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', 64.27, 2901, 7, 3.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (113, 'Gabapentin', 'Gabapentin', 'American Health Packaging', '2022-11-14', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 54.82, 1220, 2, 4.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (114, 'ketamine hydrochloride', 'KETAMINE HYDROCHLORIDE', 'General Injectables & Vaccines, Inc', '2034-07-29', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', 279.86, 3062, 2, 3.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (115, 'Olanzapine', 'Olanzapine', 'Prasco Laboratories', '2034-08-19', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
+
+Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
+
+Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+
+Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 47.4, 1460, 3, 1.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (116, 'meclizine hydrochloride', 'Meclizine Hydrochloride', 'Cardinal Health', '2030-11-14', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', 117.6, 1482, 8, 2.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (117, 'ESTRADIOL VALERATE', 'ESTRADIOL VALERATE', 'Perrigo Company', '2030-12-11', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
+
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.', 87.9, 2375, 4, 2.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (118, 'Calcitriol', 'Calcitriol', 'American Regent, Inc.', '2024-04-14', 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.', 187.61, 3912, 5, 1.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (119, 'RABEPRAZOLE SODIUM', 'RABEPRAZOLE SODIUM', 'Lupin Pharmaceuticals, Inc.', '2034-10-27', 'In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', 214.06, 3799, 3, 3.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (120, 'Allopurinol', 'Allopurinol', 'Bryant Ranch Prepack', '2025-01-22', 'Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+
+Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 222.05, 402, 1, 3.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (121, 'dextromethorphan polistirex', 'Cough DM', 'Publix Super Markets Inc', '2026-09-28', 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
+
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 177.74, 611, 4, 4.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (122, 'Titanium Dioxide, Octinoxate', 'The Cover Classic Pro Foundation', 'Dong Sung Pharm. Co., Ltd.', '2031-11-03', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 373.08, 2948, 1, 2.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (123, 'Aconitum nap., Antimon. tart., Arg. nit., Arnica, Bryona, Chamomilla, Chelidonium majus, Cimicifuga, Eupatorium perf., Hypericum, Nux vom., Rhus toxicodendron, Ruta, Sarcolacticum ac., Stramonium, Strychnium, Chamomilla, Phytolacca, Ruta, Symphytum', 'Ease Remedy Water', 'Georgetown Health, LLC DBA EssentiaLife', '2032-10-07', 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 391.46, 3943, 5, 4.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (124, 'AZITHROMYCIN', 'AZITHROMYCIN', 'Rebel Distributors Corp.', '2029-11-14', 'Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+
+Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 93.87, 3852, 8, 2.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (125, 'Quetiapine fumarate', 'Quetiapine fumarate', 'REMEDYREPACK INC.', '2029-08-10', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.', 358.05, 1383, 8, 1.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (126, 'titanium dioxide', 'Koh Gen Do Maifanshi Triple Lighting Foundation', 'Koh Gen Do USA, Inc', '2027-11-01', 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 294.08, 641, 5, 4.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (127, 'Kapok', 'Kapok', 'Nelco Laboratories, Inc.', '2034-10-19', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', 184.24, 813, 1, 3.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (128, 'LORAZEPAM', 'Lorazepam', 'Hospira, Inc.', '2031-04-22', 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+
+In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', 212.68, 1824, 7, 4.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (129, 'Acetaminophen, Diphenhydramine hydrochloride, Phenylephrine hydrochloride', 'flu and severe cold and cough', 'Kroger Company', '2024-07-16', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 233.47, 2712, 5, 2.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (130, 'SODIUM CHLORIDE, SODIUM ACETATE ANHYDROUS, SODIUM GLUCONATE, POTASSIUM CHLORIDE, AND MAGNESIUM CHLORIDE', 'Normosol-R', 'Hospira, Inc.', '2025-07-06', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+
+Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 246.87, 3730, 5, 4.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (131, 'paroxetine hydrochloride', 'PAROXETINE HYDROCHLORIDE', 'Apotex Corp', '2031-12-14', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
+
+In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 269.11, 867, 5, 3.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (132, 'LAMOTRIGINE', 'LAMOTRIGINE', 'PD-Rx Pharmaceuticals, Inc.', '2030-03-28', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 214.92, 19, 3, 3.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (133, 'Famotidine', 'leader acid reducer', 'Cardinal Health', '2029-03-17', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
+
+In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', 329.6, 344, 2, 1.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (134, 'posaconazole', 'NOXAFIL', 'Merck Sharp & Dohme Corp.', '2030-05-22', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 321.72, 3102, 9, 3.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (135, 'ACONITUM NAPELLUS and BRYONIA ALBA ROOT and PHOSPHORUS', 'Bryaconeel', 'Heel Inc', '2033-05-21', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 66.23, 2655, 3, 1.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (136, 'Titanium Dioxide , Zinc Oxide , Octinoxate', 'Foundation Primer SPF 15', 'Mary Kay Inc.', '2026-03-12', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', 81.96, 132, 3, 2.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (137, 'Crab', 'Crab', 'Nelco Laboratories, Inc.', '2030-10-02', 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 240.63, 3581, 6, 4.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (138, 'Octinoxate, Octisalate, and Titanium Dioxide', 'Neutrogena MoistureShine SPF20', 'Neutrogena Corporation', '2035-04-12', 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 204.98, 2740, 5, 3.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (139, 'Echinacea, Phytolacca Decandra, Lymph Node, Conium Maculatum, Ferrum Iodatum, Hepar Sulphuris Calcareum , Ferrum Iodatum', 'Lymphapar', 'Energique, Inc.', '2030-11-02', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 336.1, 3657, 4, 1.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (140, 'methylphenidate hydrochloride', 'Ritalin', 'Novartis Pharmaceuticals Corporation', '2023-05-21', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 174.13, 3842, 2, 3.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (141, 'bisoprolol fumarate and hydrochlorothiazide', 'Ziac', 'Teva Women''s Health, Inc.', '2029-02-23', 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+
+In congue. Etiam justo. Etiam pretium iaculis justo.', 25.32, 2404, 6, 4.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (142, 'insulin detemir', 'Levemir', 'Novo Nordisk', '2025-11-25', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 140.96, 1206, 4, 4.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (143, 'Secale Nicotiana', 'Secale Nicotiana', 'Uriel Pharmacy Inc.', '2032-12-13', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+
+In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', 299.94, 3552, 9, 3.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (144, 'Aluminum Chlorohydrate', 'Nuvel Tropic Roll-on Antiperspirant Deodorant', 'Industrias Lavin de Mexico S.A. de C.V.', '2031-09-07', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 394.26, 1477, 9, 4.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (145, 'Povidone Iodine', 'Cure-Aid POVI Adhesive Bandage', 'Pharmaplast SAE', '2029-06-09', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
+
+Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', 101.25, 712, 9, 1.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (146, 'Promethazine Hydrochloride', 'Promethazine Hydrochloride', 'Physicians Total Care, Inc.', '2032-08-05', 'Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 229.13, 3921, 7, 2.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (147, 'Ibuprofen', 'ibuprofen ib', 'HyVee Inc', '2022-07-05', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', 326.7, 67, 8, 4.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (148, 'CANDIDA PARAPSILOSIS and PENICILLIUM GLABRUM', 'SyGest', 'Syntrion GmbH', '2033-05-05', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.', 154.91, 3916, 2, 1.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (149, 'Acetaminophen, Chlorpheniramine maleate, and Phenylephrine hydrochloride', 'Alka-Seltzer Plus Fast Crystals Packs Cold Formula', 'Bayer HealthCare LLC, Consumer Care', '2034-03-07', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+
+In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 300.39, 3204, 2, 3.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (150, 'lansoprazole', 'Lansoprazole', 'Aidarex Pharmaceuticals LLC', '2032-04-19', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 379.94, 2770, 5, 2.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (151, 'Hydrogen Peroxide', 'Hydrogen Peroxide', 'Good Neighbor Pharmacy', '2022-07-10', 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 279.67, 254, 1, 1.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (152, 'Diphenhydramine Hydrochloride, Zinc Acetate', 'itch relief', 'H E B', '2034-12-27', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
+
+Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
+
+Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', 207.5, 1815, 3, 4.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (153, 'LOPERAMIDE HYDROCHLORIDE', 'Loperamide Hydrochloride', 'REMEDYREPACK INC.', '2024-12-17', 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
+
+Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', 170.44, 789, 8, 1.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (154, 'Medicated Plantar Wart Remover', 'Salicylic Acid', 'CVS Pharmacy', '2029-10-24', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', 350.52, 310, 5, 4.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (155, 'Acetaminophen 500mg Diphenhydramine HCl 25mg', 'Extra Strength Pain Relief PM', 'Discount Drug Mart', '2025-04-21', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 193.23, 3815, 4, 1.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (156, 'exemestane', 'Aromasin', 'Pharmacia and Upjohn Company', '2033-07-12', 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 372.86, 3509, 9, 3.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (157, 'Cattle Epithelium', 'Cattle Epithelium', 'Nelco Laboratories, Inc.', '2033-09-13', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 369.75, 1669, 9, 4.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (158, 'Ibuprofen', 'ibuprofen', 'Major Pharmaceuticals', '2030-07-23', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 228.08, 576, 4, 3.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (159, 'Venlafaxine', 'Venlafaxine', 'REMEDYREPACK INC.', '2032-07-14', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', 275.4, 1024, 7, 4.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (160, 'Avobenzone, Octisalate and Octocrylene', 'Advanced Firming and Anti Wrinkle', 'Rite Aid Corporation', '2027-11-24', 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', 20.9, 780, 2, 4.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (161, 'Fluoride', 'Kroger', 'Kroger Company', '2025-09-17', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 272.72, 889, 1, 2.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (162, 'HYDROQUINONE', 'OBAGI C RX SYSTEM C CLARIFYING SERUM', 'OMP, INC.', '2023-08-14', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', 6.62, 2654, 7, 2.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (163, 'Purified water', 'Sperian Eyesaline Emergency Eyewash', 'Sperian Eye & Face Protection Inc', '2031-11-08', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', 84.75, 1803, 6, 3.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (164, 'Ceftriaxone', 'Ceftriaxone', 'WG Critical Care, LLC', '2024-02-29', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 383.49, 98, 1, 3.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (165, 'Fluconazole', 'Fluconazole', 'Pack Pharmaceuticals, LLC', '2033-11-06', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
+
+Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
+
+Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+
+Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', 394.33, 1893, 7, 4.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (166, 'Methadone Hydrochloride', 'Methadone Hydrochloride', 'Lake Erie Medical DBA Quality Care Products LLC', '2025-07-21', 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 130.83, 471, 5, 4.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (167, 'Scleranthus,', 'Bio Scleranthus', 'Apotheca Company', '2023-04-02', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 33.73, 2471, 7, 4.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (168, 'NIACINAMIDE', 'Bellaskin Brightening Contour Essence', 'Ajou Medics Co., Ltd', '2028-02-29', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', 262.67, 3893, 3, 4.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (169, 'Butalbital, Aspirin, Cafeine, and Codeine Phosphate', 'Ascomp with Codeine', 'Nexgen Pharma, Inc.', '2034-05-14', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 226.43, 652, 1, 1.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (170, 'Sennosides', 'Senna', 'New World Imports', '2025-04-25', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 233.36, 2564, 6, 1.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (171, 'Salicylic acid', 'Callicide Corn and Callus Remover', 'Menper Distributors, Inc.', '2034-08-05', 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 162.36, 3612, 5, 4.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (172, 'Fluconazole', 'Fluconazole', 'BluePoint Laboratories', '2031-03-16', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 386.33, 1126, 4, 2.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (173, 'Aconitum nap., Ammonium benzoicum, Arsenicum alb., Benzoicum acidum, Bryonia, Causticum, Cinchona, Colchicum, Gnaphalium polycephalum, Iris versicolor, Kali iod., Ledum, Lithium carb., Nux vom., Phytolacca, Rhus toxicoderon, Ruta, Sambucus nig., Strychninum, Hypericum, Urtica ur', 'Sciatica - Nerve Care', 'Newton Laboratories, Inc.', '2025-08-14', 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
+
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 137.06, 3740, 1, 3.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (174, 'morphine sulfate', 'morphine sulfate', 'Lake Erie Medical DBA Quality Care Products LLC', '2030-12-22', 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 62.18, 3272, 7, 2.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (175, 'Nitrous Oxide', 'Nitrous Oxide', 'Boggs Gases div. Boggs Fire Equipment', '2025-05-04', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
+
+Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
+
+Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', 23.02, 1805, 6, 1.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (176, 'Niacin', 'Niaspan', 'Physicians Total Care, Inc.', '2025-02-24', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 259.91, 1009, 2, 4.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (177, 'Ketamine Hydrochloride', 'Ketamine Hydrochloride', 'Mylan Institutional LLC', '2034-09-04', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 334.27, 2477, 5, 4.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (178, 'TITANIUM DIOXIDE', 'CLARINS BB Skin Perfecting Broad Spectrum SPF 25 Sunscreen 03 Dark', 'Laboratoires Clarins S.A', '2029-01-03', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 341.14, 531, 7, 2.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (179, 'TITANIUM DIOXIDE OCTINOXATE ZINC OXIDE', 'Hydra Intensive Blemish Balm SPF30 PA', 'The Doctor''s Cosmetic Inc', '2027-12-04', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+
+Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
+
+Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 233.81, 582, 4, 4.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (180, 'TRICLOSAN', 'CV Medicated', 'STERIS Corporation', '2030-12-15', 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+
+In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 381.33, 2041, 9, 3.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (181, 'Hydrogen Peroxide', 'Hydrogen Peroxide', 'Walgreens', '2032-06-26', 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
+
+Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 105.7, 2209, 2, 3.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (182, 'LIDOCAINE HYDROCHLORIDE and EPINEPHRINE', 'Lidocaine Hydrochloride and Epinephrine', 'Hospira, Inc.', '2032-08-26', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 246.56, 84, 2, 2.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (183, 'ZINC OXIDE', 'iBlanc Restora-Bright Elite Natural Sun Defense', 'iBlanc, Inc.', '2029-10-31', 'Fusce consequat. Nulla nisl. Nunc nisl.
+
+Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
+
+In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', 86.47, 1472, 9, 3.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (184, 'ARNICA MONTANA, BRYONIA ALBA, CHAMOMILLA,HYPERICUM PERFORATUM, KALMIA LATIFOLIA LEAF,KALMIA LATIFOLIA LEAF', 'Arthritis Relief', 'Homeocare Laboratories', '2023-09-24', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
+
+Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', 212.84, 2515, 5, 3.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (185, 'Aluminum Zirconium Tetrachlorohydrex GLY', 'Degree', 'Conopco Inc. d/b/a Unilever', '2025-03-12', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 119.26, 3234, 3, 4.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (186, 'AVOBENZONE, OCTINOXATE, OCTISALATE, OXYBENZONE', 'EXTRASHADE Daily Defense Hydrating Sunscreen SPF 30', 'Extrashade a Sub of Versitile Group', '2034-12-10', 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 95.16, 682, 4, 4.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (187, 'Lidocaine hydrochloride', 'Unburn', 'Water-Jel Technologies', '2035-04-10', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 377.59, 3483, 1, 2.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (188, 'losartan potassium', 'Losartan potassium Tablets, 25 mg', 'Jubilant Cadista Pharmaceuticals Inc.', '2026-01-24', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+
+Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 196.55, 2371, 9, 4.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (189, 'Potassium Bicarbonate', 'KLOR-CON/EF', 'Sandoz Inc.', '2028-04-01', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', 303.89, 1946, 3, 4.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (190, 'Hydroxyzine hydrochloride', 'Hydroxyzine hydrochloride', 'Heritage Pharmaceuticals Inc.', '2032-12-05', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', 18.37, 630, 6, 3.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (191, 'Fentanyl Citrate', 'Fentanyl Citrate', 'Cantrell Drug Company', '2030-07-17', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', 105.84, 2556, 4, 2.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (192, 'sumatriptan', 'SUMATRIPTAN', 'Sandoz Inc', '2024-08-20', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', 142.49, 2162, 8, 4.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (193, 'TRICLOSAN', 'Harris Teeter', 'Harris Teeter', '2030-12-03', 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
+
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 29.8, 1966, 3, 3.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (194, 'Octinoxate and Titanium Dioxide', 'LBEL NATURAL FINISH MOISTURIZING FOUNDATION SPF 25', 'Ventura International LTD', '2034-11-06', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.', 231.42, 137, 3, 4.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (195, 'ETHYL ALCOHOL', 'Justice Vanilla ANTI BAC HAND SANITIZER', 'Tween Brands Inc', '2031-12-19', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 288.51, 1038, 4, 3.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (196, 'Simvastatin', 'Simvastatin', 'Cardinal Health', '2034-04-25', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', 49.82, 3325, 6, 1.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (197, 'Avobenzone, Homosalate, Octisalate, Octocrylene and Oxybenzone', 'LOreal Paris Advanced Suncare Silky Sheer 50 Plus Broad Spectrum SPF 50 Plus Sunscreen', 'L''Oreal USA Products Inc', '2035-01-01', 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+
+In congue. Etiam justo. Etiam pretium iaculis justo.', 124.79, 399, 5, 1.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (198, 'Hydrocodone Bitartate and Acetaminophen', 'Norco', 'Actavis Pharma, Inc.', '2026-09-23', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
+
+Fusce consequat. Nulla nisl. Nunc nisl.
+
+Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 252.41, 1940, 3, 2.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (199, 'Alprazolam', 'Alprazolam', 'DAVA Pharmaceuticals, Inc.', '2030-12-30', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+
+Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', 387.4, 805, 6, 3.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (200, 'MIRTAZAPINE', 'REMERON', 'Organon USA Inc.', '2035-01-03', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 222.95, 1924, 2, 3.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (201, 'Anticavity Rinse', 'Anticavity Rinse Fluoride Rinse', 'American Sales Company', '2025-07-11', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
+
+Fusce consequat. Nulla nisl. Nunc nisl.', 83.4, 2604, 7, 4.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (202, 'Metoprolol Tartrate', 'Metoprolol Tartrate', 'Sandoz Inc', '2023-12-09', 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 243.11, 3865, 8, 3.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (203, 'Nifedipine', 'Nifedipine', 'Physicians Total Care, Inc.', '2032-08-27', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+
+Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
+
+Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', 335.38, 930, 8, 5.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (204, 'Naphazoline Hydrochloride', 'Naphazoline', 'Preferred Pharmaceuticals, Inc.', '2028-05-16', 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 302.6, 182, 7, 3.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (205, 'Diphenhydramine HCl', 'Nighttime Sleep Aid', 'WALGREEN CO.', '2028-03-02', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 324.29, 2757, 6, 4.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (206, 'Guaifenesin', 'Rompe Pecho', 'Efficient Laboratories Inc', '2032-02-17', 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', 183.37, 1651, 1, 2.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (207, 'Hydromorphone Hydrochloride', 'EXALGO', 'Lake Erie Medical DBA Quality Care Products LLC', '2030-01-16', 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
+
+Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 92.83, 1576, 5, 2.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (208, 'Citalopram', 'Citalopram', 'Cardinal Health', '2024-12-20', 'Fusce consequat. Nulla nisl. Nunc nisl.
+
+Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
+
+In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', 180.04, 986, 9, 2.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (209, 'Leaf Tobacco', 'Leaf Tobacco', 'Antigen Laboratories, Inc.', '2027-09-01', 'In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', 134.57, 982, 9, 2.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (210, 'propranolol hydrochloride', 'Propranolol Hydrochloride', 'Aphena Pharma Solutions - Tennessee, LLC', '2029-01-11', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
+
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.', 163.4, 3170, 7, 1.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (211, 'metoprolol tartrate', 'Metoprolol Tartrate', 'PD-Rx Pharmaceuticals, Inc.', '2026-03-18', 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
+
+Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 236.59, 359, 2, 1.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (212, 'Adenosinum cyclophosphoricum, Adrenalinum, Adrenocorticotrophin, Alfalfa, Allium cepa, Bellis perennis, Conium maculatum, Cortisone aceticum, Equisetum hyemale, Euphrasia officinalis, Fogopyrum esculentum, Galphimia glauca, Histaminum hydrochloricum, kali muriaticum, Millefolium, Mucosa nasalis suis, Natrum muriaticum, Prunus spinosa, RNA, Sabadilla, Solidago virgaurea', 'AllergyEase Pacific', 'Native Remedies, LLC', '2023-11-12', 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', 251.57, 2439, 5, 4.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (213, 'benzalkonium chloride', 'BZK', 'Henry Schein Inc.', '2031-01-24', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 229.16, 2184, 4, 5.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (214, 'Aluminum Zirconium Tetrachlorohydrex GLY', 'Degree Clinical Protection Cool Rush', 'Conopco Inc. d/b/a Unilever', '2030-03-21', 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', 254.59, 1398, 4, 4.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (215, 'Warfarin Sodium', 'Warfarin Sodium', 'Barr Laboratories Inc.', '2028-07-07', 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
+
+Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', 241.69, 2709, 6, 3.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (216, 'Lidocaine Hydrochloride', 'Lidocaine Hydrochloride', 'Mylan Institutional LLC', '2027-06-12', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 137.03, 321, 4, 5.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (217, 'NIFEDIPINE', 'Nifedipine', 'State of Florida DOH Central Pharmacy', '2024-03-18', 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
+
+Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', 126.27, 3500, 4, 2.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (218, 'Docusate sodium and Sennosides', 'Stool Softener plus Stimulant Laxative', 'Best Choice (Valu Merchandisers Company)', '2027-09-30', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 158.3, 212, 6, 3.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (219, 'Acetaminophen, Caffeine and Pyrilamine maleate', 'Menstrual Relief', 'Stephen L. LaFrance Pharmacy, Inc.', '2033-02-10', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+
+Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 30.66, 3835, 6, 3.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (220, 'Donepezil Hydrochloride', 'Donepezil Hydrochloride', 'Preferred Pharmaceuticals, Inc.', '2026-12-15', 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+
+In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', 230.66, 244, 9, 2.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (221, 'amlodipine besylate and atorvastatin calcium', 'Caduet', 'Pfizer Laboratories Div Pfizer Inc', '2031-02-24', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 181.24, 2816, 1, 4.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (222, 'Salicylic Acid', 'Clean and Clear Advantage Acne Cleanser', 'Johnson & Johnson Consumer Products Company, Division of Johnson & Johnson Consumer Companies, Inc.', '2026-11-18', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 179.11, 3463, 9, 2.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (223, 'Anthracinum , Pyrogenium, Aconitum nap., Arnica, Arsenicum alb., Baptisia, Bryonia, Hydrastis, Iodium, Lachesis, Nux vom., Phosphorus, Pulsatilla, Rhus toxicodendron , Echinacea , Iris versicolor, Urtica ur.', 'Bacterial Infection', 'Newton Laboratories, Inc.', '2028-01-25', 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 50.3, 833, 2, 2.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (224, 'Aconitum nap., Arg.nit., Arsenicum alb., Belladonna, Bryonia, Cinchona, Gelsemium, Hypericum, Ignatia, Kalmia, Lachesis, Lycopodium, Mag. phos., Mezereum, Phosphorus, Pulsatilla, Rhus toxicodendron, Stramonium, Strychninum, Verbascum, Chamomilla', 'Neuro - Care', 'Newton Laboratories, Inc.', '2028-08-23', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', 391.89, 632, 4, 4.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (225, 'Arnica, Cantharis, Calendula, Causticum, Hypericum, Urtica Urens', 'Burns', 'Home Sweet Homeopathics', '2025-10-05', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 265.07, 1316, 8, 1.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (226, 'Moexipril Hydrochloride and Hydrochlorothiazide', 'Moexipril Hydrochloride and Hydrochlorothiazide', 'Paddock Laboratories, Inc.', '2022-08-21', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', 347.24, 1131, 8, 4.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (227, 'docusate sodium', 'DocQLace', 'A-S Medication Solutions LLC', '2035-01-04', 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+
+In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 272.88, 36, 2, 4.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (228, 'Triclosan', 'Foaming Antibacterial', 'Apollo Health and Beauty Care', '2024-03-13', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+
+Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
+
+Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 355.27, 2400, 5, 2.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (229, 'Amlodipine Besylate', 'Amlodipine Besylate', 'State of Florida DOH Central Pharmacy', '2026-02-03', 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 6.72, 2283, 9, 3.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (230, 'Menthol', 'Celadrin', 'Lifetech Resources, LLC', '2023-12-25', 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+
+Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 255.34, 1298, 1, 1.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (231, 'Rifampin', 'Rifampin', 'Lannett Company, Inc.', '2030-12-17', 'In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 42.52, 2965, 2, 1.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (232, 'Bupropion Hydrochloride', 'Bupropion Hydrochloride', 'NCS HealthCare of KY, Inc dba Vangard Labs', '2028-02-05', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.', 386.69, 3106, 3, 2.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (233, 'Annual Blue Grass', 'Annual Blue Grass', 'Nelco Laboratories, Inc.', '2027-01-24', 'In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', 162.97, 3993, 7, 3.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (234, 'Enoxaparin Sodium', 'Enoxaparin Sodium', 'Watson Pharma, Inc.', '2034-05-20', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', 83.34, 3075, 7, 1.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (235, 'Sodium Fluoride', 'Crest Pro-Health', 'Procter & Gamble Manufacturing Company', '2030-11-13', 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', 284.93, 1627, 3, 4.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (236, 'TRICHOPHYTON MENTAGROPHYTES', 'TRICHOPHYTON MENTAGROPHYTES', 'ALK-Abello, Inc.', '2034-11-22', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', 181.29, 2998, 2, 4.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (237, 'BLACK COHOSH - COLCHICUM AUTUMNALE BULB - POTASSIUM IODIDE', 'WHP Be gone Low Back Pain', 'Washington Homeopathic Products', '2023-12-07', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 370.87, 2781, 2, 1.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (238, 'Niacin', 'Niaspan', 'Lake Erie Medical & Surgical Supply DBA Quality Care Products LLC', '2031-11-22', 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
+
+Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', 137.17, 1502, 8, 3.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (239, 'Phosphorus 8 Special Order', 'Phosphorus 8 Special Order', 'Uriel Pharmacy Inc.', '2033-09-11', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.', 342.91, 1824, 4, 3.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (240, 'GEMCITABINE HYDROCHLORIDE', 'GEMCITABINE HYDROCHLORIDE', 'Mylan Institutional LLC', '2031-07-12', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+
+Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 119.5, 3121, 3, 1.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (241, 'Hydrocortisone', 'rexall anti itch', 'Dolgencorp, LLC', '2030-07-16', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 173.05, 1815, 1, 1.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (242, 'oatmeal', 'END-ITCH', 'Crystal Connections, LLC', '2024-04-20', 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 399.46, 637, 6, 2.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (243, 'Canadian Blue Grass', 'Canadian Blue Grass', 'Nelco Laboratories, Inc.', '2031-12-10', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 163.71, 3334, 3, 4.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (244, 'Fenofibrate', 'Fenofibrate', 'Northwind Pharmaceuticals', '2030-03-02', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 98.1, 1194, 6, 1.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (245, 'Captopril and Hydrochlorothiazide', 'Captopril and Hydrochlorothiazide', 'Physicians Total Care, Inc.', '2027-09-05', 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+
+Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 268.4, 1741, 1, 2.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (246, 'Nicotine Polacrilex', 'up and up nicotine polacrilex', 'Target Corporation', '2034-05-14', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
+
+Fusce consequat. Nulla nisl. Nunc nisl.', 379.46, 2301, 9, 4.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (247, 'Avobenzone Homosalate Octisalate Octocrylene Oxybenzone', 'LOreal Paris Sublime Sun', 'L''Oreal USA Products Inc', '2033-12-20', 'In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', 40.09, 3156, 5, 1.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (248, 'Levetiracetam', 'Levetiracetam', 'Karalex Pharma LLC', '2030-06-14', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.', 243.61, 3022, 2, 3.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (249, 'Glipizide', 'Glipizide', 'Aphena Pharma Solutions - Tennessee, LLC', '2024-09-03', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', 54.88, 2878, 4, 2.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (250, 'Fenofibric Acid', 'FIBRICOR', 'Caraco Pharma, Inc.', '2024-06-28', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 380.15, 3081, 1, 3.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (251, 'Sulfamethoxazole and Trimethoprim', 'Sulfamethoxazole and Trimethoprim', 'State of Florida DOH Central Pharmacy', '2029-06-22', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 229.21, 1879, 1, 2.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (252, 'ATORVASTATIN CALCIUM', 'ATORVASTATIN CALCIUM', 'American Health Packaging', '2034-01-30', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 202.12, 1519, 2, 4.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (253, 'ESZOPICLONE', 'Lunesta', 'A-S Medication Solutions LLC', '2028-08-31', 'Fusce consequat. Nulla nisl. Nunc nisl.
+
+Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
+
+In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', 21.41, 189, 2, 3.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (254, 'Chelidonium majus, Echinacea (Angustifolia), Hydrastis canadensis, Nasturtium aquaticum, Taraxacum officinale, Trifolium pratense, Rhus toxicodendron, Arnica montana,', 'Lymesode', 'Synergy Formulas, Inc.', '2024-03-29', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', 219.85, 3534, 8, 2.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (255, 'Captopril', 'Captopril', 'NCS HealthCare of KY, Inc dba Vangard Labs', '2034-03-04', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+
+Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', 307.34, 212, 4, 4.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (256, 'ETHYL ALCOHOL', 'Spa Originals Instant Hand Sanitizer', 'Custom Solutions, Inc.', '2027-09-09', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
+
+Fusce consequat. Nulla nisl. Nunc nisl.', 183.29, 3173, 2, 4.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (257, 'Ofloxacin', 'Ofloxacin', 'REMEDYREPACK INC.', '2030-09-23', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 273.41, 3990, 1, 4.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (258, 'Oxygen', 'Oxygen', 'Millennium Medical Supply', '2024-09-08', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+
+Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
+
+Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 298.07, 1511, 9, 4.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (259, 'SULFUR', 'Sulphur', 'Nature''s Way Products, Inc.', '2035-02-22', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+
+Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 392.44, 2864, 6, 4.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (260, 'IBUPROFEN, .GAMMA.-AMINOBUTYRIC ACID', 'Theraprofen-60', 'Physician Therapeutics LLC', '2023-03-09', 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+
+Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 253.2, 2819, 3, 1.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (261, 'Sarcolacticum Acidum, Viscum Album, Iodium, Colchicum Atumnale, Conium Maculatum, Fucus Vesiculosus, Galiu Aparine, Natrum Oxalaceticum', 'Energise RxS', 'Deseret Biologicals', '2029-01-09', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+
+Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 345.42, 216, 6, 4.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (262, 'Tolnaftate', 'athletes foot', 'Kroger Company', '2023-01-03', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', 131.51, 117, 6, 3.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (263, 'Vecuronium Bromide', 'Vecuronium Bromide', 'Hospira, Inc.', '2028-10-15', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+
+Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 9.21, 512, 3, 2.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (264, 'Aluminum Zirconium Tetrachlorohydrex Gly', 'Secret Scent Expressions', 'Procter & Gamble Manufacturing Company', '2030-06-06', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 312.56, 470, 9, 3.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (265, 'hypromellose, tetrahydrozoline HCl, zinc sulfate', 'Rohto Relief', 'The Mentholatum Company', '2022-09-20', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
+
+In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.', 398.02, 3656, 3, 3.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (266, 'Titanium Dioxide, Zinc Oxide', 'Dr. Jart Shimmering Beauty Balm 02 Medium - Deep', 'Have and Be Co., Ltd.', '2034-02-02', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 112.24, 2947, 2, 3.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (267, 'Avobenzone, Homosalate, Octisalate and Octocrylene', 'LOreal Paris Age Perfect Glow Renewal Day Moisturizer Broad Spectrum SPF 30 Sunscreen', 'L''Oreal USA Products Inc', '2026-04-29', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+
+Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 265.91, 1202, 3, 1.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (268, 'HYDROXYZINE HYDROCHLORIDE', 'HYDROXYZINE HYDROCHLORIDE', 'American Health Packaging', '2022-09-12', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 350.35, 3306, 9, 3.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (269, 'Meniscus 6', 'Meniscus 6', 'Uriel Pharmacy Inc.', '2028-04-15', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 15.95, 1089, 1, 1.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (270, 'ENALAPRIL MALEATE', 'ENALAPRIL MALEATE', 'American Health Packaging', '2030-04-21', 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+
+In congue. Etiam justo. Etiam pretium iaculis justo.', 373.63, 2922, 1, 3.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (271, 'Apis mel., Arnica, Bellis, Bryonia, Calendula, Chamomilla, Cinchona, Gelsemium, Hamamelis, Hypericum, Lacticum acidum, Ledum, Phosphorus, Rhus toxicodendron, Ruta, Sarcolacticum ac., Staphysag., Symphytum, Echinacea, Hydrastis', 'Sports Injury', 'Newton Laboratories, Inc.', '2023-03-14', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+
+Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
+
+Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', 200.88, 1471, 5, 1.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (272, 'Pyrithione zinc', 'Dandruff', 'Valu Merchandisers Co', '2027-05-13', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', 118.23, 3736, 5, 1.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (273, 'Nicotine Polacrilex', 'Up and Up Nicotine', 'Target Corporation', '2032-10-05', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
+
+In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.', 151.27, 2953, 4, 2.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (274, 'nadolol', 'CORGARD', 'Pfizer Laboratories Div Pfizer Inc', '2028-10-04', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
+
+Fusce consequat. Nulla nisl. Nunc nisl.', 60.71, 1974, 6, 2.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (275, 'albuterol sulfate', 'albuterol sulfate', 'Preferred Pharmaceuticals, Inc.', '2028-08-23', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 139.84, 3581, 1, 2.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (276, 'Rifampin', 'Rifampin', 'VersaPharm Incorporated', '2032-10-10', 'Fusce consequat. Nulla nisl. Nunc nisl.
+
+Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 147.17, 3626, 1, 3.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (277, 'Benzethonium chloride', 'Bedside-Care', 'Coloplast Manufacturing US, LLC', '2022-07-30', 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
+
+Fusce consequat. Nulla nisl. Nunc nisl.', 160.35, 3086, 7, 4.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (278, 'TITANIUM DIOXIDE and OCTINOXATE', 'SENSAI FLUID FINISH FF203', 'KANEBO COSMETICS INC', '2025-12-04', 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 253.06, 1925, 6, 2.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (279, 'clonazepam', 'Clonazepam', 'Mylan Institutional Inc.', '2027-11-06', 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
+
+Fusce consequat. Nulla nisl. Nunc nisl.
+
+Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 150.46, 1428, 5, 3.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (280, 'TRICLOSAN', 'Dial Country Orchard Antibacterial Soap', 'The Dial Corporation', '2032-03-25', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', 155.3, 1846, 6, 2.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (281, 'DIPHENHYDRAMINE HYDROCHLORIDE and NAPROXEN SODIUM', 'Aleve PM', 'Bayer HealthCare Consumer Care', '2035-06-13', 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
+
+Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 137.53, 3298, 3, 1.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (282, 'Pyrithione Zinc', 'Head and Shoulders', 'Procter & Gamble Manufacturing Co.', '2028-05-25', 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.', 294.34, 2234, 7, 2.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (283, 'Levothyroxine Sodium', 'Levothyroxine Sodium', 'PD-Rx Pharmaceuticals, Inc.', '2033-01-27', 'Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 118.23, 206, 1, 1.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (284, 'Aethusa Cynapium, Arsenicum Album, Cocculus Indicus, Ipecacuanha, Kreosotum, Petroleum, Pulsatilla', 'Nausea Vomitting', 'Energique, Inc.', '2029-10-30', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
+
+In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 371.02, 3938, 5, 4.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (285, 'TITANIUM DIOXIDE, ZINC OXIDE', 'Sun Protect Beblesh Pact SPF30 PA 2Plus', 'WIZCOZ CORPORATION LTD', '2026-11-15', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 349.4, 1899, 3, 2.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (286, 'Spironolactone', 'Spironolactone', 'McKesson Packaging Services a business unit of McKesson Corporation', '2024-01-03', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 20.59, 2547, 4, 4.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (287, 'MAGNESIUM ASCORBYL PHOSPHATE', 'ELCURE C Serum', 'Elcure Co., Ltd.', '2031-07-01', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+
+Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 167.92, 464, 2, 1.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (288, 'ABIES CANADENSIS', 'ABIES CANADENSIS', 'HOMEOLAB USA INC.', '2023-01-11', 'Fusce consequat. Nulla nisl. Nunc nisl.
+
+Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
+
+In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.', 72.31, 486, 5, 2.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (289, 'Octinoxate, Octisalate, Oxybenzone', 'Ivory Oil Controlling Makeup Broad Spectrum SPF 15', 'Jafra Cosmetics International Inc', '2022-11-01', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
+
+In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.', 369.57, 976, 2, 2.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (290, 'Acetylcholine chloride,', 'Acetylcholine Chloride Phenolic', 'Energique, Inc.', '2032-10-24', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.', 272.96, 121, 6, 1.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (291, 'calcium antacid', 'calcium antacid', 'McKesson', '2029-10-07', 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', 66.09, 3129, 7, 3.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (292, 'captopril', 'Captopril', 'Mylan Pharmaceuticals Inc.', '2034-03-26', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 387.02, 325, 7, 2.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (293, 'ARNICA MONTANA', 'ARNICA MONTANA', 'Hyland''s', '2026-11-19', 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
+
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', 324.49, 369, 6, 3.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (294, 'OCTINOXATE and TITANIUM DIOXIDE', 'SHISEIDO PERFECT REFINING FOUNDATION', 'SHISEIDO AMERICA INC.', '2032-02-01', 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 63.96, 1254, 7, 2.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (295, 'HELLEBORUS NIGER ROOT', 'Headache Drowsiness', 'Natural Health Supply', '2032-07-06', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', 49.2, 807, 7, 1.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (296, 'Julep Solace Oil-Free Sunscreen Broad Spectrum', 'Octisalate, Avobenzone, Homosalate, Octocrylene', 'Julep Nail Parlor', '2028-01-31', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', 137.84, 3265, 7, 2.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (297, 'fluorouracil', 'FLUOROURACIL', 'Physicians Total Care, Inc.', '2024-08-26', 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+
+Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
+
+Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 363.45, 3737, 9, 1.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (298, 'ceftazidime', 'FORTAZ', 'Covis Pharmaceuticals, Inc.', '2025-06-21', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+
+In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', 337.92, 45, 6, 3.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (299, 'Isopropyl Alcohol', 'Isopropyl Rubbing Alcohol', 'Professional Hospital Supply, Inc.', '2027-12-30', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 182.01, 1862, 6, 2.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (300, 'venlafaxine hydrochloride', 'Venlafaxine Hydrochloride', 'Apotex Corp.', '2022-09-06', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
+
+Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.', 219.28, 3452, 9, 3.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (301, 'mesalamine', 'ASACOL', 'KAISER FOUNDATION HOSPITALS', '2028-07-01', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+
+Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 279.16, 424, 7, 4.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (302, 'Echinacea, Hydrastis canadensis, Lomatium, Aconitum napellus, Arsenicum album, Belladonna, Eupatorium perfoliatum, Gelsemium sempervirens, Lachesis mutus, Rhus toxicodendron, Pyrogenium,', 'Viro Plus', 'Apotheca Company', '2029-05-02', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
+
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 38.74, 877, 7, 3.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (303, 'povidone-iodine', 'Povidone Iodine Plus', 'H and P Industries, Inc. dba Triad Group', '2028-03-24', 'Fusce consequat. Nulla nisl. Nunc nisl.
+
+Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 58.18, 2975, 3, 3.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (304, 'ENSULIZOLE,OCTINOXATE, OCTISALATE, OCTOCRYLENE,OXYBENZONE,TITANIUM DIOXIDE', 'Sephora Super Lisseur Rides SPF 15 Age Defy Moisture', 'S+', '2029-09-26', 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+
+Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
+
+Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 169.69, 1703, 5, 4.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (305, 'Metoprolol succinate', 'TOPROLXL', 'REMEDYREPACK INC.', '2035-04-12', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', 283.33, 1031, 7, 4.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (306, 'fluconazole', 'Diflucan', 'Lake Erie Medical & Surgical Supply DBA Quality Care Products LLC', '2026-01-30', 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
+
+Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', 92.5, 1404, 2, 1.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (307, 'NAPROXEN AND ESOMEPRAZOLE MAGNESIUM', 'VIMOVO', 'STAT RX USA LLC', '2028-10-22', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', 180.76, 501, 4, 5.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (308, 'Gemfibrozil', 'Gemfibrozil', 'Dispensing Solutions, Inc.', '2024-11-04', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+
+Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 111.69, 2850, 2, 4.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (309, 'Treatment Set TS347337', 'Treatment Set TS347337', 'Antigen Laboratories, Inc.', '2034-07-27', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', 346.85, 2148, 2, 2.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (310, 'Box Elder', 'Box Elder', 'Nelco Laboratories, Inc.', '2024-12-01', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 59.72, 77, 4, 1.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (311, 'BENZALKONIUM CHLORIDE', 'VETERAN SHIELD 24', 'AP GOLDSHIELD LLC', '2024-08-12', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 169.85, 2900, 5, 3.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (312, 'String Beans', 'String Beans', 'Nelco Laboratories, Inc.', '2034-12-05', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', 178.16, 2425, 8, 2.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (313, 'Robitussin', 'Tussin Original', 'Aaron Industries, Inc.', '2027-06-12', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
+
+Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
+
+Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
+
+Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+
+Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 390.98, 3665, 9, 3.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (314, 'Ethambutol hydrochloride', 'Myambutol', 'Physicians Total Care, Inc.', '2023-11-28', 'Fusce consequat. Nulla nisl. Nunc nisl.
+
+Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 40.34, 1269, 7, 1.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (315, 'Rhamnus purshiana, Carduus marianus, Taraxacum officinale, Chelidonium majus, Leptandra virginica, Myrica cerifera, Berberis vulgaris, Natrum sulphuricum, Magnesia phosphorica, Cuprum metallicum', 'Cholenest', 'Marco Pharma International LLC.', '2025-04-16', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 232.71, 2760, 6, 2.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (316, 'Water', 'Sterile Water', 'B. Braun Medical Inc.', '2029-06-09', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 161.62, 2295, 9, 3.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (317, 'not applicable', 'Liver Tonic II', 'BioActive Nutritional, Inc.', '2030-04-12', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 131.61, 3861, 9, 1.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (318, 'Chlordiazepoxide Hydrochloride', 'Chlordiazepoxide Hydrochloride', 'Physicians Total Care, Inc.', '2027-04-03', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 289.67, 450, 1, 3.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (319, 'Capsaicin', 'Omega 3 Heat Therapy', 'Concept Laboratories, Inc.', '2032-11-09', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 61.6, 2358, 5, 2.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (320, 'ezogabine', 'POTIGA', 'GlaxoSmithKline LLC', '2032-09-19', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 303.89, 1456, 3, 2.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (321, 'Sucralfate', 'Sucralfate', 'Aphena Pharma Solutions - Tennessee, LLC', '2026-09-09', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
+
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 82.71, 1766, 1, 4.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (322, 'Anticoagulant Citrate Phosphate Dextrose (CPD) AND AS-5 Red Cell Preservative', 'TERUFLEX Blood Bag System with Diversion Blood Sampling Arm Anticoagulant Citrate Phosphate Dextrose (CPD) AND OPTISOL (AS-5) Red Cell Preservative', 'Terumo Corporation', '2030-07-06', 'In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 20.06, 1493, 1, 2.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (323, 'Alcohol', 'Hand Sanitizer', 'Humphreyline', '2029-11-18', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+
+Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 226.46, 2060, 6, 1.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (324, 'HYDROXYUREA', 'HYDREA', 'E.R. Squibb & Sons, L.L.C.', '2028-07-27', 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 117.14, 1836, 3, 1.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (325, 'Atenolol', 'Atenolol', 'MedVantx, Inc.', '2028-11-15', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', 37.6, 3903, 9, 3.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (326, 'Athomer', 'Athomer mini', 'PHARMACOSMETIC-DIAFARM', '2027-08-18', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', 242.93, 2528, 9, 4.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (327, 'FLUPHENAZINE HYDROCHLORIDE', 'Fluphenazine Hydrochloride', 'APP Pharmaceuticals, LLC', '2030-06-04', 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+
+In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 194.94, 3152, 6, 2.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (328, 'TITANIUM DIOXIDE, OCTYLTRIETHOXYSILANE, ALUMINUM HYDROXIDE, OCTINOXATE, ATRACTYLOIDES JAPONICA ROOT OIL', 'ISAKNOX AGELESS SERUM BLEMISH BALM', 'LG Household and Healthcare, Inc.', '2033-10-15', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', 346.56, 969, 2, 2.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (329, 'Dextromethorphan HBr, Guaifenesin and Pseudoephedrine HCl', 'Poly-Vent DM', 'Poly Pharmaceuticals, Inc.', '2025-07-28', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 222.66, 566, 8, 3.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (330, 'Acetaminophen', 'Pain Relief', 'Meijer Distribution Inc', '2034-06-28', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+
+Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', 80.63, 3711, 8, 3.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (331, 'OCTINOXATE, TITANIUM DIOXIDE', 'VITALUMIERE AQUA', 'CHANEL PARFUMS BEAUTE', '2031-04-29', 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
+
+Fusce consequat. Nulla nisl. Nunc nisl.', 227.77, 858, 7, 3.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (332, 'Sucralfate', 'Sucralfate', 'Precision Dose Inc.', '2030-01-28', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', 62.26, 1849, 8, 2.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (333, 'Pain Relieving Cream', 'RAY DOL', 'Genomma Lab USA Inc.', '2033-10-07', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
+
+Fusce consequat. Nulla nisl. Nunc nisl.', 311.41, 408, 4, 3.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (334, 'Isopropyl Alcohol', 'Divas', 'JMD All Star Impex Inc', '2025-01-02', 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
+
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 98.55, 2536, 3, 3.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (335, 'vardenafil hydrochloride', 'Levitra', 'APHENA PHARMA SOLUTIONS - TENNESSEE, INC.', '2034-04-19', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', 28.6, 3038, 6, 2.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (336, 'AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE', 'BANANA BOAT', 'Energizer Personal Care LLC', '2034-01-11', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 41.46, 3741, 5, 3.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (337, 'Calcipotriene', 'Calcitrene', 'Taro Pharmaceuticals U.S.A., Inc.', '2034-04-16', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 44.26, 3464, 2, 3.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (338, 'Epirubicin Hydrochloride', 'Epirubicin Hydrochloride', 'Teva Parenteral Medicines, Inc.', '2030-08-31', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 122.22, 2099, 9, 1.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (339, 'Oxycodone and Acetaminophen', 'Oxycodone and Acetaminophen', 'H.J. Harkins Company, Inc.', '2029-07-26', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 391.13, 2643, 2, 2.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (340, 'Quinidine Sulfate', 'Quinidine Sulfate', 'Carilion Materials Management', '2027-07-08', 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
+
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 292.66, 2825, 1, 3.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (341, 'Oxazepam', 'Oxazepam', 'Sandoz Inc', '2026-04-13', 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
+
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 2.44, 721, 8, 2.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (342, 'Agnus castus, Arnica montana, Baryta carbonica, Caladium seguinum, Kali bromatum, Lycopodium clavatum, nuphar luteum, Nux vomica, Onosmodium virginianum, Phosphoricum acidum, Picnicum acidum, Selenium metallicum', 'Male Strengthener', 'King Bio Inc.', '2024-04-18', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+
+In congue. Etiam justo. Etiam pretium iaculis justo.', 57.09, 2257, 7, 4.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (343, 'OXYGEN', 'OXYGEN', 'Sound Oxygen Service, Inc.', '2026-02-14', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.', 266.68, 3801, 8, 3.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (344, 'Glycerin', 'THE FIRST WHITENING SLEEPING MASK', 'NATURE REPUBLIC CO., LTD.', '2023-07-26', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 251.39, 3064, 7, 4.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (345, 'Uricum acidum, Aconitum nap.,Apis mel., Arnica, Arsenicum alb, Belladonna,Benzoicum acidum, Bryonia, Calc. carb., Chamomilla, Cinchona, Colchicum, Eupatorium perf., Gaultheriaprocumbens, Guaiacum, Iodium, Kali bic, Kalmia,Ledum, Pulsatilla, Rhus toxicodendron, Ruta,Sabina, Strychninum, Lappa, Phytolacca, Symphytum,', 'Rheumatic - Joint Care', 'Newton Laboratories, Inc.', '2022-12-13', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', 122.82, 83, 9, 3.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (346, 'Citalopram', 'Citalopram', 'Blu Pharmaceuticals, LLC', '2034-04-22', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+
+In congue. Etiam justo. Etiam pretium iaculis justo.', 296.45, 1023, 8, 3.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (347, 'amlodipine and atorvastatin', 'Amlodipine and Atorvastatin', 'Mylan Pharmaceuticals Inc.', '2033-10-14', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 335.05, 1978, 8, 2.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (348, 'Miconazole Nitrate', 'Monistat 3 Combination Pack', 'Insight Pharmaceuticals', '2029-09-12', 'In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 319.28, 378, 1, 4.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (349, 'Gabapentin', 'Gabapentin', 'Allied Pharma Inc', '2030-10-24', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
+
+In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.', 35.42, 1578, 6, 3.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (350, 'GUAIFENESIN DEXTROMETHORPHAN', 'GUAIFENESIN DM', 'PD-Rx Pharmaceuticals, Inc.', '2034-02-15', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+
+Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
+
+Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 112.98, 2818, 5, 4.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (351, 'mitoXANTRONE', 'mitoXANTRONE', 'Teva Parenteral Medicines, Inc', '2030-12-19', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 114.36, 1427, 8, 3.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (352, 'OCTINOXATE, OXYBENZONE', 'Bubble Gum Sunscreen Lip Moisturizer', 'Beacon Promotions', '2035-04-16', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+
+In congue. Etiam justo. Etiam pretium iaculis justo.', 269.31, 1870, 6, 2.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (353, 'Loratadine', 'fad first aid direct allergy relief', 'First Aid Direct', '2024-06-19', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', 199.04, 1950, 1, 4.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (354, 'PSYLLIUM HUSK', 'Konsyl Orange Flavor Psyllium Fiber - Smooth Texture', 'Konsyl Pharmaceuticals, Inc.', '2030-12-29', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 75.55, 528, 3, 4.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (355, 'tbo-filgrastim', 'GRANIX', 'Cephalon, Inc.', '2025-05-15', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 189.65, 458, 7, 4.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (356, 'Gabapentin', 'Gabapentin', 'Cadila Healthcare Limited', '2033-02-06', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', 232.14, 3562, 8, 1.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (357, 'Povidone-Iodine', 'Scrub', 'Medline Industries, Inc.', '2022-10-28', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', 387.8, 2689, 2, 1.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (358, 'METOPROLOL SUCCINATE', 'METOPROLOL SUCCINATE', 'Lake Erie Medical DBA Quality Care Products LLC', '2032-06-27', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 306.12, 508, 2, 1.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (359, 'Etodolac', 'Etodolac', 'Golden State Medical Supply, Inc.', '2028-05-27', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 49.93, 2540, 6, 2.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (360, 'Urtica dioica', 'Nettle Pollen', 'Allermed Laboratories, Inc.', '2026-06-15', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
+
+Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
+
+Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
+
+Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+
+Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 78.6, 2642, 2, 1.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (361, 'SENNA', 'SENEXON', 'RUGBY LABORATORIES, INC.', '2033-05-15', 'In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 394.2, 3935, 9, 3.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (362, 'fentanyl', 'Fentanyl', 'Bryant Ranch Prepack', '2031-11-14', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', 148.72, 3070, 4, 5.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (363, 'Chlordiazepoxide Hydrochloride', 'Chlordiazepoxide Hydrochloride', 'Bryant Ranch Prepack', '2028-11-18', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
+
+Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
+
+Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
+
+Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', 190.66, 438, 1, 2.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (364, 'Capsaicin, Camphor', 'Kerasal NeuroCream', 'MOBERG PHARMA NORTH AMERICA LLC', '2032-04-29', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
+
+In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.', 298.61, 602, 4, 3.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (365, 'Starch, Corn and Zinc Oxide', 'Caldesene Baby', 'Insight Pharmaceuticals', '2030-08-28', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 198.59, 2276, 8, 3.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (366, 'Triclosan', 'Lemon Verbena Antibacterial Foaming Hand Wash', 'SJ Creations, Inc.', '2035-05-31', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 75.45, 784, 7, 4.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (367, 'Grapefruit', 'Grapefruit', 'Nelco Laboratories, Inc.', '2032-08-07', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 311.0, 1990, 3, 2.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (368, 'Balsalazide Disodium', 'Balsalazide Disodium', 'Roxane Laboratories, Inc', '2028-06-17', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 347.93, 2582, 1, 1.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (369, 'Oxygen', 'Oxygen', 'ITC Medical Supplies', '2030-10-11', 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 198.05, 1139, 1, 4.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (370, 'Avobenzone, Octisalate, Octocrylene', 'Australian Gold', 'Prime Packaging, Inc.', '2033-04-05', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
+
+Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
+
+Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', 5.3, 3999, 6, 3.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (371, 'Levofloxacin', 'Levofloxacin', 'Aidarex Pharmaceuticals LLC', '2025-08-22', 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 199.03, 1528, 1, 1.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (372, 'Acetaminophen', 'Direct Safety Extra Strength Aspirin Free', 'Conney Safety Products, LLC', '2030-09-16', 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
+
+Fusce consequat. Nulla nisl. Nunc nisl.', 120.23, 203, 6, 3.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (373, 'Titanium Dioxide and Zinc Oxide', 'Warm Deep Matte', 'Bare Escentuals Beauty Inc.', '2028-12-14', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.', 34.16, 3103, 4, 4.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (374, 'Clonidine Hydrochloride', 'Clonidine Hydrochloride', 'Carlsbad Technology, Inc', '2024-10-31', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
+
+Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
+
+Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+
+Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', 217.64, 3374, 2, 1.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (375, 'Octinoxate and Titanium dioxide', 'SHISEIDO SHEER MATIFYING COMPACT (REFILL)', 'SHISEIDO CO., LTD.', '2033-06-19', 'Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+
+Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 312.01, 3978, 7, 1.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (376, 'Diphenhydramine HCl, Phenylephrine HCl', 'smart sense triacting', 'Kmart Corporation', '2033-01-27', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 142.07, 2186, 1, 3.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (377, 'Buprenorphine and Naloxone', 'Buprenorphine HCl and Naloxone HCl', 'AvKARE, Inc.', '2026-05-03', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
+
+Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.', 184.82, 3829, 9, 2.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (378, 'Pantoprazole Sodium', 'Pantoprazole Sodium', 'REMEDYREPACK INC.', '2023-10-25', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 107.31, 284, 3, 2.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (379, 'LYCOPODIUM CLAVATUM SPORE', 'Upset Stomach, Constipation', 'Natural Health Supply', '2025-10-29', 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
+
+Fusce consequat. Nulla nisl. Nunc nisl.
+
+Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
+
+In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', 210.04, 3816, 8, 4.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (380, 'Zidovudine', 'Zidovudine', 'Aurobindo Pharma Limited', '2022-09-30', 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 162.77, 2517, 8, 2.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (381, 'Haloperidol', 'Haloperidol', 'Clinical Solutions Wholesale', '2028-05-31', 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+
+Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.', 261.61, 3685, 8, 2.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (382, 'PROPOFOL', 'Propofol', 'Fresenius Kabi USA, LLC', '2035-02-15', 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+
+Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
+
+Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 362.06, 2499, 6, 3.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (383, 'ATORVASTATIN CALCIUM PROPYLENE GLYCOL SOLVATE', 'ATORVASTATIN CALCIUM', 'St Marys Medical Park Pharmacy', '2032-12-03', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 388.95, 201, 9, 1.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (384, 'Avobenzone, Octinoxate, Octisalate', 'No7 Protect and Perfect Day Sunscreen Broad Spectrum SPF 15', 'BCM Ltd', '2026-04-03', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
+
+In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 232.01, 3150, 2, 5.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (385, 'didanosine enteric-coated beadlets', 'Didanosine', 'Mylan Pharmaceuticals Inc.', '2025-03-10', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
+
+Fusce consequat. Nulla nisl. Nunc nisl.
+
+Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 40.92, 1033, 9, 2.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (386, 'Octinoxate and Oxybenzone', 'LBEL Couleur Luxe Rouge Amplifier XP amplifying SPF 15', 'Ventura Corporation LTD', '2027-12-28', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 16.26, 3671, 8, 1.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (387, 'Almacone', 'Almacone', 'Rebel Distributors Corp', '2026-10-27', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 54.68, 3862, 8, 3.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (388, 'Camphor,Menthol, methyl salicylate', 'Pain Relief Rub', 'Topco Associates LLC', '2023-08-09', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', 326.01, 3967, 5, 2.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (389, 'imipramine hydrochloride', 'imipramine hydrochloride', 'Bryant Ranch Prepack', '2024-03-30', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 137.29, 2948, 7, 3.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (390, 'TRAMADOL HYDROCHLORIDE', 'TRAMADOL HYDROCHLORIDE', 'DIRECT RX', '2025-08-08', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 230.45, 2508, 9, 4.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (391, 'epinephrine', 'Adrenalin', 'JHP Pharmaceuticals LLC', '2027-10-17', 'Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', 211.66, 1646, 4, 3.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (392, 'Acetaminophen', 'Pain Relief', 'Kroger Company', '2024-11-21', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 291.89, 3173, 9, 4.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (393, 'DICLOFENAC POTASSIUM', 'DICLOFENAC POTASSIUM', 'DIRECT RX', '2023-01-06', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 331.73, 272, 7, 1.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (394, 'AVOBENZONE, HOMOSALATE, OCTISALATE, OCTOCRYLENE, OXYBENZONE', 'Meijer Sport SPF 50', 'Meijer Distribution Inc', '2023-04-20', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
+
+Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
+
+Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+
+Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', 50.89, 603, 8, 4.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (395, 'Verapamil Hydrochloride', 'Verapamil Hydrochloride', 'IVAX Pharmaceuticals, Inc.', '2026-05-21', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 123.99, 3527, 8, 1.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (396, 'Benazepril Hydrochloride', 'Lotensin', 'Physicians Total Care, Inc.', '2034-09-13', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', 81.43, 2828, 6, 3.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (397, 'Alprazolam', 'Alprazolam', 'McKesson Contract Packaging', '2029-02-21', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', 232.77, 3121, 6, 4.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (398, 'Avobenzone, Homosalate, Octisalate, and Octocrylene', 'Olay Complete Tinted Moisturizer', 'Procter & Gamble Manufacturing Company', '2031-06-21', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', 267.9, 999, 9, 2.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (399, 'Clonidine Hydrochloride', 'Clonidine Hydrochloride', 'MedVantx, Inc.', '2029-12-29', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', 308.2, 1646, 8, 4.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (400, 'diltiazem hydrochloride', 'Diltiazem Hydrochloride', 'Mylan Institutional Inc.', '2033-03-08', 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
+
+Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.', 323.71, 1369, 8, 4.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (401, 'GUAIFENESIN', 'MUCOSA', 'TIME CAP LABORATORIES, INC', '2028-09-26', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 324.02, 2747, 6, 2.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (402, 'Mulberry White', 'MORUS ALBA POLLEN', 'ALK-Abello, Inc.', '2030-03-06', 'Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', 281.79, 1687, 5, 1.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (403, 'Phytolacca decandra', 'Phytolacca', 'Apotheca Company', '2032-05-24', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', 247.45, 1428, 4, 2.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (404, 'ADENOSINUM CICLOPHOSPHORICUM - LILIUM TIGRINUM - MELATONIN - SUS SCROFA ADRENAL GLAND - SUS SCROFA CORPUS LUTEUM - SUS SCROFA HYPOTHALAMUS - SUS SCROFA OVARY - SUS SCROFA PANCREAS - SUS SCROFA PINEAL', 'GUNA-FEM', 'Guna spa', '2034-12-19', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
+
+Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
+
+Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
+
+Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+
+Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 372.93, 374, 3, 1.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (405, 'eszopiclone', 'eszopiclone', 'Roxane Laboratories, Inc.', '2023-11-29', 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', 198.76, 502, 8, 2.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (406, 'Simethicone', 'ultra strength gas relief', 'Premier Value (Chain Drug Consortium, LLC)', '2032-03-15', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+
+Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
+
+Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 274.04, 3706, 7, 4.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (407, 'butalbital, acetaminophen and caffeine', 'butalbital, acetaminophen and caffeine', 'REMEDYREPACK INC.', '2032-03-22', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+
+In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', 96.53, 3898, 2, 2.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (408, 'Dextromethorphan Hydrobromide, Guaifenesin, and Pseudoephedrine Hydrochloride', 'G-Tuss-NL', 'McLaren Medical', '2027-09-29', 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', 99.94, 245, 2, 2.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (409, 'Cetirizine HCl, Pseudoephedrine HCl', 'Cetirizine Hydrochloride and Pseudoephedrine Hydrochloride', 'Dispensing Solutions, Inc.', '2030-01-03', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', 68.24, 1423, 4, 3.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (410, 'Avobenzone, Homosalate, Octisalate, Octocrylene, and Oxybenzone', 'Neutrogena Healthy Skin Compact Makeup', 'Neutrogena Corporation', '2023-07-15', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.', 96.87, 2094, 2, 2.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (411, 'Dextromethorphan Hydrobromide, Doxylamine Succinate', 'smart sense nighttime cough', 'Kmart Corporation', '2028-10-28', 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+
+In congue. Etiam justo. Etiam pretium iaculis justo.', 68.13, 2003, 2, 3.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (412, 'AVOBENZONE HOMOSALATE OCTISALATE OCTOCRYLENE OXYBENZONE', 'Western Family Broad Spectrum SunscreenSPF 50', 'WESTERN FAMILY FOODS, INC.', '2031-12-30', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 143.71, 1697, 2, 4.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (413, 'Menthol', 'Leader Extra Strength Medicated Pain Relief Patch', 'Cardinal Health', '2030-03-25', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
+
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.', 358.15, 82, 1, 4.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (414, 'haloperidol lactate', 'Haloperidol Lactate', 'Sagent Pharmaceuticals', '2024-06-01', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+
+In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', 198.92, 2585, 8, 1.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (415, 'Loratadine', 'Childrens Wal-itin', 'Walgreen Company', '2026-11-19', 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', 220.05, 2076, 4, 4.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (416, 'Avobenzone, Octinoxate, and Octisalate', 'Neutrogena Ultra Gentle Soothing', 'Neutrogena Corporation', '2025-03-06', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', 160.56, 2451, 2, 4.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (417, 'Lisinopril', 'Lisinopril', 'Cardinal Health', '2030-07-19', 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
+
+Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+
+Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', 70.96, 3784, 5, 3.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (418, 'Enalapril Maleate', 'Enalapril Maleate', 'Med Health Pharma, LLC', '2035-01-11', 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
+
+In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 278.28, 1812, 5, 1.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (419, 'METRONIDAZOLE', 'METRONIDAZOLE', 'REMEDYREPACK INC.', '2032-06-04', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 392.56, 127, 8, 1.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (420, 'PROMETHAZINE HYDROCHLORIDE tablet', 'PROMETHAZINE HYDROCHLORIDE', 'Direct Rx', '2033-01-20', 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
+
+Fusce consequat. Nulla nisl. Nunc nisl.
+
+Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 47.39, 2378, 7, 4.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (421, 'CANDIDA PARAPSILOSIS and PENICILLIUM GLABRUM', 'SyGest Complex', 'Syntrion GmbH', '2034-05-22', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 334.56, 3318, 4, 4.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (422, 'diazepam', 'Diastat', 'Valeant Pharmaceuticals North America', '2029-09-24', 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 195.7, 937, 1, 2.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (423, 'BENZALKONIUM CHLORIDE', 'Disney MINNIE Antibacterial HAND WIPES', 'Bolero Home Decor, Inc.', '2030-06-09', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 114.7, 3078, 8, 2.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (424, 'Risperidone', 'Risperidone', 'Hikma Pharmaceutical', '2026-02-02', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
+
+Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.', 369.82, 307, 3, 1.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (425, 'Digoxin', 'DIGOX', 'PD-Rx Pharmaceuticals, Inc.', '2026-10-09', 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', 84.24, 2907, 5, 2.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (426, 'Lorazepam', 'Lorazepam', 'REMEDYREPACK INC.', '2025-09-15', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 203.13, 1582, 4, 1.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (427, 'Ibuprofen, Pseudoephedrine Hydrochloride', 'leader ibuprofen cold and sinus', 'Cardinal Health', '2024-03-08', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+
+Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 310.33, 1213, 2, 2.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (428, 'HYDROCORTISONE ACETATE', 'Hydrocortisone Acetate', 'A-S Medication Solutions LLC', '2035-01-15', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', 213.56, 1542, 9, 3.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (429, 'Oxybenzone, Octinoxate', 'RadiaBlock', 'Medline Industries, Inc.', '2023-01-18', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
+
+Fusce consequat. Nulla nisl. Nunc nisl.', 53.37, 339, 5, 2.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (430, 'Amlodipine besylate and benazepril hydrochloride', 'Amlodipine besylate and benazepril hydrochloride', 'Watson Laboratories, Inc.', '2027-08-14', 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+
+Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
+
+Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 70.18, 2124, 2, 1.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (431, 'Acetaminophen, Dextromethorphan HBr, Guaifenesin, Phenylephrine HCl', 'Healthy Accents Mucus Relief', 'DZA Brands LLC', '2028-04-14', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
+
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 84.03, 1914, 4, 2.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (432, 'Allscale', 'Allscale', 'Nelco Laboratories, Inc.', '2035-02-19', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 362.3, 3566, 9, 1.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (433, 'Mirtazapine', 'Mirtazapine', 'Bryant Ranch Prepack', '2026-09-09', 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
+
+Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+
+Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', 194.31, 3374, 9, 1.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (434, 'Cefaclor', 'Cefaclor', 'Carlsbad Technology, Inc.', '2027-08-21', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.
+
+Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
+
+Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.', 4.22, 2228, 5, 1.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (435, 'fludarabine phosphate', 'Oforta', 'sanofi-aventis U.S. LLC', '2028-08-22', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 358.81, 984, 5, 3.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (436, 'Gabapentin', 'Gabapentin', 'Unit Dose Services', '2034-09-25', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 234.94, 2887, 4, 3.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (437, 'amantadine hydrochloride', 'amantadine hydrochloride', 'Mikart, Inc.', '2031-10-04', 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+
+In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', 51.97, 2399, 9, 1.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (438, 'Lactic Acid', 'Lactic Acid', 'Stratus Pharamceuticals, Inc', '2033-04-23', 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 87.88, 3391, 4, 2.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (439, 'BUTALBITAL AND ACETAMINOPHEN AND CAFFEINE', 'Butalbital, Acetaminophen and Caffeine', 'Keltman Pharmaceuticals Inc.', '2022-11-23', 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
+
+Fusce consequat. Nulla nisl. Nunc nisl.
+
+Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
+
+In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', 250.5, 2242, 2, 1.7);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (440, 'Mexican Tea Pollen', 'Mexican Tea Pollen', 'Nelco Laboratories, Inc.', '2025-03-07', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', 242.13, 3880, 6, 2.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (441, 'Homosalate, Octinoxate, Octisalate, and Oxybenzone', 'Ulta', 'Prime Packaging, Inc.', '2023-03-22', 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
+
+Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+
+Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', 180.23, 600, 7, 4.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (442, 'METHYL SALICYLATE MENTHOL CAPSAICIN', 'TOPICAL PAIN RELIEF', 'Two Hip Consulting, LLC', '2029-08-19', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', 149.09, 1359, 8, 1.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (443, 'Dock Yellow', 'RUMEX CRISPUS POLLEN', 'ALK-Abello, Inc.', '2029-04-23', 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 281.97, 3316, 7, 1.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (444, 'Pineapple', 'PINEAPPLE', 'ALK-Abello, Inc.', '2031-12-01', 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
+
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', 7.41, 1311, 4, 2.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (445, 'granisetron', 'Sancuso', 'ProStrakan, Inc.', '2029-02-25', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 385.64, 732, 2, 1.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (446, 'Mirtazapine', 'Mirtazapine', 'Mylan Institutional Inc.', '2030-07-01', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 341.18, 138, 8, 3.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (447, 'OCTINOXATE, TITANIUM DIOXIDE', 'Capture Totale Radiance Restoring Serum Foundation SPF 15 040', 'Parfums Christian Dior', '2025-12-18', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 289.26, 2273, 2, 3.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (448, 'Ketoconazole', 'Ketoconazole', 'REMEDYREPACK INC.', '2034-03-02', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 23.75, 138, 2, 4.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (449, 'Tricolsan', 'Winning Hands Foaming Antibacterial', 'Betco Corporation, Ltd.', '2029-05-16', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', 361.78, 1983, 5, 1.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (450, 'Oxygen', 'Oxygen', 'Roberts Oxygen Company, Inc.', '2030-09-12', 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 368.55, 1444, 9, 2.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (451, 'Acetaminophen', 'Dover Aminophen', 'Unifirst First Aid Corporation', '2025-08-20', 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', 279.14, 724, 8, 2.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (452, 'OCTINOXATE and TITANIUM DIOXIDE', 'Tinted Moisturizer SPF20', 'CBI Laboratories, Inc', '2025-12-14', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', 335.45, 131, 2, 1.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (453, 'Olanzapine', 'Olanzapine', 'Prasco Laboratories', '2030-04-03', 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', 12.26, 1241, 3, 1.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (454, 'Piperonyl Butoxide, Pyrethrum Extract', 'lice kit', 'CVS Pharmacy', '2024-08-26', 'In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', 283.05, 731, 7, 1.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (455, 'Triamterene and Hydrochlorothiazide', 'Triamterene and Hydrochlorothiazide', 'Preferred Pharmaceuticals, Inc.', '2034-05-03', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 265.78, 3598, 9, 2.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (456, 'Bacitracin', 'Zapotol Bacitracin', 'Zapatol Corp.', '2025-03-27', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 11.03, 1837, 8, 2.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (457, 'Ethyl Alcohol', 'Rubbing', 'Vi-Jon', '2024-05-23', 'Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 218.59, 3000, 7, 1.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (458, 'CAPSAICIN, CAMPHOR, MENTHOL, METHYL SALICYLATE, PEPPERMINT OIL, ZINC OXIDE', 'FAMILY CARE THERA FLEX PAIN', 'UNITED EXCHANGE CORP', '2034-02-23', 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.
+
+Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 218.04, 2355, 9, 2.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (459, 'Anastrozole', 'Anastrozole', 'Ascend Laboratories, LLC', '2033-05-03', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.', 336.85, 325, 1, 4.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (460, 'ISOPROPYL ALCOHOL', 'Alcohol Cleansing Pad', 'Genuine First Aid LLC', '2022-09-14', 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
+
+Fusce consequat. Nulla nisl. Nunc nisl.
+
+Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', 329.42, 1083, 1, 4.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (461, 'amlodipine and benazepril hydrochloride', 'Amlodipine and Benazepril Hydrochloride', 'Mylan Pharmaceuticals Inc.', '2033-06-11', 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 98.62, 3907, 8, 4.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (462, 'Magnesium Citrate', 'Magnesium Citrate', 'Walgreens', '2027-10-19', 'Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 286.17, 975, 6, 4.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (463, 'ALCOHOL', 'Refresh Foaming Instant Hand Sanitizer', 'Evonik Stockhausen, LLC', '2027-08-07', 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
+
+Fusce consequat. Nulla nisl. Nunc nisl.
+
+Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
+
+In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.', 259.49, 712, 3, 1.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (464, 'Yellow Dock', 'Yellow Dock', 'Nelco Laboratories, Inc.', '2030-12-11', 'Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
+
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.
+
+Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', 77.87, 529, 7, 4.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (465, 'avobenzone, homosalate,octisalate', 'Parrot Head Fins Up Sport 15 Mist Sunscreen', 'Sun & Skin Care Research, LLC', '2029-12-26', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', 184.02, 1415, 4, 2.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (466, 'OXYGEN', 'OXYGEN', 'Ameri-Quipt of North Carolina, Inc', '2034-06-09', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.', 390.5, 584, 7, 4.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (467, 'Titanium Dioxide, Zinc Oxide, and Octinoxate', 'LBEL', 'Ventura International LTD.', '2031-04-27', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 201.82, 2062, 1, 1.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (468, 'amoxicillin', 'AMOXICILLIN', 'Dr Reddys Laboratories Inc', '2025-05-14', 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
+
+Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 325.82, 1015, 7, 5.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (469, 'Alfuzosin Hydrochloride', 'Uroxatral', 'Stat Rx USA', '2032-03-22', 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 329.37, 3872, 3, 3.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (470, 'Venlafaxine Hydrochloride', 'Venlafaxine Hydrochloride', 'REMEDYREPACK INC.', '2034-08-09', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.
+
+Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.', 176.47, 3682, 2, 4.6);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (471, 'nitrofurantoin (macrocrystals)', 'Nitrofurantoin (macrocrystals)', 'PD-Rx Pharmaceuticals, Inc.', '2029-01-29', 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.
+
+Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.
+
+Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', 239.83, 2412, 6, 3.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (472, 'TITANIUM DIOXIDE', 'VIVID TINT BAR', 'NATURE REPUBLIC CO., LTD.', '2035-06-20', 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', 131.23, 1159, 2, 1.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (473, 'aldesleukin', 'Proleukin', 'Prometheus Laboratories Inc.', '2032-03-17', 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
+
+Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', 343.07, 3781, 3, 4.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (474, 'Dextrose Monohydrate, Sodium Chloride, Sodium Lactate, Calcium Chloride, Magnesium Chloride', 'DELFLEX', 'Fresenius Medical Care North America', '2029-07-05', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', 35.16, 3217, 7, 4.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (475, 'EMTRICITABINE', 'Emtriva', 'Gilead Sciences, Inc.', '2031-12-13', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 36.48, 707, 2, 3.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (476, 'levothyroxine sodium', 'Levothyroxine Sodium', 'Mylan Pharmaceuticals Inc.', '2028-06-25', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', 244.76, 1171, 1, 1.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (477, 'Rat Epithelium', 'Rat Epithelium', 'Nelco Laboratories, Inc.', '2031-07-07', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', 40.99, 52, 5, 2.3);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (478, 'FUROSEMIDE', 'FUROSEMIDE', 'STAT Rx USA LLC', '2025-12-01', 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.
+
+Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
+
+Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', 44.94, 1644, 7, 4.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (479, 'Carbamazepine', 'Carbamazepine', 'Apotex Corp.', '2022-12-04', 'In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.', 85.01, 380, 1, 2.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (480, 'Citalopram Hydrobromide', 'Citalopram', 'Aurobindo Pharma Limited', '2023-12-16', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.
+
+Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.
+
+Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.', 141.14, 433, 6, 3.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (481, 'HOMOSALATE, OCTISALATE, AVOBENZONE, OCTOCRYLENE', 'BRIGHTER BY NATURE', 'ORIGINS NATURAL RESOURCES INC', '2034-12-03', 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 348.32, 1651, 2, 2.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (482, 'CALCIUM CHLORIDE', 'Calcium Chloride', 'Hospira, Inc.', '2030-09-14', 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.', 181.36, 3879, 5, 1.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (483, 'OCTINOXATE, TITANIUM DIOXIDE, and ZINC OXIDE', 'Sulwhasoo Lumitouch', 'AMOREPACIFIC CO.', '2029-07-16', 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', 112.98, 3930, 3, 3.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (484, 'VANCOMYCIN HYDROCHLORIDE', 'Vancomycin Hydrochloride', 'APP Pharmaceuticals, LLC', '2034-11-27', 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.
+
+Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', 353.09, 3860, 9, 2.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (485, 'Rough Pigweed', 'Rough Pigweed', 'Nelco Laboratories, Inc.', '2023-09-15', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+
+In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 272.13, 1540, 8, 3.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (486, 'cysteamine bitartrate', 'Cystagon', 'Mylan Pharmaceuticals Inc.', '2022-11-23', 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+
+In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 214.13, 2615, 8, 4.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (487, 'Ethyl Alcohol', 'Shopko Antibacterial Hand Sanitizer', 'Jets, Sets, & Elephants Beauty Corp.', '2026-04-22', 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.
+
+Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.
+
+In congue. Etiam justo. Etiam pretium iaculis justo.
+
+In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', 48.61, 1927, 8, 1.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (488, 'pravastatin sodium', 'pravastatin sodium', 'American Health Packaging', '2024-10-05', 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.
+
+In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.
+
+Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.
+
+Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.
+
+Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.', 168.18, 3348, 3, 2.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (489, 'GUINEA PIG EPITHELIA', 'CAVIA PORCELLUS SKIN', 'ALK-Abello, Inc.', '2030-09-24', 'Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 280.38, 2383, 7, 1.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (490, 'Calendula', 'PharMax Heal', 'Seroyal USA', '2032-03-02', 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.
+
+Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.
+
+Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', 96.62, 366, 1, 2.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (491, 'Ibandronate sodium', 'Ibandronate sodium', 'Heritage Pharmaceuticals Inc.', '2022-10-21', 'Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.
+
+Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', 345.33, 3576, 9, 2.4);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (492, 'Voriconazole', 'Voriconazole', 'Sandoz Inc', '2025-09-27', 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
+
+Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.
+
+Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.
+
+Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.
+
+Phasellus in felis. Donec semper sapien a libero. Nam dui.', 335.8, 2167, 3, 2.0);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (493, 'losartan potassium', 'Losartan Potassium', 'Sandoz Inc.', '2034-11-03', 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.
+
+Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.
+
+Sed ante. Vivamus tortor. Duis mattis egestas metus.', 47.06, 921, 9, 2.2);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (494, 'Ponderosa Pine', 'Ponderosa Pine', 'Nelco Laboratories, Inc.', '2033-07-14', 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.
+
+Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', 182.32, 3853, 6, 1.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (495, 'Propylene Glycol', 'Artificial Tears', 'Rite Aid Corporation', '2033-04-16', 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.
+
+Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
+
+Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.
+
+Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 116.14, 720, 4, 2.1);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (496, 'Ketorolac Tromethamine', 'Ketorolac Tromethamine', 'PD-Rx Pharmaceuticals, Inc.', '2030-02-09', 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.
+
+Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.
+
+Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.
+
+In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', 24.6, 2512, 9, 4.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (497, 'Finasteride', 'Finasteride', 'Aurobindo Pharma Limited', '2033-08-05', 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.
+
+Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', 387.14, 2791, 7, 2.5);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (498, 'Duck Feathers', 'Duck Feathers', 'Nelco Laboratories, Inc.', '2022-08-04', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.
+
+Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.
+
+Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.
+
+Fusce consequat. Nulla nisl. Nunc nisl.', 4.39, 1704, 1, 3.8);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (499, 'Clomiphene Citrate', 'Clomiphene Citrate', 'Physicians Total Care, Inc.', '2027-04-12', 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.
+
+Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.
+
+Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+
+Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.
+
+Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', 308.59, 2980, 6, 2.9);
+insert into product (id, drugname, brand, manufacturer, expireDate, description, price, votes, categoryId, rating) values (500, 'Clorazepate Dipotassium', 'Clorazepate Dipotassium', 'Contract Pharmacy Services-PA', '2032-09-02', 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.
+
+Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.', 339.43, 2492, 7, 2.8);
+
 
 create table productPicture (
 	id INT NOT NULL AUTO_INCREMENT,
@@ -932,406 +3212,2006 @@ create table productPicture (
 	PRIMARY KEY (id),
 	FOREIGN KEY (productId) REFERENCES product(id)
 );
-insert into productPicture (id, productId, picture) values (1, 39, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (2, 108, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (3, 35, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (4, 108, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (5, 9, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (6, 58, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (7, 5, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (8, 54, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (9, 50, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (10, 72, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (11, 21, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (12, 135, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (13, 145, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (14, 139, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (15, 88, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (16, 81, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (17, 113, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (18, 72, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (19, 55, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (20, 121, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (21, 75, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (22, 148, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (23, 103, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (24, 144, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (25, 31, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (26, 93, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (27, 86, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (28, 59, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (29, 6, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (30, 87, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (31, 136, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (32, 148, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (33, 112, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (34, 81, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (35, 89, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (36, 71, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (37, 11, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (38, 146, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (39, 76, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (40, 106, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (41, 99, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (42, 49, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (43, 31, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (44, 76, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (45, 20, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (46, 105, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (47, 123, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (48, 75, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (49, 118, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (50, 51, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (51, 135, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (52, 70, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (53, 150, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (54, 115, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (55, 1, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (56, 45, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (57, 59, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (58, 139, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (59, 11, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (60, 112, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (61, 92, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (62, 106, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (63, 90, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (64, 36, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (65, 122, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (66, 45, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (67, 138, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (68, 76, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (69, 76, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (70, 131, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (71, 35, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (72, 48, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (73, 79, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (74, 144, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (75, 37, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (76, 24, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (77, 7, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (78, 50, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (79, 145, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (80, 10, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (81, 35, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (82, 29, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (83, 39, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (84, 116, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (85, 41, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (86, 28, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (87, 39, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (88, 5, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (89, 28, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (90, 1, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (91, 105, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (92, 65, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (93, 75, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (94, 85, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (95, 88, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (96, 133, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (97, 82, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (98, 67, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (99, 19, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (100, 47, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (101, 138, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (102, 105, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (103, 86, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (104, 56, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (105, 2, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (106, 6, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (107, 65, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (108, 148, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (109, 100, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (110, 67, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (111, 67, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (112, 90, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (113, 55, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (114, 99, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (115, 38, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (116, 16, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (117, 138, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (118, 50, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (119, 56, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (120, 119, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (121, 16, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (122, 146, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (123, 14, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (124, 78, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (125, 126, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (126, 134, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (127, 114, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (128, 20, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (129, 14, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (130, 70, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (131, 102, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (132, 37, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (133, 67, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (134, 24, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (135, 17, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (136, 62, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (137, 144, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (138, 45, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (139, 27, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (140, 29, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (141, 79, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (142, 125, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (143, 112, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (144, 17, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (145, 44, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (146, 123, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (147, 7, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (148, 66, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (149, 4, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (150, 132, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (151, 104, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (152, 104, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (153, 56, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (154, 25, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (155, 80, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (156, 55, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (157, 37, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (158, 93, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (159, 140, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (160, 23, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (161, 70, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (162, 150, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (163, 9, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (164, 49, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (165, 85, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (166, 128, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (167, 83, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (168, 46, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (169, 131, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (170, 74, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (171, 133, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (172, 26, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (173, 25, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (174, 89, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (175, 115, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (176, 32, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (177, 139, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (178, 27, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (179, 126, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (180, 26, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (181, 97, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (182, 92, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (183, 41, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (184, 115, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (185, 52, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (186, 138, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (187, 88, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (188, 7, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (189, 146, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (190, 125, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (191, 52, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (192, 6, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (193, 75, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (194, 150, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (195, 91, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (196, 133, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (197, 96, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (198, 104, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (199, 127, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (200, 66, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (201, 39, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (202, 131, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (203, 106, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (204, 48, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (205, 47, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (206, 37, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (207, 23, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (208, 88, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (209, 81, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (210, 27, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (211, 105, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (212, 55, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (213, 82, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (214, 38, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (215, 98, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (216, 14, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (217, 101, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (218, 6, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (219, 90, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (220, 43, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (221, 19, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (222, 65, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (223, 19, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (224, 119, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (225, 92, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (226, 23, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (227, 71, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (228, 26, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (229, 73, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (230, 145, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (231, 83, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (232, 143, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (233, 43, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (234, 97, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (235, 80, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (236, 87, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (237, 43, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (238, 110, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (239, 93, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (240, 35, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (241, 32, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (242, 50, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (243, 42, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (244, 101, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (245, 27, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (246, 105, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (247, 95, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (248, 37, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (249, 69, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (250, 104, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (251, 95, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (252, 122, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (253, 92, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (254, 43, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (255, 106, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (256, 143, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (257, 67, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (258, 92, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (259, 36, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (260, 90, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (261, 2, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (262, 53, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (263, 135, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (264, 120, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (265, 76, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (266, 122, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (267, 59, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (268, 140, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (269, 66, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (270, 99, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (271, 105, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (272, 132, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (273, 64, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (274, 86, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (275, 117, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (276, 107, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (277, 18, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (278, 19, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (279, 105, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (280, 143, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (281, 106, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (282, 117, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (283, 19, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (284, 111, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (285, 35, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (286, 66, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (287, 79, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (288, 121, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (289, 72, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (290, 84, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (291, 78, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (292, 6, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (293, 27, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (294, 100, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (295, 83, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (296, 102, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (297, 52, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (298, 114, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (299, 84, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (300, 76, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (301, 100, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (302, 134, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (303, 117, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (304, 143, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (305, 21, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (306, 105, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (307, 82, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (308, 138, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (309, 128, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (310, 95, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (311, 89, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (312, 108, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (313, 45, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (314, 77, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (315, 77, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (316, 102, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (317, 135, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (318, 71, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (319, 129, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (320, 136, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (321, 76, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (322, 110, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (323, 92, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (324, 121, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (325, 46, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (326, 49, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (327, 48, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (328, 148, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (329, 138, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (330, 4, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (331, 15, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (332, 34, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (333, 20, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (334, 129, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (335, 5, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (336, 48, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (337, 34, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (338, 102, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (339, 129, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (340, 140, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (341, 119, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (342, 127, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (343, 98, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (344, 119, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (345, 114, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (346, 99, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (347, 78, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (348, 61, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (349, 82, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (350, 13, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (351, 70, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (352, 121, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (353, 88, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (354, 56, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (355, 139, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (356, 91, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (357, 105, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (358, 1, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (359, 21, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (360, 111, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (361, 68, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (362, 7, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (363, 21, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (364, 12, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (365, 69, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (366, 68, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (367, 91, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (368, 44, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (369, 98, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (370, 80, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (371, 22, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (372, 14, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (373, 108, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (374, 57, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (375, 102, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (376, 53, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (377, 79, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (378, 124, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (379, 113, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (380, 127, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (381, 114, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (382, 39, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (383, 99, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (384, 18, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (385, 58, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (386, 53, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (387, 1, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (388, 122, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (389, 31, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (390, 45, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (391, 103, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (392, 30, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (393, 144, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (394, 24, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (395, 66, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (396, 2, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (397, 136, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (398, 115, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (399, 126, 'http://dummyimage.com/200x200.png');
-insert into productPicture (id, productId, picture) values (400, 141, 'http://dummyimage.com/200x200.png');
+insert into productPicture (id, productId, picture) values (1, 1, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (2, 1, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (3, 1, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (4, 1, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (5, 2, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (6, 2, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (7, 2, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (8, 2, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (9, 3, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (10, 3, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (11, 3, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (12, 3, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (13, 4, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (14, 4, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (15, 4, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (16, 4, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (17, 5, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (18, 5, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (19, 5, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (20, 5, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (21, 6, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (22, 6, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (23, 6, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (24, 6, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (25, 7, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (26, 7, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (27, 7, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (28, 7, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (29, 8, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (30, 8, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (31, 8, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (32, 8, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (33, 9, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (34, 9, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (35, 9, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (36, 9, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (37, 10, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (38, 10, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (39, 10, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (40, 10, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (41, 11, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (42, 11, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (43, 11, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (44, 11, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (45, 12, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (46, 12, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (47, 12, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (48, 12, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (49, 13, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (50, 13, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (51, 13, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (52, 13, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (53, 14, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (54, 14, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (55, 14, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (56, 14, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (57, 15, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (58, 15, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (59, 15, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (60, 15, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (61, 16, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (62, 16, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (63, 16, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (64, 16, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (65, 17, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (66, 17, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (67, 17, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (68, 17, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (69, 18, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (70, 18, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (71, 18, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (72, 18, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (73, 19, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (74, 19, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (75, 19, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (76, 19, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (77, 20, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (78, 20, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (79, 20, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (80, 20, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (81, 21, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (82, 21, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (83, 21, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (84, 21, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (85, 22, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (86, 22, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (87, 22, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (88, 22, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (89, 23, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (90, 23, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (91, 23, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (92, 23, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (93, 24, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (94, 24, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (95, 24, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (96, 24, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (97, 25, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (98, 25, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (99, 25, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (100, 25, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (101, 26, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (102, 26, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (103, 26, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (104, 26, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (105, 27, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (106, 27, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (107, 27, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (108, 27, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (109, 28, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (110, 28, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (111, 28, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (112, 28, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (113, 29, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (114, 29, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (115, 29, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (116, 29, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (117, 30, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (118, 30, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (119, 30, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (120, 30, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (121, 31, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (122, 31, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (123, 31, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (124, 31, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (125, 32, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (126, 32, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (127, 32, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (128, 32, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (129, 33, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (130, 33, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (131, 33, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (132, 33, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (133, 34, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (134, 34, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (135, 34, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (136, 34, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (137, 35, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (138, 35, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (139, 35, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (140, 35, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (141, 36, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (142, 36, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (143, 36, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (144, 36, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (145, 37, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (146, 37, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (147, 37, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (148, 37, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (149, 38, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (150, 38, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (151, 38, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (152, 38, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (153, 39, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (154, 39, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (155, 39, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (156, 39, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (157, 40, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (158, 40, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (159, 40, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (160, 40, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (161, 41, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (162, 41, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (163, 41, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (164, 41, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (165, 42, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (166, 42, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (167, 42, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (168, 42, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (169, 43, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (170, 43, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (171, 43, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (172, 43, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (173, 44, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (174, 44, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (175, 44, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (176, 44, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (177, 45, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (178, 45, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (179, 45, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (180, 45, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (181, 46, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (182, 46, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (183, 46, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (184, 46, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (185, 47, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (186, 47, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (187, 47, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (188, 47, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (189, 48, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (190, 48, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (191, 48, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (192, 48, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (193, 49, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (194, 49, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (195, 49, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (196, 49, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (197, 50, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (198, 50, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (199, 50, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (200, 50, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (201, 51, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (202, 51, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (203, 51, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (204, 51, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (205, 52, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (206, 52, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (207, 52, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (208, 52, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (209, 53, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (210, 53, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (211, 53, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (212, 53, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (213, 54, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (214, 54, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (215, 54, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (216, 54, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (217, 55, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (218, 55, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (219, 55, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (220, 55, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (221, 56, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (222, 56, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (223, 56, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (224, 56, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (225, 57, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (226, 57, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (227, 57, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (228, 57, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (229, 58, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (230, 58, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (231, 58, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (232, 58, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (233, 59, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (234, 59, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (235, 59, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (236, 59, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (237, 60, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (238, 60, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (239, 60, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (240, 60, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (241, 61, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (242, 61, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (243, 61, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (244, 61, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (245, 62, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (246, 62, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (247, 62, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (248, 62, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (249, 63, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (250, 63, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (251, 63, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (252, 63, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (253, 64, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (254, 64, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (255, 64, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (256, 64, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (257, 65, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (258, 65, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (259, 65, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (260, 65, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (261, 66, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (262, 66, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (263, 66, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (264, 66, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (265, 67, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (266, 67, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (267, 67, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (268, 67, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (269, 68, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (270, 68, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (271, 68, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (272, 68, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (273, 69, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (274, 69, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (275, 69, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (276, 69, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (277, 70, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (278, 70, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (279, 70, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (280, 70, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (281, 71, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (282, 71, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (283, 71, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (284, 71, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (285, 72, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (286, 72, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (287, 72, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (288, 72, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (289, 73, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (290, 73, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (291, 73, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (292, 73, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (293, 74, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (294, 74, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (295, 74, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (296, 74, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (297, 75, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (298, 75, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (299, 75, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (300, 75, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (301, 76, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (302, 76, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (303, 76, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (304, 76, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (305, 77, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (306, 77, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (307, 77, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (308, 77, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (309, 78, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (310, 78, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (311, 78, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (312, 78, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (313, 79, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (314, 79, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (315, 79, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (316, 79, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (317, 80, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (318, 80, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (319, 80, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (320, 80, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (321, 81, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (322, 81, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (323, 81, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (324, 81, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (325, 82, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (326, 82, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (327, 82, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (328, 82, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (329, 83, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (330, 83, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (331, 83, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (332, 83, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (333, 84, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (334, 84, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (335, 84, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (336, 84, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (337, 85, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (338, 85, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (339, 85, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (340, 85, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (341, 86, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (342, 86, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (343, 86, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (344, 86, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (345, 87, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (346, 87, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (347, 87, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (348, 87, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (349, 88, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (350, 88, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (351, 88, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (352, 88, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (353, 89, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (354, 89, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (355, 89, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (356, 89, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (357, 90, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (358, 90, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (359, 90, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (360, 90, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (361, 91, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (362, 91, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (363, 91, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (364, 91, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (365, 92, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (366, 92, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (367, 92, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (368, 92, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (369, 93, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (370, 93, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (371, 93, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (372, 93, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (373, 94, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (374, 94, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (375, 94, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (376, 94, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (377, 95, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (378, 95, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (379, 95, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (380, 95, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (381, 96, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (382, 96, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (383, 96, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (384, 96, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (385, 97, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (386, 97, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (387, 97, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (388, 97, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (389, 98, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (390, 98, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (391, 98, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (392, 98, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (393, 99, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (394, 99, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (395, 99, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (396, 99, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (397, 100, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (398, 100, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (399, 100, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (400, 100, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (401, 101, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (402, 101, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (403, 101, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (404, 101, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (405, 102, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (406, 102, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (407, 102, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (408, 102, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (409, 103, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (410, 103, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (411, 103, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (412, 103, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (413, 104, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (414, 104, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (415, 104, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (416, 104, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (417, 105, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (418, 105, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (419, 105, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (420, 105, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (421, 106, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (422, 106, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (423, 106, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (424, 106, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (425, 107, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (426, 107, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (427, 107, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (428, 107, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (429, 108, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (430, 108, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (431, 108, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (432, 108, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (433, 109, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (434, 109, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (435, 109, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (436, 109, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (437, 110, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (438, 110, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (439, 110, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (440, 110, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (441, 111, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (442, 111, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (443, 111, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (444, 111, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (445, 112, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (446, 112, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (447, 112, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (448, 112, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (449, 113, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (450, 113, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (451, 113, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (452, 113, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (453, 114, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (454, 114, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (455, 114, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (456, 114, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (457, 115, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (458, 115, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (459, 115, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (460, 115, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (461, 116, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (462, 116, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (463, 116, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (464, 116, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (465, 117, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (466, 117, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (467, 117, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (468, 117, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (469, 118, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (470, 118, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (471, 118, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (472, 118, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (473, 119, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (474, 119, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (475, 119, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (476, 119, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (477, 120, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (478, 120, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (479, 120, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (480, 120, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (481, 121, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (482, 121, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (483, 121, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (484, 121, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (485, 122, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (486, 122, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (487, 122, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (488, 122, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (489, 123, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (490, 123, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (491, 123, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (492, 123, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (493, 124, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (494, 124, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (495, 124, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (496, 124, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (497, 125, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (498, 125, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (499, 125, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (500, 125, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (501, 126, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (502, 126, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (503, 126, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (504, 126, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (505, 127, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (506, 127, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (507, 127, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (508, 127, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (509, 128, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (510, 128, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (511, 128, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (512, 128, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (513, 129, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (514, 129, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (515, 129, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (516, 129, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (517, 130, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (518, 130, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (519, 130, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (520, 130, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (521, 131, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (522, 131, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (523, 131, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (524, 131, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (525, 132, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (526, 132, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (527, 132, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (528, 132, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (529, 133, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (530, 133, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (531, 133, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (532, 133, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (533, 134, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (534, 134, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (535, 134, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (536, 134, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (537, 135, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (538, 135, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (539, 135, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (540, 135, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (541, 136, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (542, 136, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (543, 136, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (544, 136, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (545, 137, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (546, 137, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (547, 137, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (548, 137, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (549, 138, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (550, 138, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (551, 138, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (552, 138, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (553, 139, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (554, 139, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (555, 139, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (556, 139, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (557, 140, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (558, 140, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (559, 140, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (560, 140, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (561, 141, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (562, 141, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (563, 141, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (564, 141, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (565, 142, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (566, 142, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (567, 142, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (568, 142, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (569, 143, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (570, 143, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (571, 143, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (572, 143, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (573, 144, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (574, 144, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (575, 144, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (576, 144, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (577, 145, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (578, 145, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (579, 145, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (580, 145, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (581, 146, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (582, 146, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (583, 146, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (584, 146, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (585, 147, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (586, 147, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (587, 147, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (588, 147, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (589, 148, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (590, 148, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (591, 148, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (592, 148, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (593, 149, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (594, 149, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (595, 149, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (596, 149, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (597, 150, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (598, 150, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (599, 150, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (600, 150, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (601, 151, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (602, 151, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (603, 151, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (604, 151, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (605, 152, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (606, 152, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (607, 152, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (608, 152, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (609, 153, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (610, 153, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (611, 153, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (612, 153, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (613, 154, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (614, 154, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (615, 154, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (616, 154, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (617, 155, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (618, 155, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (619, 155, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (620, 155, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (621, 156, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (622, 156, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (623, 156, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (624, 156, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (625, 157, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (626, 157, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (627, 157, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (628, 157, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (629, 158, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (630, 158, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (631, 158, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (632, 158, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (633, 159, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (634, 159, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (635, 159, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (636, 159, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (637, 160, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (638, 160, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (639, 160, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (640, 160, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (641, 161, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (642, 161, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (643, 161, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (644, 161, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (645, 162, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (646, 162, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (647, 162, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (648, 162, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (649, 163, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (650, 163, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (651, 163, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (652, 163, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (653, 164, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (654, 164, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (655, 164, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (656, 164, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (657, 165, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (658, 165, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (659, 165, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (660, 165, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (661, 166, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (662, 166, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (663, 166, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (664, 166, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (665, 167, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (666, 167, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (667, 167, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (668, 167, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (669, 168, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (670, 168, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (671, 168, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (672, 168, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (673, 169, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (674, 169, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (675, 169, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (676, 169, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (677, 170, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (678, 170, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (679, 170, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (680, 170, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (681, 171, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (682, 171, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (683, 171, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (684, 171, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (685, 172, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (686, 172, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (687, 172, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (688, 172, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (689, 173, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (690, 173, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (691, 173, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (692, 173, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (693, 174, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (694, 174, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (695, 174, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (696, 174, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (697, 175, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (698, 175, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (699, 175, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (700, 175, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (701, 176, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (702, 176, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (703, 176, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (704, 176, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (705, 177, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (706, 177, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (707, 177, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (708, 177, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (709, 178, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (710, 178, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (711, 178, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (712, 178, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (713, 179, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (714, 179, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (715, 179, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (716, 179, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (717, 180, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (718, 180, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (719, 180, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (720, 180, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (721, 181, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (722, 181, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (723, 181, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (724, 181, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (725, 182, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (726, 182, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (727, 182, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (728, 182, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (729, 183, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (730, 183, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (731, 183, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (732, 183, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (733, 184, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (734, 184, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (735, 184, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (736, 184, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (737, 185, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (738, 185, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (739, 185, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (740, 185, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (741, 186, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (742, 186, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (743, 186, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (744, 186, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (745, 187, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (746, 187, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (747, 187, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (748, 187, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (749, 188, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (750, 188, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (751, 188, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (752, 188, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (753, 189, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (754, 189, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (755, 189, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (756, 189, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (757, 190, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (758, 190, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (759, 190, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (760, 190, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (761, 191, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (762, 191, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (763, 191, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (764, 191, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (765, 192, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (766, 192, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (767, 192, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (768, 192, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (769, 193, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (770, 193, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (771, 193, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (772, 193, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (773, 194, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (774, 194, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (775, 194, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (776, 194, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (777, 195, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (778, 195, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (779, 195, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (780, 195, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (781, 196, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (782, 196, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (783, 196, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (784, 196, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (785, 197, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (786, 197, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (787, 197, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (788, 197, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (789, 198, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (790, 198, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (791, 198, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (792, 198, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (793, 199, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (794, 199, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (795, 199, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (796, 199, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (797, 200, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (798, 200, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (799, 200, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (800, 200, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (801, 201, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (802, 201, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (803, 201, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (804, 201, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (805, 202, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (806, 202, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (807, 202, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (808, 202, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (809, 203, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (810, 203, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (811, 203, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (812, 203, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (813, 204, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (814, 204, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (815, 204, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (816, 204, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (817, 205, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (818, 205, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (819, 205, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (820, 205, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (821, 206, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (822, 206, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (823, 206, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (824, 206, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (825, 207, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (826, 207, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (827, 207, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (828, 207, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (829, 208, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (830, 208, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (831, 208, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (832, 208, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (833, 209, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (834, 209, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (835, 209, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (836, 209, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (837, 210, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (838, 210, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (839, 210, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (840, 210, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (841, 211, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (842, 211, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (843, 211, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (844, 211, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (845, 212, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (846, 212, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (847, 212, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (848, 212, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (849, 213, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (850, 213, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (851, 213, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (852, 213, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (853, 214, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (854, 214, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (855, 214, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (856, 214, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (857, 215, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (858, 215, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (859, 215, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (860, 215, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (861, 216, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (862, 216, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (863, 216, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (864, 216, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (865, 217, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (866, 217, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (867, 217, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (868, 217, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (869, 218, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (870, 218, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (871, 218, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (872, 218, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (873, 219, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (874, 219, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (875, 219, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (876, 219, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (877, 220, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (878, 220, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (879, 220, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (880, 220, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (881, 221, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (882, 221, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (883, 221, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (884, 221, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (885, 222, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (886, 222, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (887, 222, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (888, 222, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (889, 223, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (890, 223, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (891, 223, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (892, 223, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (893, 224, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (894, 224, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (895, 224, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (896, 224, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (897, 225, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (898, 225, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (899, 225, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (900, 225, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (901, 226, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (902, 226, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (903, 226, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (904, 226, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (905, 227, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (906, 227, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (907, 227, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (908, 227, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (909, 228, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (910, 228, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (911, 228, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (912, 228, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (913, 229, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (914, 229, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (915, 229, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (916, 229, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (917, 230, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (918, 230, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (919, 230, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (920, 230, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (921, 231, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (922, 231, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (923, 231, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (924, 231, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (925, 232, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (926, 232, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (927, 232, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (928, 232, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (929, 233, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (930, 233, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (931, 233, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (932, 233, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (933, 234, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (934, 234, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (935, 234, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (936, 234, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (937, 235, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (938, 235, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (939, 235, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (940, 235, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (941, 236, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (942, 236, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (943, 236, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (944, 236, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (945, 237, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (946, 237, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (947, 237, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (948, 237, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (949, 238, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (950, 238, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (951, 238, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (952, 238, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (953, 239, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (954, 239, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (955, 239, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (956, 239, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (957, 240, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (958, 240, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (959, 240, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (960, 240, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (961, 241, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (962, 241, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (963, 241, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (964, 241, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (965, 242, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (966, 242, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (967, 242, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (968, 242, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (969, 243, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (970, 243, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (971, 243, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (972, 243, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (973, 244, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (974, 244, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (975, 244, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (976, 244, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (977, 245, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (978, 245, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (979, 245, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (980, 245, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (981, 246, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (982, 246, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (983, 246, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (984, 246, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (985, 247, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (986, 247, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (987, 247, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (988, 247, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (989, 248, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (990, 248, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (991, 248, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (992, 248, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (993, 249, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (994, 249, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (995, 249, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (996, 249, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (997, 250, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (998, 250, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (999, 250, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1000, 250, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1001, 251, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1002, 251, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1003, 251, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1004, 251, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1005, 252, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1006, 252, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1007, 252, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1008, 252, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1009, 253, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1010, 253, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1011, 253, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1012, 253, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1013, 254, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1014, 254, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1015, 254, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1016, 254, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1017, 255, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1018, 255, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1019, 255, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1020, 255, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1021, 256, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1022, 256, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1023, 256, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1024, 256, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1025, 257, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1026, 257, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1027, 257, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1028, 257, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1029, 258, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1030, 258, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1031, 258, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1032, 258, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1033, 259, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1034, 259, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1035, 259, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1036, 259, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1037, 260, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1038, 260, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1039, 260, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1040, 260, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1041, 261, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1042, 261, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1043, 261, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1044, 261, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1045, 262, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1046, 262, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1047, 262, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1048, 262, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1049, 263, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1050, 263, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1051, 263, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1052, 263, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1053, 264, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1054, 264, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1055, 264, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1056, 264, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1057, 265, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1058, 265, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1059, 265, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1060, 265, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1061, 266, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1062, 266, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1063, 266, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1064, 266, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1065, 267, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1066, 267, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1067, 267, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1068, 267, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1069, 268, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1070, 268, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1071, 268, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1072, 268, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1073, 269, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1074, 269, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1075, 269, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1076, 269, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1077, 270, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1078, 270, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1079, 270, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1080, 270, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1081, 271, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1082, 271, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1083, 271, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1084, 271, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1085, 272, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1086, 272, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1087, 272, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1088, 272, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1089, 273, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1090, 273, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1091, 273, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1092, 273, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1093, 274, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1094, 274, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1095, 274, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1096, 274, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1097, 275, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1098, 275, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1099, 275, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1100, 275, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1101, 276, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1102, 276, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1103, 276, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1104, 276, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1105, 277, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1106, 277, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1107, 277, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1108, 277, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1109, 278, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1110, 278, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1111, 278, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1112, 278, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1113, 279, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1114, 279, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1115, 279, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1116, 279, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1117, 280, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1118, 280, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1119, 280, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1120, 280, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1121, 281, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1122, 281, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1123, 281, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1124, 281, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1125, 282, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1126, 282, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1127, 282, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1128, 282, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1129, 283, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1130, 283, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1131, 283, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1132, 283, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1133, 284, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1134, 284, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1135, 284, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1136, 284, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1137, 285, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1138, 285, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1139, 285, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1140, 285, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1141, 286, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1142, 286, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1143, 286, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1144, 286, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1145, 287, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1146, 287, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1147, 287, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1148, 287, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1149, 288, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1150, 288, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1151, 288, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1152, 288, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1153, 289, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1154, 289, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1155, 289, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1156, 289, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1157, 290, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1158, 290, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1159, 290, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1160, 290, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1161, 291, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1162, 291, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1163, 291, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1164, 291, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1165, 292, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1166, 292, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1167, 292, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1168, 292, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1169, 293, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1170, 293, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1171, 293, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1172, 293, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1173, 294, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1174, 294, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1175, 294, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1176, 294, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1177, 295, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1178, 295, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1179, 295, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1180, 295, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1181, 296, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1182, 296, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1183, 296, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1184, 296, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1185, 297, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1186, 297, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1187, 297, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1188, 297, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1189, 298, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1190, 298, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1191, 298, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1192, 298, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1193, 299, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1194, 299, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1195, 299, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1196, 299, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1197, 300, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1198, 300, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1199, 300, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1200, 300, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1201, 301, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1202, 301, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1203, 301, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1204, 301, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1205, 302, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1206, 302, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1207, 302, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1208, 302, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1209, 303, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1210, 303, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1211, 303, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1212, 303, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1213, 304, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1214, 304, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1215, 304, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1216, 304, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1217, 305, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1218, 305, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1219, 305, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1220, 305, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1221, 306, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1222, 306, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1223, 306, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1224, 306, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1225, 307, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1226, 307, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1227, 307, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1228, 307, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1229, 308, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1230, 308, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1231, 308, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1232, 308, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1233, 309, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1234, 309, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1235, 309, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1236, 309, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1237, 310, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1238, 310, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1239, 310, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1240, 310, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1241, 311, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1242, 311, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1243, 311, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1244, 311, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1245, 312, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1246, 312, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1247, 312, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1248, 312, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1249, 313, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1250, 313, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1251, 313, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1252, 313, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1253, 314, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1254, 314, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1255, 314, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1256, 314, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1257, 315, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1258, 315, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1259, 315, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1260, 315, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1261, 316, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1262, 316, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1263, 316, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1264, 316, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1265, 317, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1266, 317, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1267, 317, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1268, 317, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1269, 318, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1270, 318, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1271, 318, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1272, 318, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1273, 319, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1274, 319, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1275, 319, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1276, 319, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1277, 320, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1278, 320, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1279, 320, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1280, 320, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1281, 321, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1282, 321, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1283, 321, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1284, 321, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1285, 322, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1286, 322, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1287, 322, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1288, 322, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1289, 323, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1290, 323, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1291, 323, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1292, 323, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1293, 324, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1294, 324, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1295, 324, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1296, 324, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1297, 325, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1298, 325, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1299, 325, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1300, 325, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1301, 326, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1302, 326, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1303, 326, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1304, 326, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1305, 327, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1306, 327, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1307, 327, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1308, 327, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1309, 328, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1310, 328, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1311, 328, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1312, 328, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1313, 329, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1314, 329, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1315, 329, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1316, 329, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1317, 330, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1318, 330, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1319, 330, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1320, 330, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1321, 331, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1322, 331, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1323, 331, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1324, 331, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1325, 332, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1326, 332, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1327, 332, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1328, 332, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1329, 333, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1330, 333, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1331, 333, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1332, 333, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1333, 334, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1334, 334, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1335, 334, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1336, 334, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1337, 335, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1338, 335, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1339, 335, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1340, 335, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1341, 336, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1342, 336, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1343, 336, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1344, 336, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1345, 337, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1346, 337, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1347, 337, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1348, 337, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1349, 338, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1350, 338, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1351, 338, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1352, 338, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1353, 339, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1354, 339, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1355, 339, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1356, 339, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1357, 340, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1358, 340, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1359, 340, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1360, 340, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1361, 341, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1362, 341, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1363, 341, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1364, 341, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1365, 342, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1366, 342, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1367, 342, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1368, 342, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1369, 343, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1370, 343, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1371, 343, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1372, 343, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1373, 344, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1374, 344, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1375, 344, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1376, 344, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1377, 345, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1378, 345, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1379, 345, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1380, 345, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1381, 346, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1382, 346, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1383, 346, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1384, 346, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1385, 347, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1386, 347, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1387, 347, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1388, 347, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1389, 348, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1390, 348, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1391, 348, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1392, 348, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1393, 349, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1394, 349, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1395, 349, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1396, 349, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1397, 350, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1398, 350, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1399, 350, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1400, 350, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1401, 351, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1402, 351, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1403, 351, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1404, 351, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1405, 352, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1406, 352, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1407, 352, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1408, 352, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1409, 353, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1410, 353, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1411, 353, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1412, 353, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1413, 354, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1414, 354, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1415, 354, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1416, 354, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1417, 355, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1418, 355, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1419, 355, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1420, 355, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1421, 356, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1422, 356, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1423, 356, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1424, 356, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1425, 357, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1426, 357, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1427, 357, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1428, 357, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1429, 358, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1430, 358, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1431, 358, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1432, 358, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1433, 359, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1434, 359, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1435, 359, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1436, 359, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1437, 360, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1438, 360, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1439, 360, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1440, 360, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1441, 361, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1442, 361, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1443, 361, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1444, 361, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1445, 362, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1446, 362, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1447, 362, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1448, 362, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1449, 363, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1450, 363, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1451, 363, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1452, 363, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1453, 364, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1454, 364, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1455, 364, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1456, 364, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1457, 365, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1458, 365, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1459, 365, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1460, 365, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1461, 366, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1462, 366, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1463, 366, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1464, 366, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1465, 367, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1466, 367, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1467, 367, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1468, 367, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1469, 368, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1470, 368, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1471, 368, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1472, 368, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1473, 369, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1474, 369, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1475, 369, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1476, 369, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1477, 370, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1478, 370, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1479, 370, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1480, 370, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1481, 371, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1482, 371, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1483, 371, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1484, 371, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1485, 372, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1486, 372, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1487, 372, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1488, 372, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1489, 373, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1490, 373, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1491, 373, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1492, 373, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1493, 374, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1494, 374, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1495, 374, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1496, 374, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1497, 375, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1498, 375, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1499, 375, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1500, 375, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1501, 376, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1502, 376, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1503, 376, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1504, 376, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1505, 377, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1506, 377, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1507, 377, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1508, 377, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1509, 378, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1510, 378, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1511, 378, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1512, 378, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1513, 379, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1514, 379, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1515, 379, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1516, 379, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1517, 380, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1518, 380, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1519, 380, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1520, 380, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1521, 381, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1522, 381, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1523, 381, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1524, 381, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1525, 382, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1526, 382, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1527, 382, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1528, 382, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1529, 383, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1530, 383, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1531, 383, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1532, 383, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1533, 384, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1534, 384, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1535, 384, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1536, 384, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1537, 385, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1538, 385, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1539, 385, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1540, 385, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1541, 386, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1542, 386, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1543, 386, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1544, 386, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1545, 387, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1546, 387, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1547, 387, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1548, 387, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1549, 388, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1550, 388, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1551, 388, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1552, 388, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1553, 389, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1554, 389, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1555, 389, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1556, 389, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1557, 390, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1558, 390, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1559, 390, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1560, 390, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1561, 391, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1562, 391, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1563, 391, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1564, 391, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1565, 392, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1566, 392, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1567, 392, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1568, 392, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1569, 393, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1570, 393, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1571, 393, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1572, 393, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1573, 394, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1574, 394, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1575, 394, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1576, 394, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1577, 395, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1578, 395, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1579, 395, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1580, 395, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1581, 396, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1582, 396, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1583, 396, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1584, 396, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1585, 397, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1586, 397, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1587, 397, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1588, 397, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1589, 398, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1590, 398, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1591, 398, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1592, 398, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1593, 399, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1594, 399, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1595, 399, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1596, 399, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1597, 400, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1598, 400, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1599, 400, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1600, 400, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1601, 401, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1602, 401, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1603, 401, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1604, 401, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1605, 402, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1606, 402, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1607, 402, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1608, 402, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1609, 403, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1610, 403, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1611, 403, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1612, 403, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1613, 404, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1614, 404, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1615, 404, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1616, 404, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1617, 405, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1618, 405, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1619, 405, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1620, 405, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1621, 406, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1622, 406, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1623, 406, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1624, 406, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1625, 407, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1626, 407, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1627, 407, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1628, 407, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1629, 408, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1630, 408, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1631, 408, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1632, 408, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1633, 409, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1634, 409, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1635, 409, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1636, 409, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1637, 410, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1638, 410, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1639, 410, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1640, 410, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1641, 411, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1642, 411, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1643, 411, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1644, 411, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1645, 412, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1646, 412, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1647, 412, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1648, 412, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1649, 413, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1650, 413, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1651, 413, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1652, 413, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1653, 414, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1654, 414, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1655, 414, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1656, 414, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1657, 415, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1658, 415, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1659, 415, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1660, 415, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1661, 416, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1662, 416, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1663, 416, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1664, 416, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1665, 417, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1666, 417, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1667, 417, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1668, 417, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1669, 418, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1670, 418, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1671, 418, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1672, 418, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1673, 419, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1674, 419, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1675, 419, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1676, 419, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1677, 420, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1678, 420, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1679, 420, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1680, 420, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1681, 421, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1682, 421, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1683, 421, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1684, 421, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1685, 422, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1686, 422, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1687, 422, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1688, 422, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1689, 423, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1690, 423, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1691, 423, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1692, 423, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1693, 424, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1694, 424, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1695, 424, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1696, 424, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1697, 425, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1698, 425, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1699, 425, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1700, 425, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1701, 426, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1702, 426, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1703, 426, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1704, 426, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1705, 427, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1706, 427, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1707, 427, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1708, 427, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1709, 428, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1710, 428, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1711, 428, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1712, 428, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1713, 429, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1714, 429, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1715, 429, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1716, 429, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1717, 430, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1718, 430, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1719, 430, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1720, 430, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1721, 431, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1722, 431, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1723, 431, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1724, 431, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1725, 432, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1726, 432, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1727, 432, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1728, 432, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1729, 433, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1730, 433, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1731, 433, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1732, 433, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1733, 434, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1734, 434, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1735, 434, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1736, 434, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1737, 435, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1738, 435, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1739, 435, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1740, 435, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1741, 436, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1742, 436, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1743, 436, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1744, 436, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1745, 437, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1746, 437, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1747, 437, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1748, 437, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1749, 438, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1750, 438, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1751, 438, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1752, 438, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1753, 439, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1754, 439, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1755, 439, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1756, 439, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1757, 440, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1758, 440, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1759, 440, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1760, 440, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1761, 441, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1762, 441, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1763, 441, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1764, 441, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1765, 442, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1766, 442, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1767, 442, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1768, 442, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1769, 443, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1770, 443, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1771, 443, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1772, 443, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1773, 444, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1774, 444, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1775, 444, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1776, 444, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1777, 445, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1778, 445, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1779, 445, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1780, 445, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1781, 446, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1782, 446, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1783, 446, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1784, 446, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1785, 447, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1786, 447, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1787, 447, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1788, 447, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1789, 448, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1790, 448, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1791, 448, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1792, 448, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1793, 449, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1794, 449, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1795, 449, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1796, 449, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1797, 450, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1798, 450, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1799, 450, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1800, 450, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1801, 451, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1802, 451, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1803, 451, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1804, 451, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1805, 452, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1806, 452, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1807, 452, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1808, 452, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1809, 453, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1810, 453, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1811, 453, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1812, 453, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1813, 454, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1814, 454, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1815, 454, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1816, 454, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1817, 455, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1818, 455, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1819, 455, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1820, 455, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1821, 456, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1822, 456, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1823, 456, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1824, 456, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1825, 457, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1826, 457, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1827, 457, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1828, 457, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1829, 458, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1830, 458, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1831, 458, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1832, 458, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1833, 459, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1834, 459, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1835, 459, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1836, 459, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1837, 460, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1838, 460, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1839, 460, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1840, 460, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1841, 461, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1842, 461, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1843, 461, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1844, 461, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1845, 462, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1846, 462, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1847, 462, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1848, 462, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1849, 463, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1850, 463, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1851, 463, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1852, 463, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1853, 464, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1854, 464, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1855, 464, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1856, 464, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1857, 465, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1858, 465, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1859, 465, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1860, 465, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1861, 466, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1862, 466, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1863, 466, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1864, 466, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1865, 467, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1866, 467, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1867, 467, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1868, 467, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1869, 468, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1870, 468, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1871, 468, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1872, 468, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1873, 469, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1874, 469, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1875, 469, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1876, 469, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1877, 470, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1878, 470, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1879, 470, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1880, 470, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1881, 471, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1882, 471, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1883, 471, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1884, 471, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1885, 472, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1886, 472, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1887, 472, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1888, 472, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1889, 473, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1890, 473, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1891, 473, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1892, 473, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1893, 474, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1894, 474, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1895, 474, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1896, 474, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1897, 475, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1898, 475, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1899, 475, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1900, 475, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1901, 476, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1902, 476, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1903, 476, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1904, 476, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1905, 477, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1906, 477, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1907, 477, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1908, 477, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1909, 478, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1910, 478, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1911, 478, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1912, 478, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1913, 479, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1914, 479, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1915, 479, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1916, 479, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1917, 480, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1918, 480, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1919, 480, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1920, 480, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1921, 481, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1922, 481, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1923, 481, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1924, 481, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1925, 482, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1926, 482, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1927, 482, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1928, 482, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1929, 483, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1930, 483, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1931, 483, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1932, 483, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1933, 484, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1934, 484, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1935, 484, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1936, 484, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1937, 485, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1938, 485, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1939, 485, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1940, 485, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1941, 486, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1942, 486, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1943, 486, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1944, 486, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1945, 487, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1946, 487, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1947, 487, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1948, 487, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1949, 488, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1950, 488, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1951, 488, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1952, 488, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1953, 489, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1954, 489, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1955, 489, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1956, 489, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1957, 490, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1958, 490, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1959, 490, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1960, 490, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1961, 491, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1962, 491, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1963, 491, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1964, 491, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1965, 492, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1966, 492, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1967, 492, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1968, 492, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1969, 493, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1970, 493, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1971, 493, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1972, 493, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1973, 494, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1974, 494, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1975, 494, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1976, 494, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1977, 495, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1978, 495, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1979, 495, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1980, 495, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1981, 496, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1982, 496, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1983, 496, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1984, 496, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1985, 497, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1986, 497, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1987, 497, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1988, 497, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1989, 498, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1990, 498, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1991, 498, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1992, 498, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1993, 499, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1994, 499, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1995, 499, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (1996, 499, 'https://dummyimage.com/200x200/fc6703/fff.png');
+insert into productPicture (id, productId, picture) values (1997, 500, 'https://dummyimage.com/200x200/f50810/fff.png');
+insert into productPicture (id, productId, picture) values (1998, 500, 'https://dummyimage.com/200x200/0a0af5/fff.png');
+insert into productPicture (id, productId, picture) values (1999, 500, 'https://dummyimage.com/200x200/014a0a/fff.png');
+insert into productPicture (id, productId, picture) values (2000, 500, 'https://dummyimage.com/200x200/fc6703/fff.png');
 
 CREATE TABLE orderPlaced (
     id INT NOT NULL AUTO_INCREMENT,
