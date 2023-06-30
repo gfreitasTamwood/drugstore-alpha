@@ -113,6 +113,7 @@ create table product (
 	expireDate DATE,
 	description TEXT,
 	price DECIMAL(5,2),
+	votes INT,
 	rating DECIMAL(2,1),
 	categoryId INT,
 	PRIMARY KEY (id),
