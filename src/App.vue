@@ -1,14 +1,23 @@
 <template>
+  <NavComponent />
+  <HeaderComponent />
   <HomePage :teamList="this.teamMembersList"/>
+  <FooterComponent />
 </template>
 
 <script>
+import NavComponent from './components/NavComponent.vue'
+import HeaderComponent from './components/HeaderComponent.vue'
 import HomePage from './components/pages/HomePage.vue'
+import FooterComponent from './components/FooterComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    HomePage
+    NavComponent,
+    HeaderComponent,
+    HomePage,
+    FooterComponent
   },
   data(){
     return {

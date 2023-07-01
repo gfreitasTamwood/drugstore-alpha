@@ -2,8 +2,8 @@
     <main class="page-homepage">
         <AboutComponent />
         <ServiceComponent />
-        <TeamMembers :teamMemberList="this.testList"/>
         <NewsLetter />
+        <TeamMembers :teamMemberList="this.testList"/>
     </main>
 </template>
 

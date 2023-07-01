@@ -21,7 +21,7 @@
             </p>
             <section class="member-social">
                 <a :href="`tel:+`+teamMember.phone"><i class="fa-sharp fa-solid fa-phone"></i></a>
-                <a :href="`mail:+`+teamMember.email"><i class="fa-sharp fa-solid fa-envelope"></i></a>
+                <a :href="`mailto:+`+teamMember.email"><i class="fa-sharp fa-solid fa-envelope"></i></a>
                 <a href="#"><i class="fa-regular fa-user"></i></a>
             </section>
         </figcaption>
