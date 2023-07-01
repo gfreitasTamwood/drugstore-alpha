@@ -18,6 +18,17 @@ export default {
     HeaderComponent,
     HomePage,
     FooterComponent,
+  },
+  data() {
+    return {
+      teamMembersList: []
+    }
+  },
+  methods: {
+
+  },
+  created() {
+
   }
 }
 </script>
