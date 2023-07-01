@@ -8,7 +8,12 @@ import HomePage from './components/pages/HomePageComponent/HomePage.vue'
 export default {
   name: 'App',
   components: {
-    HomePage
+    HomePage,
+  },
+  data() {
+    return {
+  
+    }
   }
 }
 </script>
