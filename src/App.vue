@@ -1,42 +1,14 @@
 <template>
-  <NavComponent />
-  <HeaderComponent />
   <HomePage :teamList="this.teamMembersList"/>
-  <FooterComponent />
 </template>
 
 <script>
-import NavComponent from './components/NavComponent.vue'
-import HeaderComponent from './components/HeaderComponent.vue'
 import HomePage from './components/pages/HomePage.vue'
-import FooterComponent from './components/FooterComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    NavComponent,
-    HeaderComponent,
-    HomePage,
-    FooterComponent
-  },
-  data(){
-    return {
-      teamMembersList: [],
-      apiMembers: "http://localhost:80/drugstore-alpha/src/api/rest/v0/members.php"
-    }
-  },
-  method: {
-    async getAllMembers() {
-      try {
-        let response = await fetch(this.apiMembers);
-        this.teamMembersList = await response.json();
-      } catch (error) {
-        console.log(error);
-      }
-    }
-  },
-  created() {
-    // this.getAllMembers();
+    HomePage
   }
 }
 </script>
