@@ -1,17 +1,24 @@
 <template>
+    <NavComponent :activeLink="{homeLink: true}"/>
+    <HeaderComponent />
     <main class="page-homepage">
         <AboutComponent />
         <ServiceComponent />
         <NewsLetter />
         <TeamMembers :teamMemberList="this.testList"/>
     </main>
+  <FooterComponent />
+  <router-view/>
 </template>
 
 <script>
+import NavComponent from './../NavComponent.vue'
+import HeaderComponent from './../HeaderComponent.vue'
 import AboutComponent from './../AboutComponent.vue'
 import ServiceComponent from './../ServiceComponent.vue'
 import TeamMembers from './../TeamMembers.vue'
 import NewsLetter from './../NewsLetter.vue'
+import FooterComponent from './../FooterComponent.vue'
 
 
 export default {
@@ -20,7 +27,10 @@ export default {
         AboutComponent,
         ServiceComponent,
         TeamMembers,
-        NewsLetter
+        NewsLetter,
+        NavComponent,
+        HeaderComponent,
+        FooterComponent,
     },
     data() {
         return {

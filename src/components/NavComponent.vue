@@ -11,10 +11,18 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <router-link to="/" class="nav-item nav-link active">Home</router-link>
-                        <router-link to="/product" class="nav-item nav-link">Product</router-link>
-                        <router-link to="/promotion" class="nav-item nav-link">Promotion</router-link>
-                        <router-link to="/contact" class="nav-item nav-link">Contact</router-link>     
+                        <router-link to="/" class="nav-item nav-link" :class="{'active': this.activeLink.homeLink}">
+                            Home
+                        </router-link>
+                        <router-link to="/product" class="nav-item nav-link" :class="{'active': this.activeLink.productLink}">
+                            Product
+                        </router-link>
+                        <router-link to="/promotion" class="nav-item nav-link" :class="{'active': this.activeLink.promotionLink}">
+                            Promotion
+                        </router-link>
+                        <router-link to="/contact" class="nav-item nav-link" :class="{'active': this.activeLink.contactLink}">
+                            Contact
+                        </router-link>     
                     </div>
                 </div>
             </nav>
@@ -25,6 +33,14 @@
 
 <script>
 export default {
-    name: "NavComponent"
+    name: "NavComponent",
+    props: {
+        activeLink: {
+            homeLink: Boolean,
+            productLink: Boolean,
+            promotionLink: Boolean,
+            contactLink: Boolean
+        },
+    },
 }
 </script>
