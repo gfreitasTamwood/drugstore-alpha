@@ -1,13 +1,19 @@
-import ProductPage from '../pages/ProductPage.vue';
+import HomePage from '../pages/HomePage.vue';
+import ProductGalleryPage from '../pages/ProductGalleryPage.vue';
 import PromotionPage from '../pages/PromotionPage.vue';
 import ContactPage from '../pages/ContactPage.vue';
 import {createRouter, createWebHistory} from 'vue-router';
 
 const routes = [
     {
+        path: "/",
+        name: "HomePage",
+        component: HomePage
+    },
+    {
         path: "/product",
-        name: "ProductPage",
-        component: ProductPage
+        name: "ProductGalleryPage",
+        component: ProductGalleryPage,
     },
     {
         path: "/promotion",
