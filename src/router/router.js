@@ -1,7 +1,7 @@
-import HomePage from '../pages/HomePage.vue';
-import ProductGalleryPage from '../pages/ProductGalleryPage.vue';
-import PromotionPage from '../pages/PromotionPage.vue';
-import ContactPage from '../pages/ContactPage.vue';
+import HomePage from './../components/pages/HomePage.vue';
+import ProductGalleryPage from './../components/pages/ProductGalleryPage.vue';
+import PromotionPage from './../components/pages/PromotionPage.vue';
+import ContactPage from './../components/pages/ContactPage.vue';
 import {createRouter, createWebHistory} from 'vue-router';
 
 const routes = [

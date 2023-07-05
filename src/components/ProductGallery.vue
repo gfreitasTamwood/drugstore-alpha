@@ -162,13 +162,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: 5rem;
-    padding: 5rem;
-    width: 80%;
+    padding: 3rem;
 }
 
 .product-gallery-list li {
     display: flex;
-    width: 20%;
+    width: 25%;
     justify-content: center;
 }
 
@@ -241,7 +240,6 @@
     column-gap: .5rem;
     align-items: center;
     justify-content: center;
-    width: 60%;
     align-self: center;
     background-color: #13C5DD;
     border: 0px none transparent;
