@@ -1,5 +1,5 @@
 <template>
-    <NavComponent :activeLink="{productLink: true}"/>
+    <NavComponent :cartLength="this.navCartLength" :activeLink="{productLink: true}"/>
     <HeaderComponent />
     <main class="page-product-gallery">
         <h1>
@@ -7,7 +7,7 @@
         </h1>
         <section>
             <ProductCategoriesAside :localCategoryList="this.categoryList"/>
-            <ProductGallery :localProductList="this.productList" />
+            <ProductGallery @updateCartListNav="updateNav" :localProductList="this.productList" />
         </section>
     </main>
     <FooterComponent />
@@ -33,6 +33,16 @@ import FooterComponent from './../FooterComponent.vue'
         props: {
             categoryList: [],
             productList: []
+        },
+        data() {
+            return {
+                navCartLength : 0,
+            }
+        },
+        methods: {
+            updateNav(e) {
+                this.navCartLength = e;
+            }
         }
     }
 </script>

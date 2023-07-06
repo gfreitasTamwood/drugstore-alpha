@@ -3,10 +3,10 @@
     <div class="container-fluid sticky-top bg-white shadow-sm">
         <div class="container nav-container">
             <!-- This should be a router link to redirect to cart page -->
-            <button class="cart-container">
+            <router-link to="/cart" class="cart-container">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <span>( {{ this.totalItems }} )</span>
-            </button>
+            </router-link>
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
                 <router-link to="/" class="nav-link navbar-brand" style="width: fit-content;">
                     <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-clinic-medical me-2"></i>Alpha Drugstore</h1>
@@ -42,11 +42,13 @@ import VueCookies from 'vue-cookies';
 export default {
     name: "NavComponent",
     props: {
+        cartLength : {},
         activeLink: {
             homeLink: Boolean,
             productLink: Boolean,
             promotionLink: Boolean,
-            contactLink: Boolean
+            contactLink: Boolean,
+            none: Boolean
         },
     },
     data() {
@@ -54,16 +56,19 @@ export default {
             totalItems: 0
         }
     },
-    methods: {
-        checkCartCookie() {
-            if(VueCookies.isKey("cart")) {
-                this.totalItems = VueCookies.get("cart").cartList.length;
+    watch: {
+        cartLength(newValue) {
+            if (newValue > 0) {
+                this.totalItems = newValue;
             }
         }
     },
-    created() {
-        this.checkCartCookie();
+    mounted() {
+        if(VueCookies.isKey("cart")) {
+            this.totalItems = VueCookies.get("cart").cartList.length;
+        }
     }
+    
 }
 </script>
 
@@ -88,5 +93,13 @@ export default {
     width: 10%;
     background-color: transparent;
     border: 0px none transparent;
+    text-decoration: none;
+    color: #052c65;
+    transition: .4s ease;
 }
+
+.cart-container:hover {
+    color: #13C5DD;
+}
+
 </style>

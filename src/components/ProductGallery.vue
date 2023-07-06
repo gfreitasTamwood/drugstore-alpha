@@ -1,7 +1,7 @@
 <template>
     <ul class="product-gallery-list">
-        <li v-for="product in localList" :key="product.id">
-            <ProductCard :item="product"/>
+        <li v-for="product in localList[0]" :key="product.id">
+            <ProductCard @updateNav="getCartListLength" :item="product"/>
         </li>
     </ul>
 </template>
@@ -19,90 +19,27 @@ import ProductCard from './ProductCard.vue'
         },
         data() {
             return {
-                localList: [
-                    {
-                        id: 1,
-                        drugname: "Ondansetron",
-                        brand: "Ondansetron",
-                        price: 269.66,
-                        category: 5,
-                        rating: 4.5,
-                        img: ""
-                    },
-                    {
-                        id: 2,
-                        drugname: "LEFLUNOMIDE",
-                        brand: "LEFLUNOMIDE",
-                        price: 344.33,
-                        category: 6,
-                        rating: 3.6,
-                        img: ""
-                    },
-                    {
-                        id: 3,
-                        drugname: "Phenylephrine Hydrochloride",
-                        brand: "Phenylephrine Hydrochloride",
-                        price: 62.78,
-                        category: 8,
-                        rating: 1.8,
-                        img: ""
-                    },
-                    {
-                        id: 4,
-                        drugname: "Ofloxacin",
-                        brand: "Ofloxacin",
-                        price: 351.13,
-                        category: 7,
-                        rating: 5,
-                        img: ""
-                    },
-                    {
-                        id: 5,
-                        drugname: "Technetium Tc-99m Generator",
-                        brand: "Ultra-TechneKow",
-                        price: 19.39,
-                        category: 3,
-                        rating: 3.3,
-                        img: ""
-                    },
-                    {
-                        id: 6,
-                        drugname: "Nicotine Polacrilex",
-                        brand: "leader nicotine",
-                        price: 227.8,
-                        category: 1,
-                        rating: 3.1,
-                        img: ""
-                    },
-                    {
-                        id: 7,
-                        drugname: "Chlordiazepoxide Hydrochloride",
-                        brand: "Chlordiazepoxide Hydrochloride",
-                        price: 13.62,
-                        category: 7,
-                        rating: 2.2,
-                        img: ""
-                    },
-                    {
-                        id: 8,
-                        drugname: "Homosalate and Octinoxate and Octisalate and Avobenzone and Octocrylene",
-                        brand: "Banana Boat Kids Tear Free Sunscreen SPF 60",
-                        price: 176.19,
-                        category: 2,
-                        rating: 2.3,
-                        img: ""
-                    },
-                    {
-                        id: 9,
-                        drugname: "Octinoxate",
-                        brand: "Lancome",
-                        price: 357.54,
-                        category: 9,
-                        rating: 1.2,
-                        img: ""
-                    },
-                ],
+                localList: [],
+                productApi: "http://localhost/drugstore-alpha/src/api/inc/Utilities/endpoint/product.php",
+                cartListLength : 0
             }
+        },
+        methods: {
+            async getAllProducts() {
+                try {
+                    let response = await fetch(this.productApi);
+                    this.localList = await response.json();
+                } catch(error) {
+                    console.error(error);
+                }
+            },
+            getCartListLength(e) {
+                this.cartListLength = e;
+                this.$emit("updateCartListNav",this.cartListLength);
+            }
+        },
+        created() {
+            this.getAllProducts();
         }
     }
 </script>

@@ -1,7 +1,8 @@
-import HomePage from './../components/pages/HomePage.vue';
-import ProductGalleryPage from './../components/pages/ProductGalleryPage.vue';
-import PromotionPage from './../components/pages/PromotionPage.vue';
-import ContactPage from './../components/pages/ContactPage.vue';
+import HomePage from '/src/components/pages/HomePage.vue';
+import ProductGalleryPage from '/src/components/pages/ProductGalleryPage.vue';
+import PromotionPage from '/src/components/pages/PromotionPage.vue';
+import ContactPage from '/src/components/pages/ContactPage.vue';
+import CartPage from '/src/components/pages/CartPage.vue';
 import {createRouter, createWebHistory} from 'vue-router';
 
 const routes = [
@@ -24,6 +25,11 @@ const routes = [
         path: "/contact",
         name: "ContactPage",
         component: ContactPage
+    },
+    {
+        path: "/cart",
+        name: "CartPage",
+        component: CartPage
     }
 ];
 

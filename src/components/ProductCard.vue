@@ -1,6 +1,6 @@
 <template>
     <figure class="item-product-gallery">
-        <img :src="this.randomPic[Math.floor(Math.random()*this.randomPic.length)]" :alt="item.name">
+        <img :src="item.picList[Math.floor(Math.random()*4)]" :alt="item.drugname">
         <figcaption>
             <h4>
                 {{ item.brand }}, {{ item.drugname }}
@@ -40,13 +40,7 @@ export default {
     },
     data() {
         return {
-            randomPic: [
-                "https://dummyimage.com/200x200/f50810/fff.png",
-                "https://dummyimage.com/200x200/0a0af5/fff.png",
-                "https://dummyimage.com/200x200/014a0a/fff.png",
-                "https://dummyimage.com/200x200/fc6703/fff.png"
-            ],
-            randomValue: 0,
+
         }
     },
     methods: {
@@ -57,8 +51,8 @@ export default {
             cartList.push(item);
             VueCookies.set("cart",{"token": localSession, "cartList": cartList},"20d");
 
-            location.reload();
-
+            // location.reload();
+            this.$emit("updateNav",cartList.length);
         },
         checkIfCartExist() {
             if (VueCookies.isKey("cart")) {
@@ -68,9 +62,6 @@ export default {
             }
         }
     },
-    created() {
-        this.ramdomValue = this.randomPic[Math.ceil(Math.random()*this.randomPic.length)];
-    }
 }
 </script>
 
