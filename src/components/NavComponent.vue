@@ -66,6 +66,8 @@ export default {
     mounted() {
         if(VueCookies.isKey("cart")) {
             this.totalItems = VueCookies.get("cart").cartList.length;
+        } else {
+            this.totalItems = 0;
         }
     }
     

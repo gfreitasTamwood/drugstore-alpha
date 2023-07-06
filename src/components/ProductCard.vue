@@ -48,7 +48,7 @@ export default {
             let cartList = VueCookies.get("cart").cartList;
             let localSession = VueCookies.get("cart").token;
 
-            cartList.push(item);
+            cartList.push(item.id);
             VueCookies.set("cart",{"token": localSession, "cartList": cartList},"20d");
 
             // location.reload();

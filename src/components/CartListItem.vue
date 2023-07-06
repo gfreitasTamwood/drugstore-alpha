@@ -21,6 +21,9 @@ export default {
     name: "CartListItem",
     props: {
         product: {}
+    },
+    created() {
+        console.log(this.products);
     }
 }
 </script>
