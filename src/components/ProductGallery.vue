@@ -1,52 +1,21 @@
 <template>
     <ul class="product-gallery-list">
-        <li v-for="item in localList" :key="item.id">
-            <figure class="item-product-gallery">
-                <img :src="this.randomPic[Math.floor(Math.random()*this.randomPic.length)]" :alt="item.name">
-                <figcaption>
-                    <h4>
-                        {{ item.brand }}, {{ item.drugname }}
-                    </h4>
-                    <section>
-                        <div>
-                            <!-- <span>
-                                <i class="fa-solid fa-star"></i>
-                                1
-                            </span> -->
-                            <span>
-                                {{ item.rating }}
-                                <i class="fa-solid fa-star"></i>
-                            </span>
-                            <!-- <span>
-                                5
-                                <i class="fa-solid fa-star"></i>
-                            </span> -->
-                        </div>
-                        <p class="progress-rating">
-                            <span :style="{ width: ((item.rating*100)/5)+'%'}">
-                            </span>
-                        </p>
-                    </section>
-                    <span class="item-price">
-                        ${{ item.price }}
-                    </span>
-                    <button class="add-cart-item">
-                        <span>
-                            Add to Cart
-                        </span>
-                        <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                </figcaption>
-            </figure>
+        <li v-for="product in localList" :key="product.id">
+            <ProductCard :item="product"/>
         </li>
     </ul>
 </template>
 
 <script>
+import ProductCard from './ProductCard.vue'
+
     export default {
         name: "ProductGallery",
         props: {
             localProductList: []
+        },
+        components: {
+            ProductCard
         },
         data() {
             return {
@@ -133,25 +102,7 @@
                         img: ""
                     },
                 ],
-                randomPic: [
-                    "https://dummyimage.com/200x200/f50810/fff.png",
-                    "https://dummyimage.com/200x200/0a0af5/fff.png",
-                    "https://dummyimage.com/200x200/014a0a/fff.png",
-                    "https://dummyimage.com/200x200/fc6703/fff.png"
-                ],
-                randomValue: 0
             }
-        },
-        methods: {
-            addItemToCart() {
-
-            },
-            checkIfCartExist() {
-
-            }
-        },
-        created() {
-            this.ramdomValue = this.randomPic[Math.ceil(Math.random()*this.randomPic.length)];
         }
     }
 </script>
@@ -225,25 +176,5 @@
     border-radius: 25px;
     background-color: #449A97;
     /* width: 50%; */
-}
-
-.item-price {
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
-}
-
-.add-cart-item {
-    padding: .5rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    display: flex;
-    column-gap: .5rem;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    background-color: #13C5DD;
-    border: 0px none transparent;
-    color: whitesmoke;
-    border-radius: 5px;
 }
 </style>

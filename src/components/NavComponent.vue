@@ -37,6 +37,8 @@
 </template>
 
 <script>
+import VueCookies from 'vue-cookies';
+
 export default {
     name: "NavComponent",
     props: {
@@ -54,11 +56,13 @@ export default {
     },
     methods: {
         checkCartCookie() {
-
+            if(VueCookies.isKey("cart")) {
+                this.totalItems = VueCookies.get("cart").cartList.length;
+            }
         }
     },
     created() {
-
+        this.checkCartCookie();
     }
 }
 </script>
