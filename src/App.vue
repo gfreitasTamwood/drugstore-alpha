@@ -1,28 +1,70 @@
 <template>
-  
-  <!-- <HomePage :teamList="this.teamMembersList"/> -->
-  <!-- <ProductGalleryPage /> -->
   <router-view/>
 </template>
 
 <script>
-// import HomePage from './components/pages/HomePage.vue';
+import VueCookies from 'vue-cookies';
 
 export default {
   name: 'App',
-  components: {
-    // HomePage
-  },
   data() {
     return {
-      teamMembersList: []
+      teamMembersList: [],
+      token: ""
     }
   },
   methods: {
-
+    checkIfSessionExist() {
+      if (VueCookies.isKey("session")) {
+        return true;
+      } else {
+        return false
+      }
+    },
+    createCartList() {
+      if (this.checkIfSessionExist()) {
+        if (!VueCookies.isKey("cart")) {
+          VueCookies.set(
+            "cart",
+            {
+              "token": VueCookies.get("session").token,
+              "cartList": []
+            }
+          );
+        } else {
+          VueCookies.set(
+            "cart",
+            {
+              "token": VueCookies.get("session").token,
+              "cartList": VueCookies.get("cart")
+            }
+          );
+        }
+        
+      } else {
+        if (!VueCookies.isKey("cart")) {
+          VueCookies.set(
+            "cart",
+            {
+              "token": this.token,
+              "cartList": []
+            }
+          );
+        } else {
+          VueCookies.set(
+            "cart",
+            {
+              "token": this.token,
+              "cartList": VueCookies.get("cart").cartList
+            }
+          );
+        }
+      }
+    }
   },
-  created() {
-
+  mounted(){
+    this.token = Math.random().toString(36).slice(2);
+    this.createCartList();
   }
 }
 </script>

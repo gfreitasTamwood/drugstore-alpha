@@ -61,11 +61,11 @@ export default {
 .about-container figure {
     display: flex;
     background-color: ghostwhite;
-    width: 80%;
 }
 
 .about-container img {
     border-radius: 15px;
+    width: 100%;
 }
 
 .about-container figcaption {

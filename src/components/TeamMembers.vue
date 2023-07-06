@@ -58,7 +58,6 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
 }
 
 .page-homepage .container-fluid {

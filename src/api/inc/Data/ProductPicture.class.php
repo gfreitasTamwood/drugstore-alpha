@@ -8,18 +8,23 @@ class ProductPicture {
     public function getId() {
         return $this->id;
     }
+    
     public function setId(int $id){
         $this->id = $id;
     }
+
     public function getProductId() {
         return $this->productId;
     }
+    
     public function setProductId(int $productId){
-        $this->prouctId = $productId;
+        $this->productId = $productId;
     }
+
     public function getPicture() {
         return $this->picture;
     }
+
     public function setPicture(string $picture){
         $this->picture = $picture;
     }
